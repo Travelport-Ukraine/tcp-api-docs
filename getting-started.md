@@ -1,19 +1,15 @@
 ## **Cache API**
 
-### **Cached Shopping API **
+Allows to aggregate shopping results based on general request without any additional modifiers 
 
-###### TCPCache request
+### **Cached Shopping API request**
 
-| Name | Values | Description |
+###### The following table represents a basic request for round trip journey including market from which shopping query was originally generated
+
+| Name | Example | Description |
 | :--- | :--- | :--- |
-| status |  | ? |
-| dataAvailable |  | ? |
-| requestId |  | ? |
-| executionTimeInMs |  |  |
-| originalRequest |  |  |
-| searchPhrase |  | Deparure and arrival dates and airport/city indicated in shopping request. Theformat is YYYYMMDDDEPARR, where DEP means Departure airport/city, ARR- arrival airport/city |
-| pointOfSale |  | Country code where shopping requestwas generated |
-| errorMessage |  | ? |
+| searchPhrase | 20171012IEVWAW20171015WAWIEV | Deparure and arrival dates and airport/city indicated in shopping request. Theformat is YYYYMMDDDEPARR, where DEP means Departure airport/city, ARR- arrival airport/city |
+| pointOfSale | UA | Country code where shopping requestwas generated |
 
 
 

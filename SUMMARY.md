@@ -2,8 +2,8 @@
 
 ## Overview
 
-* [My Awesome API](README.md)
-* [Getting Started](getting-started.md)
+* [Introduction to eStreaming API](README.md)
+* [Cache API](getting-started.md)
 
 ## Methods
 
