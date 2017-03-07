@@ -1,3 +1,6 @@
-# My Awesome API
+# Introduction to eStreaming API
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+eStreaming API is a fully managed solution that processes, stores and distributes Travelport eStreaming data among users with a very simple and easy to use JSON API.
+
+
+
