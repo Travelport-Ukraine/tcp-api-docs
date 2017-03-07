@@ -7,6 +7,7 @@
 * [PointofSale](pointofsale.md)
 * [Flex API](flex-api.md)
 * [Flex API](flex-api.md)
+* [eStreaming API limitations](estreaming-api-limitations.md)
 
 ## Methods
 
