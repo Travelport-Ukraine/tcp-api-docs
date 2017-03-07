@@ -1,15 +1,9 @@
-## **Cache API**
+# Getting Started
 
-Allows to aggregate shopping results based on general request without any additional modifiers
+1. Place your order via [https://www.travelportmarketplace.com/Product/eStreaming-API](https://www.travelportmarketplace.com/Product/eStreaming-API)
+2. Submit the legal documents depending on selected pricing model
+3. Complete the provisioning questionnaire.
+4. Using access credentials indicated in the Welcome letter authorise on [Postman ](http://getpostman.com)
 
-### **Cached Shopping API request**
 
-###### The following table represents a basic request for round trip journey including market from which shopping query was originally generated
-
-| Name | Example | Description |
-| :--- | :--- | :--- |
-| searchPhrase | 20171012IEVWAW20171015WAWIEV | Departure and arrival dates and airport/city indicated in shopping request. The format is YYYYMMDDDEPARR, where DEP means Departure airport/city, ARR- arrival airport/city |
-| pointOfSale | UA | Country ISO code where shopping request was generated |
-
-## **Cached Shopping API response**
 
