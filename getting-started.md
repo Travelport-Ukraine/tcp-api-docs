@@ -8,8 +8,8 @@ Allows to aggregate shopping results based on general request without any additi
 
 | Name | Example | Description |
 | :--- | :--- | :--- |
-| searchPhrase | 20171012IEVWAW20171015WAWIEV | Deparure and arrival dates and airport/city indicated in shopping request. Theformat is YYYYMMDDDEPARR, where DEP means Departure airport/city, ARR- arrival airport/city |
+| searchPhrase | 20171012IEVWAW20171015WAWIEV | Departure and arrival dates and airport/city indicated in shopping request. The format is YYYYMMDDDEPARR, where DEP means Departure airport/city, ARR- arrival airport/city |
 | pointOfSale | UA | Country ISO code where shopping request was generated |
 
-
+## **Cached Shopping API response**
 

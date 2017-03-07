@@ -3,9 +3,13 @@
 ## Overview
 
 * [Introduction to eStreaming API](README.md)
+* [Cache API](getting-started.md)
+* [PointofSale](pointofsale.md)
+* [Historical API ](historical-api.md)
 
-## API Overview
+## Methods
 
 * [Cache API](getting-started.md)
+* [Historical API ](historical-api.md)
 * [Defining Methods](methods.md)
 
