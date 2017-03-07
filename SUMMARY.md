@@ -3,9 +3,9 @@
 ## Overview
 
 * [Introduction to eStreaming API](README.md)
+
+## API Overview
+
 * [Cache API](getting-started.md)
-
-## Methods
-
 * [Defining Methods](methods.md)
 
