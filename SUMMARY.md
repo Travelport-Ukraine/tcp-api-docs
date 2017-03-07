@@ -9,7 +9,7 @@
 
 ## Methods
 
-* [Cache API](getting-started.md)
+* [Cached API](cached-api.md)
 * [Historical API ](historical-api.md)
 * [Defining Methods](methods.md)
 
