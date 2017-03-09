@@ -13,5 +13,5 @@ Provides shopping results based on general shopping request within designated ti
 
 ## Historical API response
 
-
+Coming soon
 
