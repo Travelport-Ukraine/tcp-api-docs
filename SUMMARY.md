@@ -9,7 +9,7 @@
 
 ## Methods
 
-* [Cached API](cached-api.md)
+* [Cache API](cached-api.md)
 * [Historical API ](historical-api.md)
 * [Fly From API](fly-from-api.md)
 * [Fly from To API](fly-from-to-api.md)

@@ -1,4 +1,4 @@
-# Cached API
+# Cache API
 
 Allows to aggregate shopping results and build pricing database based on general shopping query with point of sale included.
 
