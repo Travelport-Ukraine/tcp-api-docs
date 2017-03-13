@@ -1,4 +1,4 @@
-# Cache API
+# Cached API
 
 Allows to aggregate shopping results and build pricing database based on general shopping query with point of sale included.
 
@@ -14,4 +14,6 @@ The following table illustrates the minimum required data for cached shopping re
 ## Cache API response
 
 Coming soon
+
+
 

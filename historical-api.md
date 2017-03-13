@@ -15,5 +15,3 @@ Provides shopping results based on general shopping request within designated ti
 
 Coming soon
 
-
-
