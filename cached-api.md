@@ -95,8 +95,8 @@ Each proposal represents shopping results containin g a number pf pricing option
 
 | Name | Data type | Description |
 | :--- | :--- | :--- |
-| Currency | string | The currency of the PointofSale country.  |
-| TotalFareAmount | number | Includes Base fare amount in PointofSale currency |
+| Currency | string | The currency of the PointofSale country. |
+| TotalFareAmount | number | Fare amount including taxes in PointofSale currency |
 | Taxes | number | Tax amount in PointofSale currency |
 | Validating Carrier | string | IATA code of the validating vendor |
 | Legs | number | Flight connection indicator |
