@@ -80,7 +80,7 @@ Unpon decompression of base64GzippedResponse and JSON data display the user shou
 
 | Name | Example | Description |
 | :--- | :--- | :--- |
-| guid | 46de111d-180a-4094-b4bf-4aa435e20b33 | ? |
+| guid | 46de111d-180a-4094-b4bf-4aa435e20b33 | Unique id |
 | requestStart | 2017/03/11 18:22:02.525 | ? |
 | pointOfSale | UA | Country ISO code where shopping request was generated. |
 | originalRequest | 20170316IEVWAW20170319WAWIEV | Original shopping query, containing departure and arrival dates and airport/city indicated in shopping request. The format is YYYYMMDDDEPARR, where DEP means Departure airport/city, ARR- arrival airport/city |
