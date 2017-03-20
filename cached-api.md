@@ -66,11 +66,11 @@ The following table illustrates the minimum required data for cached shopping re
 | data | response object | Is shown when status is "success" anddataAvailable is true |
 | lastModified | lastModified | Time in UTC format when data had been received from Travelport eStreaming |
 | recordAgeInMs | recordAgeInMs | Milliseconds passed from the moment, when data has been received |
-| dataSizeInBytes | dataSizeInBytes | Size of the compressed data |
+| dataSizeInBytes |  | Size of the compressed data |
 | warehouseId |  | Unique identifier of the particular data in the warehouse \(this field changes when new data on the same request is received, while data is still available using warehouseId\) |
 | base64GzippedResponse |  | gzipped response in base64 format |
 
-Unpon decompression of base64GzippedResponse and JSON data display the user should be able to view object contaning 3 items:
+Upon decompression of base64GzippedResponse and JSON data display the user should be able to view object contaning 3 items:
 
 * Headers
 * Date
@@ -87,11 +87,11 @@ Unpon decompression of base64GzippedResponse and JSON data display the user shou
 
 #### Date
 
-?
+Date and time when data was transmitted to eStreaming API server.
 
 #### Proposal
 
-Each proposal represents shopping results containin g a number pf pricing options. A pricing option contains the following elements
+Each proposal represents shopping results containing a number of pricing options. A pricing option contains the following elements
 
 | Name | Data type | Description |
 | :--- | :--- | :--- |
