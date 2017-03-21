@@ -53,7 +53,7 @@ The following table illustrates the minimum required data for Fly From API reque
 
 ### Response parameters
 
-Please find below response elements for From-To OW API:
+Please find below response elements for FlyFrom API:
 
 | Name | Data type | Description |
 | :--- | :--- | :--- |
@@ -70,4 +70,17 @@ Please find below response elements for From-To OW API:
 | base64GzippedResponse |  | gzipped response in base64 formatUpon decompression of base64GzippedResponse and JSON data display the user should be able to view object contaning the following fields: |
 
 Upon decompression of base64GzippedResponse and JSON data display the user should be able to view object contaning the following fields:
+
+| Name | Example | Description |
+| :--- | :--- | :--- |
+|  | AAE | Destination code |
+| RT\_Connected/Direct, OW\_Direct/Connected |  | Indicates whether proposals referrs to RT or OW journey, containing direct or connected flights  |
+| lastModified | 2017-03-20T12:25:02.943Z | Time in UTC format when data had been received from Travelport eStreaming |
+| recordAgeInMs | 95917847 | Milliseconds passed from the moment, when data has been received |
+| amount | 8820 | Pricing offer amount |
+| currency | UAH | The currency of the PointofSale country. |
+| validatingCarrier | PS | IATA code of plating carrier |
+| originalRequest | 20170501IEVAAL20170521AALIEV | Contains parsed request from user |
+
+
 

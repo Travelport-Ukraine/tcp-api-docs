@@ -64,8 +64,8 @@ The following table illustrates the minimum required data for cached shopping re
 | originalRequest | object | Contains parsed request from user |
 | errorMessage | string | Appears if status is "error" or if dataAvailable is false. See Known issues for more detailed information about most frequestnly returned errors. |
 | data | response object | Is shown when status is "success" anddataAvailable is true |
-| lastModified | lastModified | Time in UTC format when data had been received from Travelport eStreaming |
-| recordAgeInMs | recordAgeInMs | Milliseconds passed from the moment, when data has been received |
+| lastModified |  | Time in UTC format when data had been received from Travelport eStreaming |
+| recordAgeInMs |  | Milliseconds passed from the moment, when data has been received |
 | dataSizeInBytes |  | Size of the compressed data |
 | warehouseId |  | Unique identifier of the particular data in the warehouse \(this field changes when new data on the same request is received, while data is still available using warehouseId\) |
 | base64GzippedResponse |  | gzipped response in base64 format |
