@@ -101,5 +101,38 @@ Each proposal represents shopping results containing a number of pricing options
 | Validating Carrier | string | IATA code of the validating vendor |
 | Legs | number | Flight connection indicator |
 
+#### Leg
+
+A leg is basically a part of journey between two cities/airports, that can contain one segment in case of direct flights or multiple flight segments in case of connection or stopover.
+
+| Name | Data type | Desctiption |
+| :--- | :--- | :--- |
+| PassengerTypeCode | string | IATA Passenger Type Code \(PTC\) that normally contains 3 letters: ADT, SRC, CNN etc |
+| Segments | number | Quantity of segments within one leg. See more details below |
+
+##### Segments
+
+| Name | Example | Description |
+| :--- | :--- | :--- |
+| FareBasisCode | UUATBAS | The Fare Basic Code \(FBC\) for this fare |
+| FareType | XPN | Fare type |
+| TechnicalStops | 0 | Count of Incidental Stops |
+| Duration | 00130 | Flight duration, in the format Dhhmm |
+| Origin | PRG | Origin of travel |
+| Destination | WAW | Destination point |
+| DepartureTime | 201705220705 | Departure date/time in the format \(YYYYMMDDhhmm\) |
+| ArrivalTime | 201705220835 | Arrival date/time in the format YYYYMMDDhhmm |
+| OutTerminal | 2 | Departure terminal |
+| InTerminal | 1 | Arrival terminal |
+| MarketingCarrier | OK | Marketing carrier of Flight |
+| OperatingCarrier | OK | Operating Carrier of Flight |
+| FlightNumber | 0782 | Flight number for each leg |
+| BookingCode | W | Booking code for each leg |
+| Cabin | E | Cabin for each leg |
+| Seats | 001 | Seats for each leg |
+| AvailabilitySource | B | Where availability was obtained |
+| Equipment | E75 | Equipment type |
+| SegmentsContinued | 1M | Indicates married segments |
+
 
 

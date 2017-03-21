@@ -4,12 +4,20 @@ Provides shopping results based on general shopping request within designated ti
 
 ## Historical API request
 
+### Sample request
+
+> [https://api.travelcloudpro.eu/v1/cache/history?searchPhrase=20170522IEVWAW&pointOfSale=UA&minSearchDate=2017-01-03&maxSearchDate=2017-01-10](https://api.travelcloudpro.eu/v1/cache/history?searchPhrase=20170522IEVWAW&pointOfSale=UA&minSearchDate=2017-01-03&maxSearchDate=2017-01-10)
+
+### Request parameters
+
+The following table illustrates the minimum required data for cached shopping request.
+
 | Name | Example | Description |
 | :--- | :--- | :--- |
-| searchPhrase | 20171022IEVTLV | Departure and arrival dates and airport/city indicated in shopping request. The format is YYYYMMDDDEPARR, where DEP means Departure airport/city, ARR- arrival airport/city |
+| searchPhrase | 20170522IEVWAW | Departure and arrival dates and airport/city indicated in shopping request. The format is YYYYMMDDDEPARR, where DEP means Departure airport/city, ARR- arrival airport/city |
 | pointOfSale | UA | Country ISO code where shopping request was generated |
-| minSearchDate | 2017-08-25 | Departure date marking the beginningof search results streaming |
-| maxSearchDate | 2016-08-30 | Departure date marking the end of search serults streaming |
+| minSearchDate | 2017-01-03 | Departure date marking the beginningof search results streaming |
+| maxSearchDate | 2017-01-10 | Departure date marking the end of search serults streaming |
 
 ## Historical API response
 
@@ -131,29 +139,27 @@ A leg is basically a part of journey between two cities/airports, that can conta
 
 ##### Segments
 
-| Name |  |  |
+| Name | Example | Description |
 | :--- | :--- | :--- |
-| FareBasisCode |  | The Fare Basic Code \(FBC\) for this fare |
-| FareType |  | Fare type |
-| TechnicalStops |  |  |
-| Duration |  |  |
-| Origin |  |  |
-| Destination |  |  |
-| DepartureTime |  |  |
-| ArrivalTime |  |  |
-| OutTerminal |  |  |
-| InTerminal |  |  |
-| MarketingCarrier |  |  |
-| OperatingCarrier |  |  |
-| FlightNumber |  |  |
-| BookingCode |  |  |
-| Cabin |  |  |
-| Seats |  |  |
-| AvailabilitySource |  |  |
-| Equipment |  |  |
-| SegmentsContinued |  |  |
-
-
+| FareBasisCode | UUATBAS | The Fare Basic Code \(FBC\) for this fare |
+| FareType | XPN | Fare type |
+| TechnicalStops | 0 | Count of Incidental Stops |
+| Duration | 00130 | Flight duration, in the format Dhhmm |
+| Origin | PRG | Origin of travel |
+| Destination | WAW | Destination point |
+| DepartureTime | 201705220705 | Departure date/time in the format \(YYYYMMDDhhmm\) |
+| ArrivalTime | 201705220835 | Arrival date/time in the format YYYYMMDDhhmm |
+| OutTerminal | 2 | Departure terminal |
+| InTerminal | 1 | Arrival terminal |
+| MarketingCarrier | OK | Marketing carrier of Flight |
+| OperatingCarrier | OK | Operating Carrier of Flight |
+| FlightNumber | 0782 | Flight number for each leg |
+| BookingCode | W | Booking code for each leg |
+| Cabin | E | Cabin for each leg |
+| Seats | 001 | Seats for each leg |
+| AvailabilitySource | B | Where availability was obtained |
+| Equipment | E75 | Equipment type |
+| SegmentsContinued | 1M | Indicates married segments |
 
 
 
