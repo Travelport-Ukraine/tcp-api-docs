@@ -4,7 +4,7 @@ Contains the cheapest pricing options for all flights operated from defined city
 
 ## Fly From API request
 
-### Sample request
+### Sample request \(type: GET\)
 
 > [https://api.travelcloudpro.eu/v1/cache/flyfrom?origin=IEV&pointOfSale=UA](https://api.travelcloudpro.eu/v1/cache/flyfrom?origin=IEV&pointOfSale=UA)
 
@@ -19,7 +19,7 @@ The following table illustrates the minimum required data for Fly From API reque
 
 ## Fly From API response
 
-### Response sample
+### Response sample \(application/json\)
 
 > {
 >
@@ -74,7 +74,7 @@ Upon decompression of base64GzippedResponse and JSON data display the user shoul
 | Name | Example | Description |
 | :--- | :--- | :--- |
 |  | AAE | Destination code |
-| RT\_Connected/Direct, OW\_Direct/Connected |  | Indicates whether proposals referrs to RT or OW journey, containing direct or connected flights  |
+| RT\_Connected/Direct, OW\_Direct/Connected |  | Indicates whether proposals referrs to RT or OW journey, containing direct or connected flights |
 | lastModified | 2017-03-20T12:25:02.943Z | Time in UTC format when data had been received from Travelport eStreaming |
 | recordAgeInMs | 95917847 | Milliseconds passed from the moment, when data has been received |
 | amount | 8820 | Pricing offer amount |

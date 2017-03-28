@@ -4,7 +4,7 @@ Allows to aggregate shopping results and build pricing database based on general
 
 ## Cache API request
 
-### Example
+### Sample request \(type: GET\)
 
 > [https://api.travelcloudpro.eu/v1/cache/shopping?searchPhrase=20170316IEVWAW20170319WAWIEV&pointOfSale=UA](https://api.travelcloudpro.eu/v1/cache/shopping?searchPhrase=20170316IEVWAW20170319WAWIEV&pointOfSale=UA)
 
@@ -19,7 +19,7 @@ The following table illustrates the minimum required data for cached shopping re
 
 ## Cache API response
 
-### Response example
+### Response example \(application/json\)
 
 > {
 >
@@ -103,7 +103,7 @@ Each proposal represents shopping results containing a number of pricing options
 
 #### Leg
 
-A leg is basically a part of journey between two cities/airports, that can contain one segment in case of direct flights or multiple flight segments in case of connection or stopover.
+A leg is basically a part of journey between two cities/airports, that can contain one segment in case of direct flights or multiple flight segments in case of connection or stopover. Leg object contains the following parameters:
 
 | Name | Data type | Desctiption |
 | :--- | :--- | :--- |

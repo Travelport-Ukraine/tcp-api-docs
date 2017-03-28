@@ -21,4 +21,5 @@
 ## eStreaming API limitations
 
 * [List of limitations](estreaming-api-limitations/list-of-limitations.md)
+  * [Known errors](estreaming-api-limitations/list-of-limitations/known-errors.md)
 

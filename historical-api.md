@@ -4,7 +4,7 @@ Provides shopping results based on general shopping request within designated ti
 
 ## Historical API request
 
-### Sample request
+### Sample request \(type: GET\)
 
 > [https://api.travelcloudpro.eu/v1/cache/history?searchPhrase=20170522IEVWAW&pointOfSale=UA&minSearchDate=2017-01-03&maxSearchDate=2017-01-10](https://api.travelcloudpro.eu/v1/cache/history?searchPhrase=20170522IEVWAW&pointOfSale=UA&minSearchDate=2017-01-03&maxSearchDate=2017-01-10)
 
@@ -21,7 +21,7 @@ The following table illustrates the minimum required data for cached shopping re
 
 ## Historical API response
 
-### Response example
+### Response example \(application/json\)
 
 > {
 >

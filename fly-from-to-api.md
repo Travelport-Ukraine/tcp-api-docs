@@ -4,7 +4,7 @@ Provides the cheapest pricing options for designated city/airport pair within sp
 
 ## Fly From-To OW API request
 
-### Sample request
+### Sample request \(type: GET\)
 
 > [https://api.travelcloudpro.eu/v1/cache/flyfromto?pointOfSale=UA&minDepartureDate=2017-10-01&maxDepartureDate=2017-10-07&origin=IEV&destination=WAW](https://api.travelcloudpro.eu/v1/cache/flyfromto?pointOfSale=UA&minDepartureDate=2017-10-01&maxDepartureDate=2017-10-07&origin=IEV&destination=WAW)
 
@@ -20,7 +20,7 @@ The following table illustrates the minimum required data for From-To OW request
 | origin | IEV | City/airport IATA code where the journey begins |
 | destination | WAW | City/airport IATA code where the journey ends |
 
-## Fly From-To OW API response
+## Fly From-To OW API response \(application/json\)
 
 > {
 >
@@ -118,7 +118,7 @@ The following table shows minimum parameters for FlyFromTo RT request.
 | minStay | 2 | Minimum number of days which should be spent at the point of destination before return journey |
 | maxStay | 5 | Maximum mumber of days to be soent at the poing of destination before return journey |
 
-### Sample response
+### Sample response \(application/json\)
 
 > {
 >
