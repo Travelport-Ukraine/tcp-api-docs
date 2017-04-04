@@ -8,6 +8,7 @@
     * [Making request](getting-started/getting-connected/making-request.md)
   * [Using Postman](getting-started/using-postman.md)
 * [PointofSale](pointofsale.md)
+* [Capacity Planning](capacity-planning.md)
 
 ## Methods
 
