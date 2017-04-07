@@ -4,11 +4,9 @@
 
 * [Introduction to eStreaming API](README.md)
 * [Getting Started](getting-started.md)
-  * [Getting Connected](getting-started/getting-connected.md)
-    * [Making request](getting-started/getting-connected/making-request.md)
-  * [Using Postman](getting-started/using-postman.md)
-* [PointofSale](pointofsale.md)
+* [Making request](making-request.md)
 * [Capacity Planning](capacity-planning.md)
+* [PointofSale](pointofsale.md)
 
 ## Methods
 
