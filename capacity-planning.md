@@ -4,47 +4,51 @@ We count simmultaneous concurrent transactions on RPS \(request per second\) bas
 
 Free tier users might get  the following error messsage in case daily requests limit is exceeded
 
-> { status: 'error',
+> `{ status: 'error',`
 >
->   dataAvailable: false,
+> `dataAvailable: false,`
 >
->   requestId: '72a85761-19fb-11e7-a60b-c71e54dd7836',
+> `requestId: '72a85761-19fb-11e7-a60b-c71e54dd7836',`
 >
->   executionTimeInMs: 184,
+> `executionTimeInMs: 184,`
 >
->   originalRequest: 
+> `originalRequest:`
 >
->    { pointOfSale: 'IT',
+> `{ pointOfSale: 'IT',`
 >
->      searchPhrase: '20170304CUFLCE',
+> ```
+>  searchPhrase: '20170304CUFLCE',
 >
->      minSearchDate: '2017-02-20',
+>  minSearchDate: '2017-02-20',
 >
->      maxSearchDate: '2017-02-26' },
+>  maxSearchDate: '2017-02-26' },
+> ```
 >
->   errorMessage: 'Daily capacity limit exceeded' }
+> `errorMessage: 'Daily capacity limit exceeded' }`
 
 When the number of concurrent requests per second \(RPS\) is exceeded the relevant error message is also displayed.
 
-> { status: 'error',
+> `{ status: 'error',`
 >
->   dataAvailable: false,
+> `dataAvailable: false,`
 >
->   requestId: '72a85761-19fb-11e7-a60b-c71e54dd7836',
+> `requestId: '72a85761-19fb-11e7-a60b-c71e54dd7836',`
 >
->   executionTimeInMs: 184,
+> `executionTimeInMs: 184,`
 >
->   originalRequest: 
+> `originalRequest:`
 >
->    { pointOfSale: 'IT',
+> `{ pointOfSale: 'IT',`
 >
->      searchPhrase: '20170304CUFLCE',
+> ```
+>  searchPhrase: '20170304CUFLCE',
 >
->      minSearchDate: '2017-02-20',
+>  minSearchDate: '2017-02-20',
 >
->      maxSearchDate: '2017-02-26' },
+>  maxSearchDate: '2017-02-26' },
+> ```
 >
->   errorMessage: 'RPS capacity limit exceeded' }
+> `errorMessage: 'RPS capacity limit exceeded' }`
 
 
 
