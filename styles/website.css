@@ -43,7 +43,7 @@ body .book .book-body, body .book .book-summary {
 }
 .book-summary ul.summary li a, .book-summary ul.summary li span {
     color: #0087CC;
-    padding: 8px 15px;
+    padding: 6px 15px;
 }
 .book-summary ul.summary li a:hover {
     text-decoration: none;
