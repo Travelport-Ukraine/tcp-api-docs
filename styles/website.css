@@ -47,6 +47,10 @@ body .book .book-body, body .book .book-summary {
     background: #e0f2f1;
     color: #00695c;
 }
+.book-summary ul.summary li.active>a {
+    color: #000;
+    font-weight: bold;
+}
 
 
 
