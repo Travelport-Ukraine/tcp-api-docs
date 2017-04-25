@@ -69,8 +69,11 @@ body .book .book-body, body .book .book-summary {
 
 
 .markdown-section table {
+    border-bottom: 2px solid #f1f8e9;
     width: initial;
     margin-bottom: 2em;
+    width: initial;
+    border-bottom: 2px solid #f1f8e9;
 }
 .markdown-section table tr {
     background-color: #fff;
