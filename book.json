@@ -1,5 +1,5 @@
 {
-    "plugins": [ "theme-api" ],
+    "plugins": [ "theme-api", "styles-less" ],
     "pluginsConfig": {
         "theme-api": {
             "languages": [
@@ -15,7 +15,6 @@
             ]
         }
     },
-    "plugins": ["styles-less"],
     "styles": {
         "website": "./styles/website.css"
     }
