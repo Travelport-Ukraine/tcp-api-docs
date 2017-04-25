@@ -31,7 +31,9 @@ body .book .book-body, body .book .book-summary {
 
 
 
-
+.book-summary ul.summary {
+    padding: 0 15px;
+}
 .book-summary ul.summary li.header {
     padding: 30px 0 2px;
     color: #26a69a;
