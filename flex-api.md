@@ -17,37 +17,24 @@ Provides ability to get the cheapest pricing option within pre-defined date rang
 
 ## Flex API response \(application/json\)
 
-> "status": "success",
->
-> "dataAvailable": true,
->
-> "requestId": "e016a919-138c-11e7-b8a6-7fe3e3d1b344",
->
-> "executionTimeInMs": 150,
->
-> "originalRequest": {
->
-> ```
-> "searchPhrase": "20170501IEVWAW20170508WAWIEV",
->
-> "pointOfSale": "UA"
-> ```
->
-> },
->
-> "data": {
->
-> ```
-> "proposalsCount": 48,
->
-> "compressedDataSize": 711,
->
-> "uncompressedDataSize": 10390,
->
-> "base64GzippedResponse": "H4sIAAAAAAAAA92aTWsbMRCG/4vOPqw0+szNSRNSKDjgtjmUHhZn2yy467LZFErwf6+aWxcmrWZmkZubvWuEHs3XOyN/elLfD/0wbb5s232nztSHtVqph64dd/c392P78PuZaXRorIlvLz/erm+fv7km5o/5Qf71m37sdpM6e1K7x3Hsht3P53Wu86vpMLX79bfD45DfK+2C9/npj3bf37VTP3y9aMex78b87t1GHVfq4jAMea3u7l9WszY5ZLXNVh2PKzJbKGezABrZzM22FC1EHbBzumaRuXIySB4jKzeaN2Ehm6VXazNPspmRs5lL2GLnhkOmGwJZSFgKKbeZt4B5I5NME8iseckbizaTuEFv8yJiDhQ0gNQxJ25oCJMlKxX0iR0aESUjpLOlbEYKDeewzZSTuXy4LzgAwxsJkki2uCYdl4kzgiCSJQtaTDakE5MNCbNZaQaBhhtnNtcKOZtpJ1Vc/yQj1TNJm3lwmAYp9cYZ2av1xvotlXFpGZsRsr6sN+YtLBJnFA0inUGWISPpRlGbmYA1i+fvi8hco/m6ERVEBDIdhZrFGVn9OIuAaX0mWfV6ZgCrZzwyktaPjZzW9zoIdTFzm1EySPLohKiiupqTVa/UAFjWL6zUc7Lq6goAc4BiMnNaGUQ3WAlZX7HI6lfqiMUZk4zSU4PBNkMgC+gonklGmYP8F2Skepa03J2X9xbTILwMUn3eKNfFzL2RkPWzzQQrtUfn+sU2A7YiNuhdDsFm3mJZn0lG0SAmCnYx3mDHxCSj1DMjeeVlUNcu7jzhpNSV9wnT+jyb0boYydwoqPWBn/UbzIEoWR+wqVwxmeUqYg/oLRPljw5yPbVle6PkpbkLRmj6PbcZRRFbLzlvRI+JR1ZdXbmQxDSI5dYz59DiSpqDLJRBSLpR8s5TsJ5Zdn8mSfY3b/z8C9mVHZ+WKAAA"
-> ```
->
-> }
+```
+"status": "success",
+"dataAvailable": true,
+"requestId": "e016a919-138c-11e7-b8a6-7fe3e3d1b344",
+"executionTimeInMs": 150,
+"originalRequest": 
+{
+    "searchPhrase": "20170501IEVWAW20170508WAWIEV",
+    "pointOfSale": "UA"
+},
+"data": 
+{
+    "proposalsCount": 48,
+    "compressedDataSize": 711,
+    "uncompressedDataSize": 10390,
+    "base64GzippedResponse": "H4sIAAAAAAAAA92aTWsbMRCG/4vOPqw0+szNSRNSKDjgtjmUHhZn2yy467LZFErwf6+aWxcmrWZmkZubvWuEHs3XOyN/elLfD/0wbb5s232nztSHtVqph64dd/c392P78PuZaXRorIlvLz/erm+fv7km5o/5Qf71m37sdpM6e1K7x3Hsht3P53Wu86vpMLX79bfD45DfK+2C9/npj3bf37VTP3y9aMex78b87t1GHVfq4jAMea3u7l9WszY5ZLXNVh2PKzJbKGezABrZzM22FC1EHbBzumaRuXIySB4jKzeaN2Ehm6VXazNPspmRs5lL2GLnhkOmGwJZSFgKKbeZt4B5I5NME8iseckbizaTuEFv8yJiDhQ0gNQxJ25oCJMlKxX0iR0aESUjpLOlbEYKDeewzZSTuXy4LzgAwxsJkki2uCYdl4kzgiCSJQtaTDakE5MNCbNZaQaBhhtnNtcKOZtpJ1Vc/yQj1TNJm3lwmAYp9cYZ2av1xvotlXFpGZsRsr6sN+YtLBJnFA0inUGWISPpRlGbmYA1i+fvi8hco/m6ERVEBDIdhZrFGVn9OIuAaX0mWfV6ZgCrZzwyktaPjZzW9zoIdTFzm1EySPLohKiiupqTVa/UAFjWL6zUc7Lq6goAc4BiMnNaGUQ3WAlZX7HI6lfqiMUZk4zSU4PBNkMgC+gonklGmYP8F2Skepa03J2X9xbTILwMUn3eKNfFzL2RkPWzzQQrtUfn+sU2A7YiNuhdDsFm3mJZn0lG0SAmCnYx3mDHxCSj1DMjeeVlUNcu7jzhpNSV9wnT+jyb0boYydwoqPWBn/UbzIEoWR+wqVwxmeUqYg/oLRPljw5yPbVle6PkpbkLRmj6PbcZRRFbLzlvRI+JR1ZdXbmQxDSI5dYz59DiSpqDLJRBSLpR8s5TsJ5Zdn8mSfY3b/z8C9mVHZ+WKAAA"
+}
+```
 
 ### Response parameters:
 
