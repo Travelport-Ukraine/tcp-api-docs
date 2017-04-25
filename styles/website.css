@@ -1,3 +1,7 @@
 .DocumentEditor .SlateEditor blockquote {
     border-left: none;
 }
+
+.markdown-section blockquote {
+    background: red;
+}
