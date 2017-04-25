@@ -68,12 +68,22 @@ body .book .book-body, body .book .book-summary {
 }
 
 
-
+.markdown-section table tr {
+    background-color: #fff;
+    border: none;
+}
 .markdown-section table th {
     font-size: 0.8em;
+    padding: 2px 13px;
+    background: #c5e1a5;
+    border: none;
 }
 .markdown-section table td {
     font-size: 0.9em;
+    border: none;
+}
+.markdown-section table tr:nth-child(2n) {
+    background-color: #f1f8e9;
 }
 
 
