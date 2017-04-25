@@ -61,14 +61,17 @@ body .book .book-body, body .book .book-summary {
     font-size: 1.8em;
 }
 .markdown-section h2 {
+    color: #33691e;
     font-size: 1.4em;
     margin: 2.4em 0 0.5em;
 }
 .markdown-section h3 {
+    color: #558b2f;
     font-size: 1.2em;
     margin: 2.4em 0 0.5em;
 }
 .markdown-section h4 {
+    color: #33691e;
     font-size: 1em;
     margin: 2em 0 0.5em;
 }
