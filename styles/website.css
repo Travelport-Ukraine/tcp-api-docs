@@ -40,6 +40,7 @@ body .book .book-body, body .book .book-summary {
     font-size: 12px;
 }
 .book-summary ul.summary li a, .book-summary ul.summary li span {
+    color: #0087CC;
     padding: 8px 15px;
 }
 .book-summary ul.summary li a:hover {
