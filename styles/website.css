@@ -65,6 +65,8 @@ body .book .book-body, body .book .book-summary {
 }
 .markdown-section h3 {
     font-size: 1.2em;
+    margin-bottom: 0.4em;
+    margin: 2.4em 0 0.4em;
 }
 
 
