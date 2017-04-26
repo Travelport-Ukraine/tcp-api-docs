@@ -10,8 +10,7 @@ Free tier users might get  the following error messsage in case daily requests l
      dataAvailable: false,
      requestId: '72a85761-19fb-11e7-a60b-c71e54dd7836',
      executionTimeInMs: 184,
-     originalRequest: 
-     {
+     originalRequest: {
          pointOfSale: 'IT',
          searchPhrase: '20170304CUFLCE',
          minSearchDate: '2017-02-20',
@@ -29,8 +28,7 @@ When the number of concurrent requests per second \(RPS\) is exceeded the releva
     dataAvailable: false,
     requestId: '72a85761-19fb-11e7-a60b-c71e54dd7836',
     executionTimeInMs: 184,
-    originalRequest: 
-    {
+    originalRequest: {
         pointOfSale: 'IT',`
         searchPhrase: '20170304CUFLCE',
         minSearchDate: '2017-02-20',
