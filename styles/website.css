@@ -113,9 +113,4 @@ body .book .book-body, body .book .book-summary {
 
 
 
-.DocumentEditor .SlateEditor blockquote {
-    border-left: none;
-}
-
-
 .markdown-section blockquote {}
