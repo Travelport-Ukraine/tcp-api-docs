@@ -27,13 +27,11 @@ The following table illustrates the minimum required data for cached shopping re
     "dataAvailable": true,
     "requestId": "f0338277-07d7-11e7-8d76-93c818f06757",
     "executionTimeInMs": 328,
-    "originalRequest": 
-    {
+    "originalRequest": {
         "searchPhrase": "20170316IEVWAW20170319WAWIEV",
         "pointOfSale": "UA"
     },
-    "data": 
-    {
+    "data": {
         "lastModified": "2017-03-11T18:22:02.525Z",
         "recordAgeInMs": 144447048,
         "dataSizeInBytes": 17578,
