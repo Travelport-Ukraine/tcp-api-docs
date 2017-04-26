@@ -56,6 +56,10 @@ body .book .book-body, body .book .book-summary {
 }
 
 
+.markdown-section {
+    padding-bottom: 50px;
+}
+
 
 .markdown-section h1 {
     font-size: 1.8em;
