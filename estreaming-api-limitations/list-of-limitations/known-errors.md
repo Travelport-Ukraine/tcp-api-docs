@@ -6,8 +6,7 @@
     "dataAvailable": false,
     "requestId": "10ec7a52-8c59-11e6-a503-532190b26d0f",
     "executionTimeInMs": 94,
-    "originalRequest": 
-    {
+    "originalRequest": {
         "searchPhrase": "20161012IEVWAW20161015WAWIEV",
         "pointOfSale": ""
     },
@@ -23,8 +22,7 @@
     "dataAvailable": false,
     "requestId": "d4617c75-8c8b-11e6-a868-5d5f7099ab60",
     "executionTimeInMs": 257,
-    "originalRequest": 
-    {
+    "originalRequest": {
         "searchPhrase": "20181201IEVWAW20181205WAWIEV",
         "pointOfSale": ""
     },
@@ -40,8 +38,7 @@
     "dataAvailable": false,
     "requestId": "c613adda-8c8b-11e6-9b1c-6fc042573b18",
     "executionTimeInMs": 264,
-    "originalRequest": 
-    {
+    "originalRequest": {
         "searchPhrase": "20181201IEVWAW20181205WAWIEV",
         "pointOfSale": "UA"
     },
