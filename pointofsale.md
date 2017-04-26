@@ -1,4 +1,4 @@
-# PointofSale \(BSP zone\)
+# Point Of Sale \(BSP zone\)
 
 Airlines distribute their fares and inventory in a different way depending on the country of point-of-sale. Some carriers restrict specific fares only for sale on their domestic market, whereas others may offer different range of bookings classes depending on the origin where the agency is located.
 
