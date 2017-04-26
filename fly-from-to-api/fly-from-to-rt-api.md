@@ -18,51 +18,30 @@ The following table shows minimum parameters for FlyFromTo RT request.
 
 ### Sample response \(application/json\)
 
-> {
->
-> "status": "success",
->
-> "dataAvailable": true,
->
-> "requestId": "c0b8fc4c-0e3a-11e7-ba5b-d5670f74ff75",
->
-> "executionTimeInMs": 103,
->
-> "originalRequest": {
->
-> ```
-> "origin": "IEV",
->
-> "destination": "AMS",
->
-> "pointOfSale": "UA",
->
-> "minDepartureDate": "2017-11-01",
->
-> "maxDepartureDate": "2017-11-07",
->
-> "minStay": "2",
->
-> "maxStay": "5"
-> ```
->
-> },
->
-> "data": {
->
-> ```
-> "proposalsCount": 8,
->
-> "compressedDataSize": 493,
->
-> "uncompressedDataSize": 2831,
->
-> "base64GzippedResponse": "H4sIAAAAAAAAA72WTWvbQBCG/8ueHbEzs6P9uKlpS0NjHLDbQ0sPwlYSgSsVWSmU4P/eUcmhBa2dlUVBB2ln2X3n0cy7+/VZ/Wjrpl/dr8t9pYL6VKiFOlRlt328e+zKwzCGGiyAhpt3n4vl+uWL5VUGZPbbuqu2vQrPavvUdVWz/fVnnQ8S6tu+3Bff26dG4sp5rWXwZ7mvd2VfNw/XZdfVVSehu7UE9uWhX7a7+r6udi/bXmm6Ar9BHbQPhjO25ovMlA3bblc8VDfN8qACGOdJW+uOC3XdNo3IGVY4KyhngIig29U8go6LBML4D+F8AmGHZgph3gAFY4NxmUUYSYjBGmNzgkTC7MBHBL3ZzCPoAsL2vxI2AVkqI/O5HU2IZTI5TiUsdRYRVLyfR9AFhM0Ul6CYS3y8PZ2QC8NDmSMeS0gDIkrhzOcSqzO//LWCLiA8xYedneTDdmhKdIEgc4gjCZFhp41UZCphMm6KSyQISiJMMxCONeUpwggbnQdDQbtMWz+SEBpGh5aSS5hoQgkn6LmA7wQX9ogxvmc8Yji1rfhe5owba0kCaQ7WJtWFmWMtdeace7WgJML2b8IAU1wYYxVzkrAdEiIfgDOtx65GxJ5zkIZPJYw+5hEnz7kEQcdvvwHYvqO6DwsAAA=="
-> ```
->
-> }
->
-> }
+```
+{
+    "status": "success",
+    "dataAvailable": true,
+    "requestId": "c0b8fc4c-0e3a-11e7-ba5b-d5670f74ff75",
+    "executionTimeInMs": 103,
+    "originalRequest": {
+        "origin": "IEV",
+        "destination": "AMS",
+        "pointOfSale": "UA",
+        "minDepartureDate": "2017-11-01",
+        "maxDepartureDate": "2017-11-07",
+        "minStay": "2",
+        "maxStay": "5"
+    },
+    "data": {
+        "proposalsCount": 8,
+        "compressedDataSize": 493,
+        "uncompressedDataSize": 2831,
+        "base64GzippedResponse": "H4sIAAAAAAAAA72WTWvbQBCG/8ueHbEzs6P9uKlpS0NjHLDbQ0sPwlYSgSsVWSmU4P/eUcmhBa2dlUVBB2ln2X3n0cy7+/VZ/Wjrpl/dr8t9pYL6VKiFOlRlt328e+zKwzCGGiyAhpt3n4vl+uWL5VUGZPbbuqu2vQrPavvUdVWz/fVnnQ8S6tu+3Bff26dG4sp5rWXwZ7mvd2VfNw/XZdfVVSehu7UE9uWhX7a7+r6udi/bXmm6Ar9BHbQPhjO25ovMlA3bblc8VDfN8qACGOdJW+uOC3XdNo3IGVY4KyhngIig29U8go6LBML4D+F8AmGHZgph3gAFY4NxmUUYSYjBGmNzgkTC7MBHBL3ZzCPoAsL2vxI2AVkqI/O5HU2IZTI5TiUsdRYRVLyfR9AFhM0Ul6CYS3y8PZ2QC8NDmSMeS0gDIkrhzOcSqzO//LWCLiA8xYedneTDdmhKdIEgc4gjCZFhp41UZCphMm6KSyQISiJMMxCONeUpwggbnQdDQbtMWz+SEBpGh5aSS5hoQgkn6LmA7wQX9ogxvmc8Yji1rfhe5owba0kCaQ7WJtWFmWMtdeace7WgJML2b8IAU1wYYxVzkrAdEiIfgDOtx65GxJ5zkIZPJYw+5hEnz7kEQcdvvwHYvqO6DwsAAA=="
+    }
+}
+```
+
 
 Please find below the description of From-To RT elements:
 
@@ -113,6 +92,4 @@ Upon decompression of base64GzippedResponse and JSON data display the user shoul
 | validatingCarrier | BT | IATA code of the plating carrier |
 | lastModified | 2017-04-12T17:37:44.098Z | Time in UTC format when data had been received from Travelport eStreaming |
 | recordAgeInMs | 55591865 | Milliseconds passed from the moment, when data has been received |
-
-
 
