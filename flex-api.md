@@ -22,13 +22,11 @@ Provides ability to get the cheapest pricing option within pre-defined date rang
 "dataAvailable": true,
 "requestId": "e016a919-138c-11e7-b8a6-7fe3e3d1b344",
 "executionTimeInMs": 150,
-"originalRequest": 
-{
+"originalRequest": {
     "searchPhrase": "20170501IEVWAW20170508WAWIEV",
     "pointOfSale": "UA"
 },
-"data": 
-{
+"data": {
     "proposalsCount": 48,
     "compressedDataSize": 711,
     "uncompressedDataSize": 10390,
