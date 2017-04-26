@@ -39,7 +39,6 @@ The following table illustrates the minimum required data for cached shopping re
         "dataSizeInBytes": 17578,
         "warehouseId": "main\_data/2017/03/11/18/bd1a1bc2-88bf-40be-989e-f5fd25bf1ab2.gz:100533:17578",
         "base64GzippedResponse": "H4sIAAAAAAAAA+2dXZPcNpKu78+vOKHr8Vl8kAA5d9Ufsjq61ZKqqiVbJ...
-        ...
     }
 }
 ```
