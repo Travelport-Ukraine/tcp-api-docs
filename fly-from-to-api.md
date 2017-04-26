@@ -22,51 +22,29 @@ The following table illustrates the minimum required data for From-To OW request
 
 ## Fly From-To OW API response \(application/json\)
 
-> {
->
-> "status": "success",
->
-> "dataAvailable": true,
->
-> "requestId": "742461c6-0e3b-11e7-a5f2-a7bb8199509d",
->
-> "executionTimeInMs": 62,
->
-> "originalRequest": {
->
-> ```
-> "origin": "IEV",
->
-> "destination": "WAW",
->
-> "pointOfSale": "UA",
->
-> "minDepartureDate": "2017-10-01",
->
-> "maxDepartureDate": "2017-10-07",
->
-> "minStay": null,
->
-> "maxStay": null
-> ```
->
-> },
->
-> "data": {
->
-> ```
-> "proposalsCount": 5,
->
-> "compressedDataSize": 358,
->
-> "uncompressedDataSize": 1703,
->
-> "base64GzippedResponse": "H4sIAAAAAAAAA71UW0vDMBj9L3ley/flnrzVKThwbLDqQPGhtN1WqK2knSBj/91UfGzRDBnkKSeXc07OycuJvLdV0692m6wuiSWPCZmRrsxcflgfXNYNcxRQIQAu7p62ydbjt5Ur857YE8mPzpVN/vm9895DfdtndfLWHhuPEzSo/ORHVldF1lfNfp45V5XOQ+uNB+qs65dtUe2qsvi5KAIWUUhBWWosqFhK+exX+gtbVyT7ctEsO2IRNJdGCjjPyLxtGk9nOOFXQoyimCB0k/4PofMswFMW7inXyCYkPKymJGCEIgVtGbegYwQ1IkFIxlEaCibUVMWnGE2bGsgoyFV+QVKFmdIwnVQaoUkpWkb9+8eG6RENdBChJVM61FUuw6MayCjIVXG1/qNOQVpAP3zdRjVoKYSQPNxUJS/ofwihIE/VNf9Un4uhcCwWDMfaZhj4UIirfal/5XN+/QIDob/JpwYAAA=="
-> ```
->
-> }
->
-> }
+```
+{
+    "status": "success",
+    "dataAvailable": true,
+    "requestId": "742461c6-0e3b-11e7-a5f2-a7bb8199509d",
+    "executionTimeInMs": 62,
+    "originalRequest": {
+        "origin": "IEV",
+        "destination": "WAW",
+        "pointOfSale": "UA",
+        "minDepartureDate": "2017-10-01",
+        "maxDepartureDate": "2017-10-07",
+        "minStay": null,
+        "maxStay": null
+    },
+    "data": {
+    "proposalsCount": 5,
+    "compressedDataSize": 358,
+    "uncompressedDataSize": 1703,
+    "base64GzippedResponse": "H4sIAAAAAAAAA71UW0vDMBj9L3ley/flnrzVKThwbLDqQPGhtN1WqK2knSBj/91UfGzRDBnkKSeXc07OycuJvLdV0692m6wuiSWPCZmRrsxcflgfXNYNcxRQIQAu7p62ydbjt5Ur857YE8mPzpVN/vm9895DfdtndfLWHhuPEzSo/ORHVldF1lfNfp45V5XOQ+uNB+qs65dtUe2qsvi5KAIWUUhBWWosqFhK+exX+gtbVyT7ctEsO2IRNJdGCjjPyLxtGk9nOOFXQoyimCB0k/4PofMswFMW7inXyCYkPKymJGCEIgVtGbegYwQ1IkFIxlEaCibUVMWnGE2bGsgoyFV+QVKFmdIwnVQaoUkpWkb9+8eG6RENdBChJVM61FUuw6MayCjIVXG1/qNOQVpAP3zdRjVoKYSQPNxUJS/ofwihIE/VNf9Un4uhcCwWDMfaZhj4UIirfal/5XN+/QIDob/JpwYAAA=="
+    }
+}
+```
 
 ### Response parameters
 
