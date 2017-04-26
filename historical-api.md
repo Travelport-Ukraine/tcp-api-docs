@@ -23,41 +23,26 @@ The following table illustrates the minimum required data for cached shopping re
 
 ### Response example \(application/json\)
 
-> {
->
-> "status": "success",
->
-> "dataAvailable": true,
->
-> "requestId": "42880234-0a5f-11e7-89f3-6b9a48544cdd",
->
-> "executionTimeInMs": 244,
->
-> "originalRequest": {
->
-> ```
-> "pointOfSale": "UA",
->
-> "searchPhrase": "20170522IEVWAW",
->
-> "minSearchDate": "2017-01-03",
->
-> "maxSearchDate": "2017-01-10"
-> ```
->
-> },
->
-> "data": {
->
-> ```
-> "proposalsCount": 1,
->
-> "compressedDataSize": 2914,
->
-> "uncompressedDataSize": 7341,
->
-> "base64GzippedResponse": "H4sIAAAAAAAAA+2Xx67EyG6G3+VsNWPlNDvlnLMMw1ArZ7Wy+uK+u3suYK8MeG8cLUmCJdZfRdb37/....
-> ```
+```
+{
+    "status": "success",
+    "dataAvailable": true,
+    "requestId": "42880234-0a5f-11e7-89f3-6b9a48544cdd",
+    "executionTimeInMs": 244,
+    "originalRequest": {
+        "pointOfSale": "UA",
+        "searchPhrase": "20170522IEVWAW",
+        "minSearchDate": "2017-01-03",
+        "maxSearchDate": "2017-01-10"
+    },
+    "data": {
+        "proposalsCount": 1,
+        "compressedDataSize": 2914,
+        "uncompressedDataSize": 7341,
+        "base64GzippedResponse": "H4sIAAAAAAAAA+2Xx67EyG6G3+VsNWPlNDvlnLMMw1ArZ7Wy+uK+u3suYK8MeG8cLUmCJdZfRdb37/...
+    }
+}
+```
 
 | Name | Data type | Description |
 | :--- | :--- | :--- |
