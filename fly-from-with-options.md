@@ -26,45 +26,28 @@ The following table illustrates the minimum required data for Fly From API with 
 
 ### Response sample \(application/json\)
 
-> {
->
-> "status": "success",
->
-> "dataAvailable": true,
->
-> "requestId": "fe3cf313-0e4c-11e7-b9ff-711858ad153a",
->
-> "executionTimeInMs": 238,
->
-> "originalRequest": {
->
-> ```
-> "origin": "IEV",
->
-> "pointOfSale": "UA",
->
-> "destination": "PRG,WAW,BRU",
->
-> "minDepartureDate": "2017-11-01",
->
-> "maxDepartureDate": "2017-11-07",
->
-> "minStay": "5",
->
-> "maxStay": "10"
-> ```
->
-> },
->
-> "data": {
->
-> ```
-> "proposalsCount": 3,
->
-> "compressedDataSize": 472,
->
-> "base64GzippedResponse": "H4sIAAAAAAAAA7XUS4vbMBAA4P+is2M0o5elWza7bZZsaEidLrTswcTeIEht6jiFEvzfO2oDeeCkDqTgw3hsSaOPkXbsdfjK3I49+rpYNiHKvlfbkiK0gkdsua3rolz+Yo4thmMWsZ/Z2udZ48vVKKtrX9T0ZfaZPlS1X/kyW8+LH9tiQxMw5GAAuHp++kKr/H0DTiElaMCmyWhaFbF1tmmmVe7ffZHvhw04DgBT0E4pJ2ycWP2VhlCNVZ0PV8VzOd0wJ8CiBG6QCl0XK8p82+3roHkmDzMaklMtVFbjq5ALu22jo59C4vynMLB9ayM2qsqSVEJVBxdpBPZ0eRlfczEnLuLMRV9wEQNuUp44SBya2Ere4QIoNErURv8PF4KZzT92N43SqHvifJpcw5FkQavscZDCY5zkIg7wPzjWCRmD7GoaazQ90vTumbDZE5uQuK1nFKDqyTL8cI0Fjll4csZiLrOYlEykdAgxt9B1lgTNZ1Wo8/4s5PIwX3S3TAIS7nLPhJahVfYtAxT2tNEpN05JByrW2nbYSM25lVaavjZhsyc2IXHjNaNl3+t38vKva+bAos5YLp8khBQEHSOHgli6TpLRibaq9zm6BaVtfwOK5+X6mgYAAA=="
-> ```
+```
+{
+    "status": "success",
+    "dataAvailable": true,
+    "requestId": "fe3cf313-0e4c-11e7-b9ff-711858ad153a",
+    "executionTimeInMs": 238,
+    "originalRequest": {
+        "origin": "IEV",
+        "pointOfSale": "UA",
+        "destination": "PRG,WAW,BRU",
+        "minDepartureDate": "2017-11-01",
+        "maxDepartureDate": "2017-11-07",
+        "minStay": "5",
+        "maxStay": "10"
+    },
+    "data": {
+        "proposalsCount": 3,
+        "compressedDataSize": 472,
+        "base64GzippedResponse": "H4sIAAAAAAAAA7XUS4vbMBAA4P+is2M0o5elWza7bZZsaEidLrTswcTeIEht6jiFEvzfO2oDeeCkDqTgw3hsSaOPkXbsdfjK3I49+rpYNiHKvlfbkiK0gkdsua3rolz+Yo4thmMWsZ/Z2udZ48vVKKtrX9T0ZfaZPlS1X/kyW8+LH9tiQxMw5GAAuHp++kKr/H0DTiElaMCmyWhaFbF1tmmmVe7ffZHvhw04DgBT0E4pJ2ycWP2VhlCNVZ0PV8VzOd0wJ8CiBG6QCl0XK8p82+3roHkmDzMaklMtVFbjq5ALu22jo59C4vynMLB9ayM2qsqSVEJVBxdpBPZ0eRlfczEnLuLMRV9wEQNuUp44SBya2Ere4QIoNErURv8PF4KZzT92N43SqHvifJpcw5FkQavscZDCY5zkIg7wPzjWCRmD7GoaazQ90vTumbDZE5uQuK1nFKDqyTL8cI0Fjll4csZiLrOYlEykdAgxt9B1lgTNZ1Wo8/4s5PIwX3S3TAIS7nLPhJahVfYtAxT2tNEpN05JByrW2nbYSM25lVaavjZhsyc2IXHjNaNl3+t38vKva+bAos5YLp8khBQEHSOHgli6TpLRibaq9zm6BaVtfwOK5+X6mgYAAA=="
+    }
+}
+```
 
 ### Response parameters
 
