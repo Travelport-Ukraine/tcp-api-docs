@@ -8,7 +8,7 @@ Prices can also differ between countries because of market conditions also becau
 
 ## PointOfSale Parameter usage
 
-Parameter pointOfSale is used in the folloing request types:
+Parameter pointOfSale is used in the following request types:
 
 * Cached API,
 * Historical API,
