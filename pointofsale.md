@@ -14,7 +14,7 @@ Parameter pointOfSale is used in the following request types:
 * [Historical API](/historical-api.md),
 * [Fly From To API](/fly-from-to-api.md),
 * [Fly From API](/fly-from-api.md),
-* [Fly From with options API](/historical-api.md),
+* [Fly From with options API](/fly-from-with-options.md),
 * [Flex API](/flex-api.md).
 
 
