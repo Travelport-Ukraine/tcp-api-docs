@@ -25,7 +25,15 @@ body .book .book-body, body .book .book-summary {
 
 
 
-
+.book-summary:before {
+    content: '';
+    display: block;
+    margin: 5px;
+    background: url(/assets/eStr-logo.png) no-repeat;
+    height: 60px;
+    background-size: contain;
+    cursor: pointer;
+}
 
 
 
