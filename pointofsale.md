@@ -10,11 +10,12 @@ Prices can also differ between countries because of market conditions also becau
 
 Parameter pointOfSale is used in the following request types:
 
-* Cached API,
-* Historical API,
-* Fly From API,
-* Fly From with options API,
-* Flex API.
+* [Cached API](/cached-api.md),
+* [Historical API](/cached-api.md),
+* [Fly From To API](/fly-from-to-api.md),
+* [Fly From API](/fly-from-api.md),
+* [Fly From with options API](/fly-from-with-options-api.md),
+* [Flex API](/flex-api.md).
 
 
 
