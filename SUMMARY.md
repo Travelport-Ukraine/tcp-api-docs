@@ -6,7 +6,7 @@
 * [Getting Started](getting-started.md)
 * [Making request](making-request.md)
 * [Capacity Planning](capacity-planning.md)
-* [PointofSale](pointofsale.md)
+* [Point Of Sale](pointofsale.md)
 
 ## Methods
 
