@@ -21,35 +21,25 @@ The following table illustrates the minimum required data for Fly From API reque
 
 ### Response sample \(application/json\)
 
-> {
->
-> "status": "success",
->
-> "dataAvailable": true,
->
-> "requestId": "912cd26f-0e47-11e7-af3f-8d3df4e11839",
->
-> "executionTimeInMs": 1340,
->
-> "originalRequest": {
->
-> ```
-> "origin": "IEV",
->
-> "pointOfSale": "UA"
-> ```
->
-> },
->
-> "data": {
->
-> ```
-> "proposalsCount": 1397,
->
-> "compressedDataSize": 75493,
->
-> "base64GzippedResponse": "H4sIAAAAAAAAA6y9a48muY0u+F/683RA1F31rTKz7lmZ1Xmp25cDY8Y7MDDrwXpmFlgcnP++pKSIUBh8lWR12Iah6La7KL0UxcvDh/....
-> ```
+```
+{
+    "status": "success",
+    "dataAvailable": true,
+    "requestId": "912cd26f-0e47-11e7-af3f-8d3df4e11839",
+    "executionTimeInMs": 1340,
+    "originalRequest": 
+    {
+        "origin": "IEV",
+        "pointOfSale": "UA"
+    },
+    "data":
+    {
+        "proposalsCount": 1397,
+        "compressedDataSize": 75493,
+        "base64GzippedResponse": "H4sIAAAAAAAAA6y9a48muY0u+F/683RA1F31rTKz7lmZ1Xmp25cDY8Y7MDDrwXpmFlgcnP++pKSIUBh8lWR12Iah6La7KL0UxcvDh/...
+    }
+}
+```
 
 ### Response parameters
 
