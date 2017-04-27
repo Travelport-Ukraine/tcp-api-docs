@@ -2,7 +2,6 @@
   "plugins": [
     "theme-api", 
     "styles-less", 
-    "custom-favicon", 
     "favicon"
   ], 
   "pluginsConfig": {
