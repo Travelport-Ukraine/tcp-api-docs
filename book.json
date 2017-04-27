@@ -1,25 +1,30 @@
 {
-    "plugins": [ "theme-api", "styles-less", "custom-favicon", "favicon" ],
-    "pluginsConfig": {
-        "theme-api": {
-            "languages": [
-                {
-                    "lang": "js",
-                    "name": "JavaScript",
-                    "default": true
-                },
-                {
-                    "lang": "go",
-                    "name": "Go"
-                }
-            ]
-        },
-        "favicon":{
-            "shortcut": "assets/favicon.png",
-            "bookmark": "assets/favicon.png",
+  "plugins": [
+    "theme-api", 
+    "styles-less", 
+    "custom-favicon", 
+    "favicon"
+  ], 
+  "pluginsConfig": {
+    "favicon": {
+      "bookmark": "assets/favicon.png", 
+      "shortcut": "assets/favicon.png"
+    }, 
+    "theme-api": {
+      "languages": [
+        {
+          "default": true, 
+          "lang": "js", 
+          "name": "JavaScript"
+        }, 
+        {
+          "lang": "go", 
+          "name": "Go"
         }
-    },
-    "styles": {
-        "website": "./styles/website.css"
+      ]
     }
+  }, 
+  "styles": {
+    "website": "./styles/website.css"
+  }
 }
