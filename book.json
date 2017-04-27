@@ -1,5 +1,5 @@
 {
-    "plugins": [ "theme-api", "styles-less", "custom-favicon" ],
+    "plugins": [ "theme-api", "styles-less", "custom-favicon", "favicon" ],
     "pluginsConfig": {
         "theme-api": {
             "languages": [
@@ -14,7 +14,10 @@
                 }
             ]
         },
-        "favicon": "./assets/favicon.png"
+        "favicon":{
+            "shortcut": "assets/favicon.png",
+            "bookmark": "assets/favicon.png",
+        }
     },
     "styles": {
         "website": "./styles/website.css"
