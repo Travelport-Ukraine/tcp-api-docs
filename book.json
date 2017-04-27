@@ -1,5 +1,5 @@
 {
-    "plugins": [ "theme-api", "styles-less" ],
+    "plugins": [ "theme-api", "styles-less", "custom-favicon" ],
     "pluginsConfig": {
         "theme-api": {
             "languages": [
@@ -13,7 +13,8 @@
                     "name": "Go"
                 }
             ]
-        }
+        },
+        "favicon": "/assets/favicon.png"
     },
     "styles": {
         "website": "./styles/website.css"
