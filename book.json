@@ -2,7 +2,8 @@
   "plugins": [
     "theme-api", 
     "styles-less", 
-    "favicon"
+    "favicon",
+    "collapsible-chapters"    
   ], 
   "pluginsConfig": {
     "favicon": {
