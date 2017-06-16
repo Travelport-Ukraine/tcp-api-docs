@@ -1,28 +1,29 @@
 {
   "plugins": [
-    "theme-api", 
-    "styles-less", 
-    "favicon"
-  ], 
+    "theme-api",
+    "styles-less",
+    "favicon",
+    "collapsible-chapters"
+  ],
   "pluginsConfig": {
     "favicon": {
-      "bookmark": "assets/favicon.png", 
+      "bookmark": "assets/favicon.png",
       "shortcut": "assets/favicon.png"
-    }, 
+    },
     "theme-api": {
       "languages": [
         {
-          "default": true, 
-          "lang": "js", 
+          "default": true,
+          "lang": "js",
           "name": "JavaScript"
-        }, 
+        },
         {
-          "lang": "go", 
+          "lang": "go",
           "name": "Go"
         }
       ]
     }
-  }, 
+  },
   "styles": {
     "website": "./styles/website.css"
   }
