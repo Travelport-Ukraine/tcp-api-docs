@@ -1,31 +1,26 @@
 # Summary
 
-## Travel Cloud Pro
+## Overview
 
-* [Introduction](README.md)
-* [Applications](travel-cloud-pro/applications.md)
-  * [eStreaming API](travel-cloud-pro/applications/estreaming-api.md)
-  * [Air application](travel-cloud-pro/applications/air-application.md)
+* [Introduction to eStreaming API](README.md)
+* [Getting Started](getting-started.md)
+* [Making request](making-request.md)
+* [Capacity Planning](capacity-planning.md)
+* [Point Of Sale](pointofsale.md)
 
-## Documentation
+## Methods
 
-* [eStreaming API](estreaming-api.md)
-  * [Getting Started](getting-started.md)
-    * [Making request](making-request.md)
-    * [Capacity Planning](capacity-planning.md)
-    * [Point Of Sale](pointofsale.md)
-  * Methods
-    * 111
-    * [Cached API](cached-api.md)
-    * [Historical API ](historical-api.md)
-    * [Flex API](flex-api.md)
-    * [Fly From API](fly-from-api.md)
-    * [Fly From To API](fly-from-to-api.md)
-      * [Fly From TO RT API](fly-from-to-api/fly-from-to-rt-api.md)
-    * [Fly From with options API](fly-from-with-options.md)
-  * Limitations
+* [Cached API](cached-api.md)
+* [Historical API ](historical-api.md)
+* [Fly From To API](fly-from-to-api.md)
+  * [Fly From TO RT API](fly-from-to-api/fly-from-to-rt-api.md)
+* [Fly From API](fly-from-api.md)
+* [Fly From with options API](fly-from-with-options.md)
+* [Flex API](flex-api.md)
+* [Defining Methods](methods.md)
+
+## eStreaming API limitations
+
+* [List of limitations](estreaming-api-limitations/list-of-limitations.md)
   * [Known errors](estreaming-api-limitations/list-of-limitations/known-errors.md)
-* Air application
-  * Getting Started
-  * Limitations
 

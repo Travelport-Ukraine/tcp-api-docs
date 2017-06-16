@@ -1,6 +1,4 @@
-# Travel Cloud Pro
+# Introduction to eStreaming API
 
-Travel Cloud Pro is an integrated platform of travel content applications with single sign on to all of them and fair pricing model.
-
-It contents a lot of [applications](/travel-cloud-pro/applications.md) suitable for your business.
+eStreaming API is a fully managed solution that processes, stores and distributes Travelport eStreaming data among users with a very simple and easy to use JSON API interface.
 
