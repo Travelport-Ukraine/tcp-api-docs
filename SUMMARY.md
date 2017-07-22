@@ -7,6 +7,7 @@
 * [Making request](making-request.md)
 * [Capacity Planning](capacity-planning.md)
 * [Point Of Sale](pointofsale.md)
+* [FAQ](faq.md)
 
 ## Methods
 
