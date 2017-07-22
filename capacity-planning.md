@@ -4,7 +4,7 @@ We count simultaneous concurrent transactions on RPS \(request per second\) basi
 
 Free tier users might get  the following error message in case daily requests limit is exceeded
 
-```
+```js
  {
      status: 'error',
      dataAvailable: false,
@@ -22,19 +22,21 @@ Free tier users might get  the following error message in case daily requests li
 
 When the number of concurrent requests per second \(RPS\) is exceeded the relevant error message is also displayed.
 
-    {
-        status: 'error',
-        dataAvailable: false,
-        requestId: '72a85761-19fb-11e7-a60b-c71e54dd7836',
-        executionTimeInMs: 184,
-        originalRequest: {
-            pointOfSale: 'IT',`
-            searchPhrase: '20170304CUFLCE',
-            minSearchDate: '2017-02-20',
-            maxSearchDate: '2017-02-26'
-        },
-        errorMessage: 'RPS capacity limit exceeded'
-    }
+```js
+{
+    status: 'error',
+    dataAvailable: false,
+    requestId: '72a85761-19fb-11e7-a60b-c71e54dd7836',
+    executionTimeInMs: 184,
+    originalRequest: {
+        pointOfSale: 'IT',`
+        searchPhrase: '20170304CUFLCE',
+        minSearchDate: '2017-02-20',
+        maxSearchDate: '2017-02-26'
+    },
+    errorMessage: 'RPS capacity limit exceeded'
+}
+```
 
 
 
