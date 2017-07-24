@@ -55,7 +55,7 @@ When the number of concurrent requests per second \(RPS\) is exceeded the releva
     requestId: '72a85761-19fb-11e7-a60b-c71e54dd7836',
     executionTimeInMs: 184,
     originalRequest: {
-        pointOfSale: 'IT',`
+        pointOfSale: 'IT',
         searchPhrase: '20170304CUFLCE',
         minSearchDate: '2017-02-20',
         maxSearchDate: '2017-02-26'
