@@ -21,7 +21,7 @@ The following table illustrates the minimum required data for cached shopping re
 
 ### Response example \(application/json\)
 
-```
+```js
 {
     "status": "success",
     "dataAvailable": true,
@@ -44,7 +44,7 @@ The following table illustrates the minimum required data for cached shopping re
 | Name | Data type | Description |
 | :--- | :--- | :--- |
 | status | string | Can be "success" or "error". if status is "success" indicates if the data exists in the warehouse. indicates an error while validating input params and while processing warehouse response. |
-| dataAvailable | boolean | If value false is returned data is not available either because too distant dates indicated or some mandatory parameters not specified.  |
+| dataAvailable | boolean | If value false is returned data is not available either because too distant dates indicated or some mandatory parameters not specified. |
 | requestId | string | Pnnrovides id for an API call |
 | executionTimeInMs | number | Indicates execution time on Amazon servers without time taken to transfer data in and out |
 | originalRequest | object | Contains parsed request from user |

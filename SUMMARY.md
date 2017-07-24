@@ -11,7 +11,7 @@
 
 ## Methods
 
-* [Cached API](cached-api.md)
+* [Cache API](cached-api.md)
 * [Historical API ](historical-api.md)
 * [Fly From To API](fly-from-to-api.md)
   * [Fly From TO RT API](fly-from-to-api/fly-from-to-rt-api.md)
