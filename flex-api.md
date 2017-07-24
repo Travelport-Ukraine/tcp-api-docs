@@ -17,7 +17,7 @@ Provides ability to get the cheapest pricing option within pre-defined date rang
 
 ## Flex API response \(application/json\)
 
-```
+```js
 "status": "success",
 "dataAvailable": true,
 "requestId": "e016a919-138c-11e7-b8a6-7fe3e3d1b344",

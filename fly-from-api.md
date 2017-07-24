@@ -21,7 +21,7 @@ The following table illustrates the minimum required data for Fly From API reque
 
 ### Response sample \(application/json\)
 
-```
+```js
 {
     "status": "success",
     "dataAvailable": true,

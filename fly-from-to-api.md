@@ -22,7 +22,7 @@ The following table illustrates the minimum required data for From-To OW request
 
 ## Fly From-To OW API response \(application/json\)
 
-```
+```js
 {
     "status": "success",
     "dataAvailable": true,

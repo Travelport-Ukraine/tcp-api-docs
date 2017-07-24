@@ -18,7 +18,7 @@ The following table shows minimum parameters for FlyFromTo RT request.
 
 ### Sample response \(application/json\)
 
-```
+```js
 {
     "status": "success",
     "dataAvailable": true,
@@ -41,7 +41,6 @@ The following table shows minimum parameters for FlyFromTo RT request.
     }
 }
 ```
-
 
 Please find below the description of From-To RT elements:
 
@@ -92,4 +91,6 @@ Upon decompression of base64GzippedResponse and JSON data display the user shoul
 | validatingCarrier | BT | IATA code of the plating carrier |
 | lastModified | 2017-04-12T17:37:44.098Z | Time in UTC format when data had been received from Travelport eStreaming |
 | recordAgeInMs | 55591865 | Milliseconds passed from the moment, when data has been received |
+
+
 

@@ -1,6 +1,6 @@
 ### Cached API error response body example:
 
-```
+```js
 {
     "status": "error",
     "dataAvailable": false,
@@ -16,7 +16,7 @@
 
 ### Flex API error response body example \(application/json\):
 
-```
+```js
 {
     "status": "error",
     "dataAvailable": false,
@@ -45,3 +45,6 @@
     "errorMessage": "No cache records found in warehouse"
 }
 ```
+
+
+

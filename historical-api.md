@@ -23,7 +23,7 @@ The following table illustrates the minimum required data for cached shopping re
 
 ### Response example \(application/json\)
 
-```
+```js
 {
     "status": "success",
     "dataAvailable": true,
@@ -47,7 +47,7 @@ The following table illustrates the minimum required data for cached shopping re
 | Name | Data type | Description |
 | :--- | :--- | :--- |
 | status | string | Can be "success" or "error". Indicates an error while validating input params and while processing warehouse response. If the status is "error" then errorMessage is provided |
-| dataAvailable | boolean | If value false is returned data is not available either because too distant dates indicated or some mandatory parameters not specified. In the latter  |
+| dataAvailable | boolean | If value false is returned data is not available either because too distant dates indicated or some mandatory parameters not specified. In the latter |
 | requestId | string | Provides id for an API call |
 | executionTimeInMs | number | Indicates execution time on Amazon servers without time taken to transfer data in and out |
 | originalRequest | object | Indicates parsed request from user |
@@ -68,7 +68,7 @@ Upon decompression of base64GzippedResponse and JSON data display the user shoul
 | pointOfSale | string | Country ISO code where shopping request was generated. |
 | searchPhrase | string | Departure and arrival dates and airport/city indicated in shopping request. The format is YYYYMMDDDEPARR, where DEP means Departure airport/city, ARR- arrival airport/city |
 | searchDate | date | Date in the format YYYY-MM-DD to which the search results refer |
-| Direct | response object | Contains the cheapest pricing option   for direct flight. Also contains gzippedshopping response in base64 format, to which this cheapest option  |
+| Direct | response object | Contains the cheapest pricing option   for direct flight. Also contains gzippedshopping response in base64 format, to which this cheapest option |
 | Connected | response object | Contains the cheapest option for connected flight. Also includes gzipped shopping response in base64 format, to which this chepeast option refers. For more information please see below |
 
 ### Direct
