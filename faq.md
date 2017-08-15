@@ -40,17 +40,21 @@ We do not have 2000 or 10000 or any other then 1000 requests limits in free tier
 
 Currently we process all data that Travelport sends us from following markets "AE", "AF", "AL", "AS", "AT", "AZ", "BA", "BY", "CZ", "DE", "EE", "ES", "FI", "FR", "HK", "HU", "ID", "IE", "IT", "JP", "LT", "LV", "MD", "MK", "NL", "NZ", "PK", "PL", "PT", "RO", "RS", "SK", "SZ", "UA", "US", "ZA". Feel free to use any from this list in your requests.
 
-### 10. Data about some particular route isn't available in selected point of sale?
+### 10. I need an additional point of sale which is not in the list. What should I do?
+
+We can process literally any number of point of sales that Travelport is ready to provide us with. However, our expanses are linearly dependent on the number of processed transactions. So there is no financial sense to process data from markets that doesn’t have any clients yet. This is especially important for big markets. If you will express real interest to go for paid access will be more than happy to turn on any additional markets. Currently we can discuss an opportunity of implementation of additional point of sales with clients who are ready to buy reserved 3-10 RPS \(depending on the size of requested point of sale\)  capacity for 3 month minimum.
+
+### 11. Data about some particular route isn't available in selected point of sale?
 
 Please keep in mind, that some destinations are very unusual for some markets. For example PEK-LAX  is very-very rare request for Ukranian agencies. Meanwhile, IEV-HRK is very rare in Australia. So the probability that someone ever searched this destination \(especially for some particular days of flights\) is infinitely low. For the test purposes, please use destinations that could be theoretically popular in appropriate market. Remember that any data that we have it is a stat that someone searched before.
 
-### 11. I've found a proposal that suits my customer's request. How can I book it?
+### 12. I've found a proposal that suits my customer's request. How can I book it?
 
 The best way to do a booking is [Travelport Universal API](https://www.travelport.com/solutions/travelport-universal-API). The most sexy way of using uAPI is [uAPI-JSON](https://github.com/Travelport-Ukraine/uapi-json). It depend of your booking strategy. But the best practice is following:
 
 Once you know Dates, Flight number, Fare, Airline etc, you can try to do a [direct booking](https://github.com/Travelport-Ukraine/uapi-json/blob/master/docs/Air.md#bookparams). If it is successful that's it. If seats is no longer available in this class, just send a [direct booking](https://github.com/Travelport-Ukraine/uapi-json/blob/master/docs/Air.md#bookparams) request without _fareBasisCode_ and _bookingClass_ parameters as a result booking will be done in the cheapest available class on the same flight. It is strongly recommended to notify your client about price change if it is occurred.
 
-### 12. Can I see my confidential \(negotiated\) fares in search results?
+### 13. Can I see my confidential \(negotiated\) fares in search results?
 
 Because of the obvious reasons Travelport doesn't share with us all confidential fares of all agencies from all over the World. However, we do consider an opportunity to build a private data partitions for some selected customers once this customer authorize us to process it's confidential fare. It will require separate processing and separate data storage and as a result it will cause additional expenses for us. Currently we can discuss an opportunity of implementation of Private Data Partition only with clients who reserved 20+ RPS capacity for 3 month minimum.
 
