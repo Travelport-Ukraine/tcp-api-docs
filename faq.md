@@ -6,23 +6,23 @@ Cache data is stored for a year from a day it was received, though it could be u
 
 ### 2. Is cache data accuracy dependent on point of sale?
 
-Cache data accuracy depends on data volume for particular market.
+Cache data accuracy depends on data volume and Travelport market share for particular market.
 
 ### 3. When data in cache is being refreshed?
 
-Cache data is being refreshed each time we receive search results from Travelport for particular point of sale and search query.
+Cache data is being refreshed each time we receive search results from Travelport for particular point of sale and search query. In vast majority of cases it takes less then a second after shopping was done.
 
 ### 4. How many RPS eStreaming API could handle?
 
 eStreaming API is based on fully scalable architecture which allows us to process virtually unlimited RPS count.
 
-### 5. Is it possible to search eStreaming API cache by travel class?
+### 5. Is it possible to search eStreaming API cache by cabin class?
 
 Because Business shopping is relatively rare, there is very low probability that it is is possible to build respective cache on it. Data will always be outdated because of low frequency of host requests. Besides, business travelers are usually very demanding clients, and that is why majority of agencies uses direct requests to GDS to get the most sharp results for them. Fortunately there is not so much such requests and it should not seriously harm look 2 book ratio.
 
-### 6. How do requests for the same city pair, but in various point of sales count?
+### 6. How do requests for the same city pair, but in various point of sales?
 
-If you need to search the same route in different point of sales would will need to make several requests to eSteaming API, and so they count as several requests.
+If you need to search the same route in different point of sales would will need to make several requests to eSteaming API, and so they count as several requests. Depending on your programming strategy these requests could be sent simultaneously or consequently. eStreaming API support both approaches.
 
 ### 7. We have 15000 requests per day. Which RPS capacity do we need?
 
@@ -31,4 +31,14 @@ Required RPS capacity is much dependent how your requests are distributed during
 But you should consider that requests distribution is not flat during the day. If, for example, you have almost none requests during the night and doubled activity during the night, you should reserve an amount of capacity that will be enough to serve your peak periods. However short bursts of activity should be taken into account, and it's highly recommended to implement consequent retry API calls in case you receive API response message, that you are over your capacity.
 
 For further information about capacity, please visit [Capacity Planning](/capacity-planning.md) page.
+
+### 8. 1000 requests per day in a free tier is not enough for me. Can I ask you to give me more?
+
+We do not have 2000 or 10000 or any other then 1000 requests limits in free tier. The lowest possible daily limit after 1000 is 1 RPS. It is actually 86400 requests per day \(1 RPS \* 60 sec \* 60 min \* 24h\). It will cost you a peanuts \($5 for a day\). If you need 1RPS or more just for a couple of days please contact our sales department for invoicing.
+
+### 9. Which point of sales are available?
+
+Currently we process all data that Travelport sends us from following markets "AE", "AF", "AL", "AS", "AT", "AZ", "BA", "BY", "CZ", "DE", "EE", "ES", "FI", "FR", "HK", "HU", "ID", "IE", "IT", "JP", "LT", "LV", "MD", "MK", "NL", "NZ", "PK", "PL", "PT", "RO", "RS", "SK", "SZ", "UA", "US", "ZA". Feel free to use any from this list in your requests.
+
+
 
