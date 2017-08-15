@@ -42,5 +42,9 @@ Currently we process all data that Travelport sends us from following markets "A
 
 ### 10. Data about some particular route isn't available in selected point of sale?
 
-Please keep in mind, that some destinations are very unusual for some markets. For example PEK-LAX  is very-very rare request for Ukranian agencies. Meanwhile, IEV-HRK is very rare in Australia. So the probability that someone ever searched this destination \(especially for some particular days of flights\) is infinitely low. For the test purposes, please use destinations that could be theoretically popular in appropriate market. Remember that any data that we have it is a stat that someone searched before.
+Please keep in mind, that some destinations are very unusual for some markets. For example PEK-LAX  is very-very rare request for Ukranian agencies. Meanwhile, IEV-HRK is very rare in Australia. So the probability that someone ever searched this destination \(especially for some particular days of flights\) is infinitely low. For the test purposes, please use destinations that could be theoretically popular in appropriate market. Remember that any data that we have it is a stat that someone searched before.
+
+### 11. Can I see my confidential \(negotiated\) fares in search results?
+
+Because of the obvious reasons Travelport doesn't share with us all confidential fares of all agencies from all over the World. However, we do consider an opportunity to build a private data partitions for some selected customers once this customer authorize us to process it's confidential fare. It will require separate processing and separate data storage and as a result it will cause additional expenses for us. Currently we can discuss an opportunity of implementation of Private Data Partition only with clients who reserved 20+ RPS capacity for 3 month minimum.  
 
