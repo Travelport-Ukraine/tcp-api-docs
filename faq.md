@@ -34,11 +34,13 @@ For further information about capacity, please visit [Capacity Planning](/capaci
 
 ### 8. 1000 requests per day in a free tier is not enough for me. Can I ask you to give me more?
 
-We do not have 2000 or 10000 or any other then 1000 requests limits in free tier. The lowest possible daily limit after 1000 is 1 RPS. It is actually 86400 requests per day \(1 RPS \* 60 sec \* 60 min \* 24h\). It will cost you a peanuts \($5 for a day\). If you need 1RPS or more just for a couple of days please contact our sales department for invoicing.
+We do not have 2000 or 10000 or any other then 1000 requests limits in free tier. The lowest possible daily limit after 1000 is 1 RPS. It is actually 86400 requests per day \(1 RPS \* 60 sec \* 60 min \* 24h\). It will cost you a peanuts \($5 for a day\). If you need 1RPS or more just for a couple of days please contact our sales department for invoicing.
 
 ### 9. Which point of sales are available?
 
-Currently we process all data that Travelport sends us from following markets "AE", "AF", "AL", "AS", "AT", "AZ", "BA", "BY", "CZ", "DE", "EE", "ES", "FI", "FR", "HK", "HU", "ID", "IE", "IT", "JP", "LT", "LV", "MD", "MK", "NL", "NZ", "PK", "PL", "PT", "RO", "RS", "SK", "SZ", "UA", "US", "ZA". Feel free to use any from this list in your requests.
+Currently we process all data that Travelport sends us from following markets "AE", "AF", "AL", "AS", "AT", "AZ", "BA", "BY", "CZ", "DE", "EE", "ES", "FI", "FR", "HK", "HU", "ID", "IE", "IT", "JP", "LT", "LV", "MD", "MK", "NL", "NZ", "PK", "PL", "PT", "RO", "RS", "SK", "SZ", "UA", "US", "ZA". Feel free to use any from this list in your requests.
 
+### 10. Data about some particular route isn't available in selected point of sale?
 
+Please keep in mind, that some destinations are very unusual for some markets. For example PEK-LAX  is very-very rare request for Ukranian agencies. Meanwhile, IEV-HRK is very rare in Australia. So the probability that someone ever searched this destination \(especially for some particular days of flights\) is infinitely low. For the test purposes, please use destinations that could be theoretically popular in appropriate market. Remember that any data that we have it is a stat that someone searched before.
 
