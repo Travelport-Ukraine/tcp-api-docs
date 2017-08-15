@@ -48,7 +48,7 @@ Please keep in mind, that some destinations are very unusual for some markets. F
 
 The best way to do a booking is [Travelport Universal API](https://www.travelport.com/solutions/travelport-universal-API). The most sexy way of using uAPI is [uAPI-JSON](https://github.com/Travelport-Ukraine/uapi-json). It depend of your booking strategy. But the best practice is following:
 
-Once you know Dates, Flight number, Fare, Airline etc, you can try to do a [direct booking](https://github.com/Travelport-Ukraine/uapi-json/blob/master/docs/Air.md#bookparams). If it is successful that's it. If seats is no longer available in this class, just send a [direct booking](https://github.com/Travelport-Ukraine/uapi-json/blob/master/docs/Air.md#bookparams) request without _fareBasisCode_ and _bookingClass_ parameters as a result booking will be done in the cheapest available class on the same flight. It is strongly recommended to notify your client about price change if it is occurred.
+Once you know Dates, Flight number, Fare, Airline etc, you can try to do a [direct booking](https://github.com/Travelport-Ukraine/uapi-json/blob/master/docs/Air.md#bookparams). If it is successful that's it. If seats is no longer available in this class, just send a [direct booking](https://github.com/Travelport-Ukraine/uapi-json/blob/master/docs/Air.md#bookparams) request without _fareBasisCode_ and _bookingClass_ parameters as a result booking will be done in the cheapest available class on the same flight. It is strongly recommended to notify your client about price change if it is occurred. 
 
 ### 12. Can I see my confidential \(negotiated\) fares in search results?
 
