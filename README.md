@@ -6,5 +6,5 @@ For more information please check [presentation of the product](https://docs.goo
 
 If you'll like our API and would like to put your hands on it you can easily receive your **free credentials** by applying [very simple form](http://estrapi.cee-systems.com). Anyone can start in the free tier and can upgrade to one of the paid ones anytime later.
 
-If you’ll have any questions, I’m sure you’ll find an [answers here](https://docs.travelcloudpro.eu/faq.html). 
+If you’ll have any questions, I’m sure you’ll find an [answers here](https://docs.travelcloudpro.eu/faq.html). 
 
