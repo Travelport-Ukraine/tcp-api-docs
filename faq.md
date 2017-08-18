@@ -24,9 +24,9 @@ Because Business shopping is relatively rare, there is very low probability that
 
 If you need to search the same route in different point of sales would will need to make several requests to eSteaming API, and so they count as several requests. Depending on your programming strategy these requests could be sent simultaneously or consequently. eStreaming API support both approaches.
 
-### 7. We have 15000 requests per day. Which RPS capacity do we need?
+### 7. We have 150 000 requests per day. Which RPS capacity do we need?
 
-Required RPS capacity is much dependent how your requests are distributed during the day. Basic math shows that 15000 requests / 86400 seconds = 1.73 RPS per day.
+Required RPS capacity is much dependent how your requests are distributed during the day. Basic math shows that 150000 requests / 86400 seconds = 1.73 RPS per day.
 
 But you should consider that requests distribution is not flat during the day. If, for example, you have almost none requests during the night and doubled activity during the night, you should reserve an amount of capacity that will be enough to serve your peak periods. However short bursts of activity should be taken into account, and it's highly recommended to implement consequent retry API calls in case you receive API response message, that you are over your capacity.
 
