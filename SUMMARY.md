@@ -4,7 +4,6 @@
 
 * [Introduction to eStreaming API](README.md)
 * [Getting Started](getting-started.md)
-  * [Using Postman](getting-started/using-postman.md)
 * [Using Postman Application](using-postman-application.md)
 * [Making request](making-request.md)
 * [Capacity Planning](capacity-planning.md)
