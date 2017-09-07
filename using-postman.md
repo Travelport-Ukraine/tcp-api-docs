@@ -1,6 +1,6 @@
 # Using Postman
 
-In order to test eStreaming API credentials and confirm connectivity [Postman](https://www.getpostman.com/) can be used.
+In order to test eStreaming API credentials and confirm connectivity [Postman](https://www.getpostman.com/) can be used.   
 
 1. Open Cache folder in Collections Section.
 
