@@ -6,7 +6,7 @@ Cache data is stored for a year from a day it was received, though it could be u
 
 ### 2. Is cache data accuracy dependent on point of sale? {#2}
 
-Cache data accuracy depends on data volume and Travelport market share for particular market. 
+Cache data accuracy depends on data volume and Travelport market share for particular market.
 
 ### 3. When data in cache is being refreshed? {#3}
 
@@ -151,10 +151,10 @@ Some times it happens when selected booking class is already gone \(see answer \
 1. Booking attempt is failed
 2. Remember the price of proposal which you've been trying to book 
 3. Call [.book\(params\)](https://github.com/Travelport-Ukraine/uapi-json/blob/master/docs/Air.md#bookparams) method of our free [uAPI JSON](https://github.com/Travelport-Ukraine/uapi-json) library _without_ `fareBasisCode` и `bookingClass` parameters but with mentioning all other flight details. 
-4. [uAPI JSON](https://www.gitbook.com/book/yulianagoncharenko/cee-esteaming-api/edit#) will give you the cheapest available option on this particular flight straight from GDS
+4. [uAPI JSON](https://github.com/Travelport-Ukraine/uapi-json) will give you the cheapest available option on this particular flight straight from GDS
 5. Show an exclamation to a visitor with proposal to do a booking in a different class and ask if he/she agree with following price change. 
 6. If he agree proceed with this booking
 7. If he do not, just do _new_ shopping request for the same O&D and dates and redirect user there. 
 
-If you do not use Node.JS / JavaScript in your project or if you interesting how [uAPI JSON](https://www.gitbook.com/book/yulianagoncharenko/cee-esteaming-api/edit#) does this trick you can take a look in [uAPI JSON](https://www.gitbook.com/book/yulianagoncharenko/cee-esteaming-api/edit#) source [code of .book method](https://github.com/Travelport-Ukraine/uapi-json/blob/master/src/Services/Air/Air.js#L32). Feel free to adopt this method in language of your project and do not forget to share it as we did 😉
+If you do not use Node.JS / JavaScript in your project or if you interesting how [uAPI JSON](https://github.com/Travelport-Ukraine/uapi-json) does this trick you can take a look in [uAPI JSON](https://github.com/Travelport-Ukraine/uapi-json) source [code of .book method](https://github.com/Travelport-Ukraine/uapi-json/blob/master/src/Services/Air/Air.js#L32). Feel free to adopt this method in language of your project and do not forget to share it as we did 😉
 
