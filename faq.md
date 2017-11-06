@@ -6,7 +6,7 @@ Cache data is stored for a year from a day it was received, though it could be u
 
 ### 2. Is cache data accuracy dependent on point of sale? {#2}
 
-Cache data accuracy depends on data volume and Travelport market share for particular market.
+Cache data accuracy depends on data volume and Travelport market share for particular market. 
 
 ### 3. When data in cache is being refreshed? {#3}
 
