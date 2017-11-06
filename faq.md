@@ -12,6 +12,8 @@ Cache data accuracy depends on data volume and Travelport market share for parti
 
 Cache data is being refreshed each time we receive search results from Travelport for particular point of sale and search query. In vast majority of cases it takes less then a second after shopping was done.
 
+Our data warehouse is updates instantly with each incoming search result from Travelport. So practically data updates thousands time in a second to ensure that you'll always have an access to the most up to date and fresh information. Meanwhile, in all can see an age of each particular search result in `recordAgeInMs` field. This field shows you a how many milliseconds passed from the moment, when data has been received from Travelport servers.
+
 ### 4. How many RPS eStreaming API could handle?
 
 eStreaming API is based on fully scalable architecture which allows us to process virtually unlimited RPS count.
@@ -52,9 +54,110 @@ Please keep in mind, that some destinations are very unusual for some markets. F
 
 The best way to do a booking is [Travelport Universal API](https://www.travelport.com/solutions/travelport-universal-API). The most sexy way of using uAPI is [uAPI-JSON](https://github.com/Travelport-Ukraine/uapi-json). It depend of your booking strategy. But the best practice is following:
 
-Once you know Dates, Flight number, Fare, Airline etc, you can try to do a [direct booking](https://github.com/Travelport-Ukraine/uapi-json/blob/master/docs/Air.md#bookparams). If it is successful that's it. If seats is no longer available in this class, just send a [direct booking](https://github.com/Travelport-Ukraine/uapi-json/blob/master/docs/Air.md#bookparams) request without _fareBasisCode_ and _bookingClass_ parameters as a result booking will be done in the cheapest available class on the same flight. It is strongly recommended to notify your client about price change if it is occurred.
+Once you know Dates, Flight number, Fare, Airline etc, you can try to do a direct booking. If it is successful that's it. If seats is no longer available in this class, just send a direct booking request without fareBasisCode and bookingClass parameters as a result booking will be done in the cheapest available class on the same flight. It is strongly recommended to notify your client about price change if it is occurred.
 
 ### 13. Can I see my confidential \(negotiated\) fares in search results?
 
 Because of the obvious reasons Travelport doesn't share with us all confidential fares of all agencies from all over the World. However, we do consider an opportunity to build a private data partitions for some selected customers once this customer authorize us to process it's confidential fare. It will require separate processing and separate data storage and as a result it will cause additional expenses for us. Currently we can discuss an opportunity of implementation of Private Data Partition only with clients who reserved 20+ RPS capacity for 3 month minimum.
+
+### 14. I want to have a flat file with 1000 origin-destinations based on your data. Is it possible?
+
+Short answer: yes, you can build it on your side by calling methods of our API, but you better shouldn't do this. 
+
+A _flat files_ is an outdated approach which is still used by some data providers who afraid or can not handle massive request form clients. This is why they ready to answer you only twice a day \(or each hour\) with with big spreadsheet. The biggest issue with such files is they become outdated once you downloaded it. Even if you will download updated flat file each hour during following 60 minutes we will receive more then 10 000 000 new search results and until you'll download new version of file you'll be absolutely not aware of this updates. You'll get them only 60 minutes later. This approach is seriously harms book ability because you'll be always trying to do a bookings based on outdated information which means that some booking classes could be already unavailable. 
+
+But it despite all said above you still want to build a flat file for 1000 O&D with 20 flight dates combinations for each O&D you can easily do it by sending us 20 000 [Cache API](https://docs.travelcloudpro.eu/cached-api.html) requests \(if you need all proposals for each request\) or 1000 [Fly From-To RT API](https://docs.travelcloudpro.eu/fly-from-to-api/fly-from-to-rt-api.html) requests \(if only cheapest direct & cheapest connected options is enough for you\). If you'll have for example 20 RPS \(Request per second\) capacity you can receive 1000 results in 1000/20 = 50 seconds, so about a minute would be enough for you to build such file. When you'll need to update it you can do it again. You can execute this procedure however often you like. We are ready to process literally any number of simultaneous incoming request. 
+
+### 15. If I would not use flat files what is the best approach to use your API?
+
+Just consider that we already stored all available data on our servers for you and there is absolutely no practical sense to download some fraction of it to your site. 
+
+Once  someone came to your web site and would like to know  know what is the most up to date proposals to fly from PAR to LON in 15th of Jan - just call [Cache API](https://www.gitbook.com/book/yulianagoncharenko/cee-esteaming-api/edit#) with appropriate parameters. 
+
+Once someone come to your web site and would like to take a look on a price calendar for NYC - MUC just call [Fly From-To RT API](https://www.gitbook.com/book/yulianagoncharenko/cee-esteaming-api/edit#) and you'll get necessary data in less then a second.
+
+In both cases you'll get the latest data available for this point of time. In a contrast, if you'll be using any kind of flat files your data will be as old as your files are.
+
+### 16. What should I do in order to increase book ability?
+
+Book ability is always compromise between amount of expensive direct GDS requests and number of cheap Cache results. Even none of GDS could guarantee you 100% book ability. While your clients will be looking on a search results some seats from this proposals could be sold by other agent on other side of the Earth. Consequently when you'll try to do a booking with this class you'll fail. 
+
+_Any_ cache solution will provide you with even lower book ability than GDS for an obvious reasons. Fortunately we offering you _global_ cache which updates not only by your requests, but by all request of all Travelport users globally. 
+
+However you can tune your cache book ability by cutting off some results extracted from cache. The best approach is following: 
+
+1. Request data from [Cache API](https://www.gitbook.com/book/yulianagoncharenko/cee-esteaming-api/edit#)
+2. Take a look to `recordAgeInMs` field in the results.  \(See answer \#3 of this FAQ\)
+3. Take a look to how many time remains to the first flight
+4. Based on this two figures you can do an assumption if data from the cache is reliable or not. If the first flight of the journey will be in 7 mont an age of this record in cache is 1 hour it could be considered as very reliable because it is doubtful that something will be changed in availability of classes during an hour for the flight in such long future. In a contrast, if you first flight is tomorrow and you received data from the cache which was updated 5 days ago - this data is obviously outdated because classes availabilities for tomorrow flights are changing each minute. 
+5. If you consider data in the cache as unreliable just do a GDS Shopping request. Fortunately Cache check tooks just milliseconds any you would not depend too much time to do it. 
+6. If cache data was as reliable just show it to your user as usual shopping result.
+
+In our company we use following method to define reliability of cache result. Please feel free to use it in your projects. By changing `settings` you can tune how old data will be gutted off.  
+
+```js
+const settings = {
+  defaultTtl: 3600,           // 1h
+  baseTtl: 2592000,           // 30 days
+  maxSearchPeriod: 31536000,  // 365 days
+  multiplier: 3,              // maxTime = baseTtl * multiplier
+  seed: 0.0001,               // 0.00001 <= seed <= 10000000 (smaller - bigger ttl values)
+};
+
+const getTTL = function getTTL(flightTime) {
+  if (!flightTime) {
+    return settings.defaultTtl;
+  }
+
+  const maxTtl = Math.round(settings.baseTtl / settings.multiplier);
+  const now = (new Date()).getTime();
+  const timeDiff = (flightTime instanceof Date)
+    ? (flightTime.getTime() - now)/1000
+    : (flightTime - now)/1000;
+
+  if (timeDiff < 0) {
+    return settings.defaultTtl;
+  }
+
+  return Math.round(
+    settings.multiplier
+    * (
+      (maxTtl / Math.atan(settings.seed))
+      * Math.atan(
+        (
+          (
+            settings.multiplier
+            * settings.seed
+            * timeDiff
+          ) / settings.maxSearchPeriod
+        ) - settings.seed
+      ) + maxTtl
+    )
+  );
+};
+
+module.exports = getTTL;
+
+/**
+ * Example
+ * getTTL(new Date('2018-06-25'));
+ */
+
+```
+
+### 17. I've tried to do a booking based on cache or GDS results and failed. What should I do next? 
+
+Some times it happens when selected booking class is already gone \(see answer \#16 of this FAQ\). But it is absolutely doesn't mean that we should lose thus client. Most probably this plane is still full of other available classes and you just should calmly explain to your client what happened and suggest other options. Internally in our company we use following approach:
+
+1. Booking attempt is failed
+2. Remember the price of proposal which you've been trying to book 
+3. Call [.book\(params\)](https://github.com/Travelport-Ukraine/uapi-json/blob/master/docs/Air.md#bookparams) method of our free [uAPI JSON](https://github.com/Travelport-Ukraine/uapi-json) library _without_ `fareBasisCode` и `bookingClass` parameters but with mentioning all other flight details. 
+4. [uAPI JSON](https://www.gitbook.com/book/yulianagoncharenko/cee-esteaming-api/edit#) will give you the cheapest available option on this particular flight straight from GDS
+5. Show an exclamation to a visitor with proposal to do a booking in a different class and ask if he/she agree with following price change. 
+6. If he agree proceed with this booking
+7. If he do not, just do _new_ shopping request for the same O&D and dates and redirect user there. 
+
+If you do not use Node.JS / JavaScript in your project or if you interesting how [uAPI JSON](https://www.gitbook.com/book/yulianagoncharenko/cee-esteaming-api/edit#) does this trick you can take a look in [uAPI JSON](https://www.gitbook.com/book/yulianagoncharenko/cee-esteaming-api/edit#) source [code of .book method](https://github.com/Travelport-Ukraine/uapi-json/blob/master/src/Services/Air/Air.js#L32). Feel free to adopt this method in language of your project and do not forget to share it as we did 😉
+
+
 
