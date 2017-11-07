@@ -10,7 +10,7 @@ Cache data accuracy depends on data volume and Travelport market share for a par
 
 ### 3.When cached data is being refreshed? {#3}
 
-Cache data is being refreshed each time we receive search results from Travelport for aparticular point of sale and search query. 
+Cache data is being refreshed each time we receive search results from Travelport for aparticular point of sale and search query.
 
 Our data warehouse  updates instantly with each incoming search result from Travelport. So practically data updates thousands time in a second to ensure that you'll always have an access to the most up to date and fresh information. Meanwhile, in all can see an age of each particular search result `recordAgeInMs` field. This field shows you a how many milliseconds passed from the moment, when data has been received from Travelport servers.
 
@@ -20,80 +20,80 @@ eStreaming API is based on fully scalable architecture which allows us to proces
 
 ### 5. Is it possible to search eStreaming API cache by cabin class? {#5}
 
-Because Business shopping is relatively rare, there is very low probability that itis is possible to build respective cache on it. Data will always be outdated because of low frequency of host requests. Besides, business travelers are usually very demanding clients, and that is why majority of agencies uses direct requests to GDS to get the most sharp results for them. Fortunately there is not so much such requests and it should not seriously harm look 2 book ratio.
+Because Business shopping is relatively rare, there is very low probability that it is possible to build respective cache on it. Data will always be outdated because of low frequency of host requests. Besides, business travelers are usually very demanding clients, and that is why majority of agencies uses direct requests to GDS to get the most sharp results for them. Fortunately there is not so many such requests and it should not seriously harm look 2 book ratio.
 
-### 6. How do requests for the same city pair, but in various point of sales? {#6}
+### 6. How to do requests for the same city pair, but in various points of sale? {#6}
 
-If you need to search the same route in different point of sales would will need to make several requests to eSteaming API, and so they count as several requests. Depending on your programming strategy these requests could be sent simultaneously or consequently. eStreaming API support both approaches.
+If you need to search the same route in different points of sale you would will need to make several requests to eSteaming API, so they would count as several requests. Depending on your programming strategy these requests could be sent simultaneously or consequently. eStreaming API supports both approaches.
 
 ### 7. We have 150 000 requests per day. Which RPS capacity do we need? {#7}
 
-Required RPS capacity is much dependent how your requests are distributed during the day. Basic math shows that 150000 requests / 86400 seconds = 1.73 RPS per day.
+Required RPS capacity is much dependent on the way how your requests are distributed during the day. Basic math shows that 150000 requests / 86400 seconds = 1.73 RPS per day.
 
-But you should consider that requests distribution is not flat during the day. If, for example, you have almost none requests during the night and doubled activity during the night, you should reserve an amount of capacity that will be enough to serve your peak periods. However short bursts of activity should be taken into account, and it's highly recommended to implement consequent retry API calls in case you receive API response message, that you are over your capacity.
+But you should consider that requests distribution is not flat during the day. If, for example, you have almost no requests during the day and doubled activity during the night, you should reserve an amount of capacity that will be enough to serve your peak periods. However short bursts of activity should be taken into account, and it's highly recommended to implement consequent retry API calls in case you receive API response message, that you are over your capacity.
 
 For further information about capacity, please visit [Capacity Planning](/capacity-planning.md) page.
 
 ### 8. 1000 requests per day in a free tier is not enough for me. Can I ask you to give me more? {#8}
 
-We do not have 2000 or 10000 or any other then 1000 requests limits in free tier. The lowest possible daily limit after 1000 is 1 RPS. It is actually 86400 requests per day \(1 RPS \* 60 sec \* 60 min \* 24h\). It will cost you a peanuts \($5 for a day\). If you need 1RPS or more just for a couple of days please contact our sales department for invoicing.
+We do not have 2000 or 10000 or any other thaen 1000 requests limits in free tier. The lowest possible daily limit after 1000 is 1 RPS. It is actually 86400 requests per day \(1 RPS \* 60 sec \* 60 min \* 24h\). It will cost you 
 
-### 9. Which point of sales are available? {#9}
+### 9. Which points of sale are available? {#9}
 
 Currently we process all data that Travelport sends us from following markets "AE", "AF", "AL", "AS", "AT", "AZ", "BA", "BY", "CZ", "DE", "EE", "ES", "FI", "FR", "HK", "HU", "ID", "IE", "IT", "JP", "LT", "LV", "MD", "MK", "NL", "NZ", "PK", "PL", "PT", "RO", "RS", "RU", "SK", "SZ", "UA", "US", "ZA". Feel free to use any from this list in your requests.
 
 ### 10. I need an additional point of sale which is not in the list. What should I do? {#10}
 
-We can process literally any number of point of sales that Travelport is ready to provide us with. However, our expanses are linearly dependent on the number of processed transactions. So there is no financial sense to process data from markets that doesn’t have any clients yet. This is especially important for big markets. If you will express real interest to go for paid access will be more than happy to turn on any additional markets. Currently we can discuss an opportunity of implementation of additional point of sales with clients who are ready to buy reserved 3-10 RPS \(depending on the size of data generated by requested point of sale\)  capacity for 3 month minimum.
+We can process literally any number of point of sales that Travelport is ready to provide us with. However, our expanses are linearly dependent on the number of processed transactions. So there is no financial sense to process data from markets that do not have any clients yet. This is especially important for big markets. If you will express real interest to go for a paid access, we will be more than happy to turn on any additional markets. Currently we can discuss an opportunity of implementation of additional point of sales with clients who are ready to buy reserved 3-10 RPS \(depending on the size of data generated by requested point of sale\)  capacity for 3 month minimum.
 
 ### 11. Data about some particular route isn't available in selected point of sale? {#11}
 
-Please keep in mind, that some destinations are very unusual for some markets. For example PEK-LAX  is very-very rare request for Ukranian agencies. Meanwhile, IEV-HRK is very rare in Australia. So the probability that someone ever searched this destination \(especially for some particular days of flights\) is infinitely low. For the test purposes, please use destinations that could be theoretically popular in appropriate market. Remember that any data that we have it is a stat that someone searched before.
+Please keep in mind, that some destinations are very unusual for some markets. For example PEK-LAX  is very-very rare request for Ukranian agencies. Meanwhile, IEV-HRK is very rare in Australia. So the probability that someone ever searched this destination \(especially for some particular days of flights\) is infinitely low. For the test purposes, please use destinations that could be theoretically popular in appropriate market. Remember that any data that we have is a stat that someone searched before.
 
 ### 12. I've found a proposal that suits my customer's request. How can I book it? {#12}
 
-The best way to do a booking is [Travelport Universal API](https://www.travelport.com/solutions/travelport-universal-API). The most sexy way of using uAPI is [uAPI-JSON](https://github.com/Travelport-Ukraine/uapi-json). It depend of your booking strategy. But the best practice is following:
+The best way to do a booking is [Travelport Universal API](https://www.travelport.com/solutions/travelport-universal-API). The most sexy way of using uAPI is [uAPI-JSON](https://github.com/Travelport-Ukraine/uapi-json). It depends on your booking strategy. But the best practice is the following:
 
-Once you know Dates, Flight number, Fare, Airline etc, you can try to do a direct booking. If it is successful that's it. If seats is no longer available in this class, just send a direct booking request without fareBasisCode and bookingClass parameters as a result booking will be done in the cheapest available class on the same flight. It is strongly recommended to notify your client about price change if it is occurred.
+Once you know Dates, Flight number, Fare, Airline etc, you can try to do a direct booking. If it is successful that's it. If seats are no longer available in this class, just send a direct booking request without fareBasisCode and bookingClass parameters as a result booking will be done in the cheapest available class on the same flight. It is strongly recommended to notify your client about price change if it is occurred.
 
 ### 13. Can I see my confidential \(negotiated\) fares in search results? {#13}
 
-Because of the obvious reasons Travelport doesn't share with us all confidential fares of all agencies from all over the World. However, we do consider an opportunity to build a private data partitions for some selected customers once this customer authorize us to process it's confidential fare. It will require separate processing and separate data storage and as a result it will cause additional expenses for us. Currently we can discuss an opportunity of implementation of Private Data Partition only with clients who reserved 20+ RPS capacity for 3 month minimum.
+Because of the obvious reasons Travelport doesn't share with us all confidential fares of all agencies from all over the World. However, we do consider an opportunity to build a private data partitions for some selected customers once this customer authorize us to process their confidential fares. It will require a separate processing and a separate data storage and as a result it will cause additional expenses for us. Currently we can discuss an opportunity of implementation of Private Data Partition only with clients who reserved 20+ RPS capacity for 3 month minimum.
 
 ### 14. I want to have a flat file with 1000 origin-destinations based on your data. Is it possible? {#14}
 
-Short answer: yes, you can build it on your side by calling methods of our API, but you better shouldn't do this.
+Short answer: yes, you can build it on your side by calling methods of our API, but you'd better not do this.
 
-A _flat files_ is an outdated approach which is still used by some data providers who afraid or can not handle massive request form clients. This is why they ready to answer you only twice a day \(or each hour\) with with big spreadsheet. The biggest issue with such files is they become outdated once you downloaded it. Even if you will download updated flat file each hour during following 60 minutes we will receive more then 10 000 000 new search results and until you'll download new version of file you'll be absolutely not aware of this updates. You'll get them only 60 minutes later. This approach is seriously harms bookability because you'll be always trying to do a bookings based on outdated information which means that some booking classes could be already unavailable.
+A _flat files_ is an outdated approach which is still used by some data providers who are afraid or can not handle massive request form clients. This is why they are ready to answer you only twice a day \(or each hour\) with a big spreadsheet. The biggest issue with such files is they become outdated once you downloaded it. Even if you download updated flat file each hour during following 60 minutes we will receive more then 10 000 000 new search results and until you download a new version of file you'll be absolutely unaware of this updates. You'll get them only 60 minutes later. This approach seriously harms bookability because you'll be always trying to do a booking based on outdated information which means that some booking classes could be already unavailable.
 
-But it despite all said above you still want to build a flat file for 1000 O&D with 20 flight dates combinations for each O&D you can easily do it by sending us 20 000 [Cache API](https://docs.travelcloudpro.eu/cached-api.html) requests \(if you need all proposals for each request\) or 1000 [Fly From-To RT API](https://docs.travelcloudpro.eu/fly-from-to-api/fly-from-to-rt-api.html) requests \(if only cheapest direct & cheapest connected options is enough for you\). If you'll have for example 20 RPS \(Request per second\) capacity you can receive 1000 results in 1000/20 = 50 seconds, so about a minute would be enough for you to build such file. When you'll need to update it you can do it again. You can execute this procedure however often you like. We are ready to process literally any number of simultaneous incoming request.
+But despite the above said, if you still want to build a flat file for 1000 O&D with 20 flight dates combinations for each O&D you can easily do it by sending us 20 000 [Cache API](https://docs.travelcloudpro.eu/cached-api.html) requests \(if you need all proposals for each request\) or 1000 [Fly From-To RT API](https://docs.travelcloudpro.eu/fly-from-to-api/fly-from-to-rt-api.html) requests \(if only cheapest direct & cheapest connected options is enough for you\). If you have for example 20 RPS \(Request per second\) capacity you can receive 1000 results in 1000/20 = 50 seconds, so about a minute would be enough for you to build such a file. When you need to update it you can repeat the whole process. You can execute this procedure however often you like. We are ready to process literally any number of simultaneous incoming request.
 
-### 15. If I would not use flat files what is the best approach to use your API? {#15}
+### 15. If I do not use flat files what is the best approach to use your API? {#15}
 
-Just consider that we already stored all available data on our servers for you and there is absolutely no practical sense to download some fraction of it to your site.
+Just consider that we already stored all available data on our servers for you and there is absolutely no practical sense to download some fraction of it on your site.
 
-Once  someone came to your web site and would like to know  know what is the most up to date proposals to fly from PAR to LON in 15th of Jan - just call [Cache API](https://www.gitbook.com/book/yulianagoncharenko/cee-esteaming-api/edit#) with appropriate parameters.
+When  someone comes to your web site and wants to know what are the most up-to-date pricing options from PAR to LON in 15th of Jan - just call [Cache API](https://www.gitbook.com/book/yulianagoncharenko/cee-esteaming-api/edit#) with appropriate parameters.
 
-Once someone come to your web site and would like to take a look on a price calendar for NYC - MUC just call [Fly From-To RT API](https://www.gitbook.com/book/yulianagoncharenko/cee-esteaming-api/edit#) and you'll get necessary data in less then a second.
+Once someone came to your web site and would like to take a look on a price calendar for NYC - MUC just call [Fly From-To RT API](https://www.gitbook.com/book/yulianagoncharenko/cee-esteaming-api/edit#) and you'll get necessary data in less then a second.
 
 In both cases you'll get the latest data available for this point of time. In a contrast, if you'll be using any kind of flat files your data will be as old as your files are.
 
 ### 16. What should I do in order to increase bookability? {#16}
 
-Bookability is always compromise between amount of expensive direct GDS requests and number of cheap Cache results. Even none of GDS could guarantee you 100% bookability. While your clients will be looking on a search results some seats from this proposals could be sold by other agent on other side of the Earth. Consequently when you'll try to do a booking with this class you'll fail.
+Bookability is always a compromise between amount of expensive direct GDS requests and a number of cheap Cache results. Even none of GDS could guarantee you 100% bookability. While your clients are still looking at search results on your website some seats from this proposals could be sold by other agent on other side of the Earth. Consequently when you'll try to do a booking with this class you'll fail.
 
-_Any_ cache solution will provide you with even lower bookability than GDS for an obvious reasons. Fortunately we offering you _global_ cache which updates not only by your requests, but by all request of all Travelport users globally.
+_Any_ cache solution will provide you with even lower bookability than GDS for an obvious reasons. Fortunately, we offer you a _global_ cache which updates not only by your requests, but by all request of all Travelport users globally.
 
-However you can tune your cache bookability by cutting off some results extracted from cache. The best approach is following:
+However you can tune your cache bookability by cutting off some results extracted from cache. The best approach is the following:
 
 1. Request data from [Cache API](https://www.gitbook.com/book/yulianagoncharenko/cee-esteaming-api/edit#)
 2. Take a look to `recordAgeInMs` field in the results.  \(See answer \#3 of this FAQ\)
-3. Take a look to how many time remains to the first flight
-4. Based on this two figures you can do an assumption if data from the cache is reliable or not. If the first flight of the journey will be in 7 mont an age of this record in cache is 1 hour it could be considered as very reliable because it is doubtful that something will be changed in availability of classes during an hour for the flight in such long future. In a contrast, if you first flight is tomorrow and you received data from the cache which was updated 5 days ago - this data is obviously outdated because classes availabilities for tomorrow flights are changing each minute. 
+3. Take a look to how much time remains till the first flight
+4. Based on this two figures you can do an assumption if data from the cache is reliable or not. If the first flight of the journey will be within 7 months and the age of this record in cache is 1 hour, it could be considered as very reliable because it is doubtful that something will be changed in availability of classes during an hour for the flight in such long future. On the contrary, if your first flight is tomorrow and you received data from the cache which was updated 5 days ago - this data is obviously outdated because classes availability for tomorrow's flights is changing each minute. 
 5. If you consider data in the cache as unreliable just do a GDS Shopping request. Fortunately Cache check tooks just milliseconds any you would not depend too much time to do it. 
 6. If cache data was as reliable just show it to your user as usual shopping result.
 
-In our company we use following method to define reliability of cache result. Please feel free to use it in your projects. By changing `settings` you can tune how old data will be gutted off.
+In our company we use following method to define reliability of cache result. Please feel free to use it in your projects. By changing `settings` you can tune how old data will be cut off.
 
 ```js
 const settings = {
@@ -144,17 +144,17 @@ module.exports = getTTL;
  */
 ```
 
-### 17. I've tried to do a booking based on cache or GDS results and failed. What should I do next? {#17}
+### 17. I've tried to do a booking based on the cached or GDS results and it failed. What should I do next? {#17}
 
-Some times it happens when selected booking class is already gone \(see answer \#16 of this FAQ\). But it is absolutely doesn't mean that we should lose thus client. Most probably this plane is still full of other available classes and you just should calmly explain to your client what happened and suggest other options. Internally in our company we use following approach:
+Some times it happens when selected booking class is already gone \(see answer \#16 of this FAQ\). But it absolutely doesn't mean that we should loose this client. Most probably this plane is still full of the other available classes and you just should calmly explain to your client what happened and suggest other options. Internally in our company we use following approach:
 
-1. Booking attempt is failed
+1. Booking attempt has failed
 2. Remember the price of proposal which you've been trying to book 
 3. Call [.book\(params\)](https://github.com/Travelport-Ukraine/uapi-json/blob/master/docs/Air.md#bookparams) method of our free [uAPI JSON](https://github.com/Travelport-Ukraine/uapi-json) library _without_ `fareBasisCode` и `bookingClass` parameters but with mentioning all other flight details. 
-4. [uAPI JSON](https://github.com/Travelport-Ukraine/uapi-json "uAPI JSON") will give you the cheapest available option on this particular flight straight from GDS
-5. Show an exclamation to a visitor with proposal to do a booking in a different class and ask if he/she agree with following price change. 
-6. If he agree proceed with this booking
-7. If he do not, just do _new_ shopping request for the same O&D and dates and redirect user there. 
+4. [uAPI JSON](https://github.com/Travelport-Ukraine/uapi-json "uAPI JSON") will give you the cheapest available option on this particular flight straight from the GDS
+5. Show an exclamation mark to a visitor with proposal to do a booking in a different class and ask if he/she agrees with following price change. 
+6. If they agree, proceed with this booking
+7. If they do not, just do a _new_ shopping request for the same O&D and dates and redirect this user there. 
 
-If you do not use Node.JS / JavaScript in your project or if you interesting how [uAPI JSON](https://github.com/Travelport-Ukraine/uapi-json "uAPI JSON") does this trick you can take a look in [uAPI JSON](https://github.com/Travelport-Ukraine/uapi-json "uAPI JSON") source [code of .book method](https://github.com/Travelport-Ukraine/uapi-json/blob/master/src/Services/Air/Air.js#L32). Feel free to adopt this method in language of your project and do not forget to share it as we did 😉
+If you do not use Node.JS / JavaScript in your project or if you are interested how [uAPI JSON](https://github.com/Travelport-Ukraine/uapi-json "uAPI JSON") does this trick you can take a look in [uAPI JSON](https://github.com/Travelport-Ukraine/uapi-json "uAPI JSON") source [code of .book method](https://github.com/Travelport-Ukraine/uapi-json/blob/master/src/Services/Air/Air.js#L32). Feel free to adopt this method in the language of your project and do not forget to share it as we did 😉
 
