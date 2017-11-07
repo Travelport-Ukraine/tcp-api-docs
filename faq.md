@@ -36,7 +36,7 @@ For further information about capacity, please visit [Capacity Planning](/capaci
 
 ### 8. 1000 requests per day in a free tier is not enough for me. Can I ask you to give me more? {#8}
 
-We do not have 2000 or 10000 or any other thaen 1000 requests limits in free tier. The lowest possible daily limit after 1000 is 1 RPS. It is actually 86400 requests per day \(1 RPS \* 60 sec \* 60 min \* 24h\). It will cost you 
+We do not have 2000 or 10000 or any other thaen 1000 requests limits in free tier. The lowest possible daily limit after 1000 is 1 RPS. It is actually 86400 requests per day \(1 RPS \* 60 sec \* 60 min \* 24h\). It will cost you only 5 USD per day.
 
 ### 9. Which points of sale are available? {#9}
 
@@ -52,7 +52,7 @@ Please keep in mind, that some destinations are very unusual for some markets. F
 
 ### 12. I've found a proposal that suits my customer's request. How can I book it? {#12}
 
-The best way to do a booking is [Travelport Universal API](https://www.travelport.com/solutions/travelport-universal-API). The most sexy way of using uAPI is [uAPI-JSON](https://github.com/Travelport-Ukraine/uapi-json). It depends on your booking strategy. But the best practice is the following:
+The best way to do a booking is [Travelport Universal API](https://www.travelport.com/solutions/travelport-universal-API). The sexiest way of using uAPI is [uAPI-JSON](https://github.com/Travelport-Ukraine/uapi-json). It depends on your booking strategy. But the best practice is the following:
 
 Once you know Dates, Flight number, Fare, Airline etc, you can try to do a direct booking. If it is successful that's it. If seats are no longer available in this class, just send a direct booking request without fareBasisCode and bookingClass parameters as a result booking will be done in the cheapest available class on the same flight. It is strongly recommended to notify your client about price change if it is occurred.
 
