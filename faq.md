@@ -2,17 +2,17 @@
 
 ### 1. How long data is being kept in cache? {#1}
 
-Cache data is stored for a year from a day it was received, though it could be updated by cheaper result \(in case of Historical cache\) or more fresh result \(in other cases\). Meanwhile, any result data set returned by our API will be accompanied by the _age of the data_. So you can see how long ago \(in milliseconds\) this data were processed on Travelport servers. Depending on your strategy and based on this figure your algorithm can decide if it can rely on this particular data set or it is outdated for your purposes.
+Cache data is stored for a year from a day it was received, though it could be updated by cheaper result \(in case of Historical cache\) or more fresh result \(in other cases\). Meanwhile, any result data set returned by our API will be accompanied by the _age of the data_. So you can see how long ago \(in milliseconds\) this data was processed on Travelport servers. Depending on your strategy and based on this figure your algorithm can decide if it can rely on this particular data set or it is outdated for your purposes.
 
 ### 2. Is cache data accuracy dependent on point of sale? {#2}
 
-Cache data accuracy depends on data volume and Travelport market share for particular market.
+Cache data accuracy depends on data volume and Travelport market share for a particular market.
 
-### 3. When data in cache is being refreshed? {#3}
+### 3.When cached data is being refreshed? {#3}
 
-Cache data is being refreshed each time we receive search results from Travelport for particular point of sale and search query. In vast majority of cases it takes less then a second after shopping was done.
+Cache data is being refreshed each time we receive search results from Travelport for aparticular point of sale and search query. 
 
-Our data warehouse is updates instantly with each incoming search result from Travelport. So practically data updates thousands time in a second to ensure that you'll always have an access to the most up to date and fresh information. Meanwhile, in all can see an age of each particular search result in `recordAgeInMs` field. This field shows you a how many milliseconds passed from the moment, when data has been received from Travelport servers.
+Our data warehouse  updates instantly with each incoming search result from Travelport. So practically data updates thousands time in a second to ensure that you'll always have an access to the most up to date and fresh information. Meanwhile, in all can see an age of each particular search result `recordAgeInMs` field. This field shows you a how many milliseconds passed from the moment, when data has been received from Travelport servers.
 
 ### 4. How many RPS eStreaming API could handle? {#4}
 
@@ -20,7 +20,7 @@ eStreaming API is based on fully scalable architecture which allows us to proces
 
 ### 5. Is it possible to search eStreaming API cache by cabin class? {#5}
 
-Because Business shopping is relatively rare, there is very low probability that it is is possible to build respective cache on it. Data will always be outdated because of low frequency of host requests. Besides, business travelers are usually very demanding clients, and that is why majority of agencies uses direct requests to GDS to get the most sharp results for them. Fortunately there is not so much such requests and it should not seriously harm look 2 book ratio.
+Because Business shopping is relatively rare, there is very low probability that itis is possible to build respective cache on it. Data will always be outdated because of low frequency of host requests. Besides, business travelers are usually very demanding clients, and that is why majority of agencies uses direct requests to GDS to get the most sharp results for them. Fortunately there is not so much such requests and it should not seriously harm look 2 book ratio.
 
 ### 6. How do requests for the same city pair, but in various point of sales? {#6}
 
@@ -64,7 +64,7 @@ Because of the obvious reasons Travelport doesn't share with us all confidential
 
 Short answer: yes, you can build it on your side by calling methods of our API, but you better shouldn't do this.
 
-A _flat files_ is an outdated approach which is still used by some data providers who afraid or can not handle massive request form clients. This is why they ready to answer you only twice a day \(or each hour\) with with big spreadsheet. The biggest issue with such files is they become outdated once you downloaded it. Even if you will download updated flat file each hour during following 60 minutes we will receive more then 10 000 000 new search results and until you'll download new version of file you'll be absolutely not aware of this updates. You'll get them only 60 minutes later. This approach is seriously harms book ability because you'll be always trying to do a bookings based on outdated information which means that some booking classes could be already unavailable.
+A _flat files_ is an outdated approach which is still used by some data providers who afraid or can not handle massive request form clients. This is why they ready to answer you only twice a day \(or each hour\) with with big spreadsheet. The biggest issue with such files is they become outdated once you downloaded it. Even if you will download updated flat file each hour during following 60 minutes we will receive more then 10 000 000 new search results and until you'll download new version of file you'll be absolutely not aware of this updates. You'll get them only 60 minutes later. This approach is seriously harms bookability because you'll be always trying to do a bookings based on outdated information which means that some booking classes could be already unavailable.
 
 But it despite all said above you still want to build a flat file for 1000 O&D with 20 flight dates combinations for each O&D you can easily do it by sending us 20 000 [Cache API](https://docs.travelcloudpro.eu/cached-api.html) requests \(if you need all proposals for each request\) or 1000 [Fly From-To RT API](https://docs.travelcloudpro.eu/fly-from-to-api/fly-from-to-rt-api.html) requests \(if only cheapest direct & cheapest connected options is enough for you\). If you'll have for example 20 RPS \(Request per second\) capacity you can receive 1000 results in 1000/20 = 50 seconds, so about a minute would be enough for you to build such file. When you'll need to update it you can do it again. You can execute this procedure however often you like. We are ready to process literally any number of simultaneous incoming request.
 
@@ -78,13 +78,13 @@ Once someone come to your web site and would like to take a look on a price cale
 
 In both cases you'll get the latest data available for this point of time. In a contrast, if you'll be using any kind of flat files your data will be as old as your files are.
 
-### 16. What should I do in order to increase book ability? {#16}
+### 16. What should I do in order to increase bookability? {#16}
 
-Book ability is always compromise between amount of expensive direct GDS requests and number of cheap Cache results. Even none of GDS could guarantee you 100% book ability. While your clients will be looking on a search results some seats from this proposals could be sold by other agent on other side of the Earth. Consequently when you'll try to do a booking with this class you'll fail.
+Bookability is always compromise between amount of expensive direct GDS requests and number of cheap Cache results. Even none of GDS could guarantee you 100% bookability. While your clients will be looking on a search results some seats from this proposals could be sold by other agent on other side of the Earth. Consequently when you'll try to do a booking with this class you'll fail.
 
-_Any_ cache solution will provide you with even lower book ability than GDS for an obvious reasons. Fortunately we offering you _global_ cache which updates not only by your requests, but by all request of all Travelport users globally.
+_Any_ cache solution will provide you with even lower bookability than GDS for an obvious reasons. Fortunately we offering you _global_ cache which updates not only by your requests, but by all request of all Travelport users globally.
 
-However you can tune your cache book ability by cutting off some results extracted from cache. The best approach is following:
+However you can tune your cache bookability by cutting off some results extracted from cache. The best approach is following:
 
 1. Request data from [Cache API](https://www.gitbook.com/book/yulianagoncharenko/cee-esteaming-api/edit#)
 2. Take a look to `recordAgeInMs` field in the results.  \(See answer \#3 of this FAQ\)
