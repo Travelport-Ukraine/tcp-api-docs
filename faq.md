@@ -36,7 +36,7 @@ For further information about capacity, please visit [Capacity Planning](/capaci
 
 ### 8. 1000 requests per day in a free tier is not enough for me. Can I ask you to give me more? {#8}
 
-We do not have 2000 or 10000 or any other thaen 1000 requests limits in free tier. The lowest possible daily limit after 1000 is 1 RPS. It is actually 86400 requests per day \(1 RPS \* 60 sec \* 60 min \* 24h\). It will cost you only 5 USD per day.
+We do not have 2000 or 10000 or any other than 1000 requests limits in free tier. The lowest possible daily limit after 1000 is 1 RPS. It is actually 86400 requests per day \(1 RPS \* 60 sec \* 60 min \* 24h\). It will cost you only 5 USD per day.
 
 ### 9. Which points of sale are available? {#9}
 
