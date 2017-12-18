@@ -4,7 +4,7 @@ eStreaming API is a fully managed solution that processes, stores and distribute
 
 ---
 
-For more information please check [presentation of the product](https://docs.google.com/presentation/d/1b4NTC7Qz7H7P_xQ4xbPMzoQdD9IG-JAUXLB1bDrLemo/edit?usp=sharing) or [online webinar](https://vimeo.com/240124996).
+For more information please check [presentation of the product](https://docs.google.com/presentation/d/1b4NTC7Qz7H7P_xQ4xbPMzoQdD9IG-JAUXLB1bDrLemo/edit?usp=sharing) or [online webinar](https://www.youtube.com/watch?v=xCaoQulCcmA&feature=youtu.be).
 
 If you'll like our API and would like to put your hands on it you can easily receive your **free credentials** by applying [very simple form](http://estrapi.cee-systems.com). Anyone can start in the free tier and can upgrade to one of the paid ones anytime later.
 
