@@ -40,7 +40,7 @@ We do not have 2000 or 10000 or any other than 1000 requests limits in free tier
 
 ### 9. Which points of sale are available? {#9}
 
-Currently we process all data that Travelport sends us from following markets "AE", "AF", "AL", "AS", "AT", "AZ", "BA", "BY", "CZ", "DE", "EE", "ES", "FI", "FR", "HK", "HU", "ID", "IE", "IT", "JP", "LT", "LV", "MD", "MK", "NL", "NZ", "PK", "PL", "PT", "RO", "RS", "RU", "SK", "SZ", "UA", "US", "ZA". Feel free to use any from this list in your requests.
+Currently we process all data that Travelport sends us from following markets "AE", "AF", "AL", "AS", "AT", "AZ", "BA", "BY", "CZ", "DE", "EE", "ES", "FI", "FR", "HK", "HU", "ID", "IE", "IN" "IT", "JP", "LT", "LV", "MD", "MK", "NL", "NZ", "PK", "PL", "PT", "RO", "RS", "RU", "SK", "SZ", "UA", "US", "ZA". Feel free to use any from this list in your requests.
 
 ### 10. I need an additional point of sale which is not in the list. What should I do? {#10}
 
