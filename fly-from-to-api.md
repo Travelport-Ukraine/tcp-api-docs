@@ -1,6 +1,6 @@
 # Fly From-To API
 
-Provides the cheapest pricing options for designated city/airport pair within specified time period and desirable minimum/maximum stay days.
+Provides the cheapest pricing options for designated city/airport pair within specified time period and desirable minimum/maximum stay days. One \(single\) request allows to extract data with total length of departure dates range + stay days range up to 20.
 
 ## Fly From-To OW API request
 
@@ -17,8 +17,8 @@ The following table illustrates the minimum required data for From-To OW request
 | pointOfSale | UA | Country ISO code where shopping request was generated |
 | minDepartureDate | 2017-11-01 | The earliest possible journey departure date |
 | maxDepartureDate | 2017-11-07 | The farthest possible journey departure date |
-| origin | IEV | City/airport IATA code where the journey begins |
-| destination | WAW | City/airport IATA code where the journey ends |
+| origin | IEV | City IATA code where the journey begins \(do not use airport code\) |
+| destination | WAW | City IATA code where the journey ends \(do not use airport code\) |
 
 ## Fly From-To OW API response \(application/json\)
 
@@ -58,7 +58,7 @@ Please find below response elements for From-To OW API:
 | executionTimeInMs | number | Indicates execution time on amazon servers without time taken to transfer data in and out |
 | originalRequest | object | Indicates parsed request from user |
 | pointOfSale | string | Country ISO code where shopping request was generated. |
-| searchPhrase | string | Departure and arrival dates and airport/city indicated in shopping request. The format is YYYYMMDDDEPARR, where DEP means Departure airport/city, ARR- arrival airport/city |
+| searchPhrase | string | Departure and arrival dates city indicated in shopping request. The format is YYYYMMDDDEPARR, where DEP means Departure city сщву, ARR- arrival airport/city |
 | minDepartureDate | date | Data format: YYYY-MM-DD. Marks the earliest date, staring from departure can take place |
 | maxDepartureDate | date | Data format: YYYY-MM-DD. Indicates the last date, until which the flight should depart |
 | minStay | null | No data for OW type of search |

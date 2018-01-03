@@ -17,8 +17,8 @@ The following table illustrates the minimum required data for Fly From API with 
 | pointOfSale | UA | Country ISO code where shopping request was generated |
 | minDepartureDate | 2017-01-01 | The earliest possible journey departure date |
 | maxDepartureDate | 2017-01-07 | The farthest possible journey departure date |
-| origin | IEV | City/airport IATA code where the journey begins |
-| destination | PRG,WAW,BRU | City/airport IATA code where the journey ends |
+| origin | IEV | City IATA code where the journey begins \(do not use airport code\) |
+| destination | PRG,WAW,BRU | City IATA code where the journey ends\(do not use airport code\) |
 | minStay | 5 | Minimum number of days which should be spent at the point of destination before return journey |
 | maxStay | 10 | Maximum mumber of days to be spent at the poing of destination before return journey |
 

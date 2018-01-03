@@ -14,7 +14,7 @@ The following table illustrates the minimum required data for Fly From API reque
 
 | Name | Example | Description |
 | :--- | :--- | :--- |
-| origin | IEV | City/airport IATA code from which journey begins |
+| origin | IEV | City IATA code from which journey begins \(do not use airport code\) |
 | pointOfSale | UA | Country ISO code where shopping request was generated. Maximum one point of sale is allowed per each request. |
 
 ## Fly From API response

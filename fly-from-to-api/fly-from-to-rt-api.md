@@ -1,5 +1,7 @@
 ## Fly From-To RT API request
 
+One \(single\) request allows to extract data with total length of departure dates range + stay days range up to 20.
+
 ### Sample request
 
 > [https://api.travelcloudpro.eu/v1/cache/flyfromto?pointOfSale=UA&minDepartureDate=2017-11-01&maxDepartureDate=2017-11-07&origin=IEV&destination=AMS&minStay=2&maxStay=5](https://api.travelcloudpro.eu/v1/cache/flyfromto?pointOfSale=UA&minDepartureDate=2017-11-01&maxDepartureDate=2017-11-07&origin=IEV&destination=AMS&minStay=2&maxStay=5)

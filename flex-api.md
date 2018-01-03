@@ -12,7 +12,7 @@ Provides ability to get the cheapest pricing option within pre-defined date rang
 
 | Name | Example | Description |
 | :--- | :--- | :--- |
-| searchPhrase | 20170501IEVWAW20170508WAWIEV | Departure and arrival date ranges whithin which cheapest options are received for a range dates before and/or after the requested flight date up to a maximum of three days. |
+| searchPhrase | 20170501IEVWAW20170508WAWIEV | Departure and arrival date ranges whithin which cheapest options are received for a range dates before and/or after the requested flight date up to a maximum of three days. City IATA code required \(do not use airport code\). |
 | pointOfSale | UA | Country ISO code where shopping request was generated. |
 
 ## Flex API response \(application/json\)

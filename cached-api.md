@@ -14,7 +14,7 @@ The following table illustrates the minimum required data for cached shopping re
 
 | Name | Example | Description |
 | :--- | :--- | :--- |
-| searchPhrase | 20171012IEVWAW20171015WAWIEV | Departure and arrival dates and airport/city indicated in shopping request. The format is YYYYMMDDDEPARR, where DEP means Departure airport/city, ARR- arrival airport/city |
+| searchPhrase | 20171012IEVWAW20171015WAWIEV | Departure and arrival dates and city IATA code \(do not use airport code\), indicated in shopping request. The format is YYYYMMDDDEPARR, where DEP means Departure city code, ARR- arrival city code |
 | pointOfSale | UA | Country ISO code where shopping request was generated. |
 
 ## Cache API response
@@ -69,7 +69,7 @@ Upon decompression of base64GzippedResponse and JSON data display the user shoul
 | guid | 46de111d-180a-4094-b4bf-4aa435e20b33 | Unique id |
 | requestStart | 2017/03/11 18:22:02.525 | ? |
 | pointOfSale | UA | Country ISO code where shopping request was generated. |
-| originalRequest | 20170316IEVWAW20170319WAWIEV | Original shopping query, containing departure and arrival dates and airport/city indicated in shopping request. The format is YYYYMMDDDEPARR, where DEP means Departure airport/city, ARR- arrival airport/city |
+| originalRequest | 20170316IEVWAW20170319WAWIEV | Original shopping query, containing departure and arrival dates and city/airport code indicated in shopping request. The format is YYYYMMDDDEPARR, where DEP means Departure city, ARR- arrival city code  |
 
 #### Date
 
@@ -89,7 +89,7 @@ Each proposal represents shopping results containing a number of pricing options
 
 #### Leg
 
-A leg is basically a part of journey between two cities/airports, that can contain one segment in case of direct flights or multiple flight segments in case of connection or stopover. Leg object contains the following parameters:
+A leg is basically a part of journey between two cities, that can contain one segment in case of direct flights or multiple flight segments in case of connection or stopover. Leg object contains the following parameters:
 
 | Name | Data type | Desctiption |
 | :--- | :--- | :--- |
@@ -106,7 +106,7 @@ A leg is basically a part of journey between two cities/airports, that can conta
 | Duration | 00130 | Flight duration, in the format Dhhmm |
 | Origin | PRG | Origin of travel |
 | Destination | WAW | Destination point |
-| DepartureTime | 201705220705 | Departure date/time in the format \(YYYYMMDDhhmm\) |
+| DepartureTime | 201705220705 | Departure date/time in the format YYYYMMDDhhmm |
 | ArrivalTime | 201705220835 | Arrival date/time in the format YYYYMMDDhhmm |
 | OutTerminal | 2 | Departure terminal |
 | InTerminal | 1 | Arrival terminal |

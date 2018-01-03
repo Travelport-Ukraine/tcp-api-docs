@@ -14,7 +14,7 @@ The following table illustrates the minimum required data for cached shopping re
 
 | Name | Example | Description |
 | :--- | :--- | :--- |
-| searchPhrase | 20170522IEVWAW | Departure and arrival dates and airport/city indicated in shopping request. The format is YYYYMMDDDEPARR, where DEP means Departure airport/city, ARR- arrival airport/city |
+| searchPhrase | 20170522IEVWAW | Departure and arrival dates and city codes indicated in shopping request. The format is YYYYMMDDDEPARR, where DEP means Departure city, ARR- arrival city code \(do not use airport code\) |
 | pointOfSale | UA | Country ISO code where shopping request was generated |
 | minSearchDate | 2017-01-03 | Departure date marking the beginningof search results streaming |
 | maxSearchDate | 2017-01-10 | Departure date marking the end of search results streaming |
@@ -52,7 +52,7 @@ The following table illustrates the minimum required data for cached shopping re
 | executionTimeInMs | number | Indicates execution time on Amazon servers without time taken to transfer data in and out |
 | originalRequest | object | Indicates parsed request from user |
 | pointOfSale | string | Country ISO code where shopping request was generated. |
-| searchPhrase | string | Departure and arrival dates and airport/city indicated in shopping request. The format is YYYYMMDDDEPARR, where DEP means Departure airport/city, ARR- arrival airport/city |
+| searchPhrase | string | Departure and arrival dates and city codes indicated in shopping request. The format is YYYYMMDDDEPARR, where DEP means Departure city, ARR- arrival city code \(do not use airport code\) |
 | minSearchDate | date | Data format: YYYY-MM-DD. Marks the earliest date, starting from which search results are streamed |
 | maxSearchDate | date | Data format: YYYY-MM-DD. Indicates the last date, until which search results are streamed |
 | data | response object | Appears only if status is "success" and dataAvailable is true |
@@ -66,7 +66,7 @@ Upon decompression of base64GzippedResponse and JSON data display the user shoul
 | Name | Data type | Description |
 | :--- | :--- | :--- |
 | pointOfSale | string | Country ISO code where shopping request was generated. |
-| searchPhrase | string | Departure and arrival dates and airport/city indicated in shopping request. The format is YYYYMMDDDEPARR, where DEP means Departure airport/city, ARR- arrival airport/city |
+| searchPhrase | string | Departure and arrival dates and city codes indicated in shopping request. Original shopping query, containing departure and arrival dates and city indicated in shopping request. The format is YYYYMMDDDEPARR, where DEP means Departure city/airport code ARR- arrival city/airport code  |
 | searchDate | date | Date in the format YYYY-MM-DD to which the search results refer |
 | Direct | response object | Contains the cheapest pricing option   for direct flight. Also contains gzippedshopping response in base64 format, to which this cheapest option |
 | Connected | response object | Contains the cheapest option for connected flight. Also includes gzipped shopping response in base64 format, to which this chepeast option refers. For more information please see below |
@@ -95,7 +95,7 @@ Shopping reponse contains the following elements:
 | guid | 46de111d-180a-4094-b4bf-4aa435e20b33 | Unique id |
 | requestStart | 2017/03/11 18:22:02.525 |  |
 | pointOfSale | UA | Country ISO code where shopping request was generated. |
-| originalRequest | 20170316IEVWAW20170319WAWIEV | Original shopping query, containing departure and arrival dates and airport/city indicated in shopping request. The format is YYYYMMDDDEPARR, where DEP means Departure airport/city, ARR- arrival airport/city |
+| originalRequest | 20170316IEVWAW20170319WAWIEV | Original shopping query, containing departure and arrival dates and city indicated in shopping request.The format is YYYYMMDDDEPARR, where DEP means Departure city/airport code ARR- arrival city/airport code. |
 
 #### Date
 
