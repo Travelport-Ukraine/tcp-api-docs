@@ -40,11 +40,11 @@ We do not have 2000 or 10000 or any other than 1000 requests limits in free tier
 
 ### 9. Which points of sale are available? {#9}
 
-Currently we process all data that Travelport sends us from following markets "AE", "AF", "AL", "AS", "AT", "AZ", "BA", "BY", "CZ", "DE", "EE", "FI", "FR", "HU", "ID", "IE", "IN" ,"IT", "JP", "LT", "LV", "MD", "MK", "NL", "NZ", "PK", "PL", "RO", "RS", "RU", "SK", "SZ", "UA", "US", "ZA". Feel free to use any from this list in your requests.
+Currently we process all data that Travelport sends us from following markets "AE", "AF", "AL", "AS", "AT", "AZ", "BA", "BY", "CZ", "DE", "EE", "FI", "FR", “HR”, "HU", "ID", "IE", "IN" ,"IT", "JP", "LT", "LV", "MD", "MK", "NL", "NZ", "PK", "PL", "RO", "RS", "RU", "SK", "SZ", "UA", "US", "ZA". Feel free to use any from this list in your requests. Historical data available for “CZ”, “PL”, “UA” markets for 3 month.
 
 ### 10. I need an additional point of sale which is not in the list. What should I do? {#10}
 
-We cn process literally any number of point of sales that Travelport is ready to provide us with. However, our expeanses are linearly dependent on the number of processed transactions. So there is no financial sense to process data from markets that do not have any clients yet. This is especially important for big markets. If you will express real interest to go for a paid access, we will be more than happy to turn on any additional markets. 
+We cn process literally any number of point of sales that Travelport is ready to provide us with. However, our expeanses are linearly dependent on the number of processed transactions. So there is no financial sense to process data from markets that do not have any clients yet. This is especially important for big markets. If you will express real interest to go for a paid access, we will be more than happy to turn on any additional markets.
 
 ### 11. Data about some particular route isn't available in selected point of sale? {#11}
 
