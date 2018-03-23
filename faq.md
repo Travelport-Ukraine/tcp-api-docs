@@ -2,7 +2,7 @@
 
 ### 1. How long data is being kept in cache? {#1}
 
-Cache data is stored for a year from a day it was received, though it could be updated by cheaper result \(in case of Historical cache\) or more fresh result \(in other cases\). Meanwhile, any result data set returned by our API will be accompanied by the _age of the data_. So you can see how long ago \(in milliseconds\) this data was processed on Travelport servers. Depending on your strategy and based on this figure your algorithm can decide if it can rely on this particular data set or it is outdated for your purposes.
+Cache data is stored for 3 months from a day it was received, though it could be updated by _age of the data_. So you can see how long ago \(in milliseconds\) this data was processed on Travelport servers. Depending on your strategy and based on this figure your algorithm can decide if it can rely on this particular data set or it is outdated for your purposes.
 
 ### 2. Is cache data accuracy dependent on point of sale? {#2}
 
@@ -10,7 +10,7 @@ Cache data accuracy depends on data volume and Travelport market share for a par
 
 ### 3.When cached data is being refreshed? {#3}
 
-Cache data is being refreshed each time we receive search results from Travelport for aparticular point of sale and search query.
+Cache data is being refreshed each time we receive search results from Travelport for a particular point of sale and search query.
 
 Our data warehouse  updates instantly with each incoming search result from Travelport. So practically data updates thousands time in a second to ensure that you'll always have an access to the most up to date and fresh information. Meanwhile, in all can see an age of each particular search result `recordAgeInMs` field. This field shows you a how many milliseconds passed from the moment, when data has been received from Travelport servers.
 
@@ -44,7 +44,7 @@ Currently we process all data that Travelport sends us from following markets "A
 
 ### 10. I need an additional point of sale which is not in the list. What should I do? {#10}
 
-We cn process literally any number of point of sales that Travelport is ready to provide us with. However, our expeanses are linearly dependent on the number of processed transactions. So there is no financial sense to process data from markets that do not have any clients yet. This is especially important for big markets. If you will express real interest to go for a paid access, we will be more than happy to turn on any additional markets.
+We can process literally any number of point of sales that Travelport is ready to provide us with. However, our expenses are linearly dependent on the number of processed transactions. So there is no financial sense to process data from markets that do not have any clients yet. This is especially important for big markets. If you will express real interest to go for a paid access, we will be more than happy to turn on any additional markets.
 
 ### 11. Data about some particular route isn't available in selected point of sale? {#11}
 
@@ -146,7 +146,7 @@ module.exports = getTTL;
 
 ### 17. I've tried to do a booking based on the cached or GDS results and it failed. What should I do next? {#17}
 
-Some times it happens when selected booking class is already gone \(see answer \#16 of this FAQ\). But it absolutely doesn't mean that we should loose this client. Most probably this plane is still full of the other available classes and you just should calmly explain to your client what happened and suggest other options. Internally in our company we use following approach:
+Sometimes it happens when selected booking class is already gone \(see answer \#16 of this FAQ\). But it absolutely doesn't mean that we should loose this client. Most probably this plane is still full of the other available classes and you just should calmly explain to your client what happened and suggest other options. Internally in our company we use following approach:
 
 1. Booking attempt has failed
 2. Remember the price of proposal which you've been trying to book 
