@@ -6,11 +6,17 @@ description: This page describes how to make a request against TCP eStreaming AP
 
 To run a request against TCP eStreaming API you should make a proper GET request against on of the API methods, providing all required params.
 
-Don't forget to include your personal API key in AuthToken header.
+## Authorization
+
+To authorize you against the API we use `AuthToken` header, which
+should be passed with each and every request. You always receive
+one, when you register in TCP.
+
+## Request URL
 
 Typical request URL looks like that:
 
-> https://api.travelcloudpro.eu/v1/cache/shopping?searchPhrase=20181009IEVIST20181015ISTIEV&pointOfSale=UA&ptc=ADT
+> [https://api.travelcloudpro.eu/v1/cache/shopping?searchPhrase=20181009IEVIST20181015ISTIEV&pointOfSale=UA&ptc=ADT](https://api.travelcloudpro.eu/v1/cache/shopping?searchPhrase=20181009IEVIST20181015ISTIEV&pointOfSale=UA&ptc=ADT)
 
 Request URL consists of the following elements:
 
@@ -21,6 +27,8 @@ Request URL consists of the following elements:
 | /cache | API application \(cache stands here for eStreaming API\) |
 | /shopping | API method |
 | ?searchPhrase=...&... | API query params |
+
+## Common required params
 
 Common eStreaming API request has following required params:
 
