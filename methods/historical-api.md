@@ -1,4 +1,4 @@
-# **Historical API**
+# Historical API
 
 Provides shopping results based on general shopping request within designated time period from specific point \(s\) of sale. Allows to analyze prise fluctuations, off- peak and price jumps for specific destinations
 
@@ -23,7 +23,7 @@ The following table illustrates the minimum required data for cached shopping re
 
 ### Response example \(application/json\)
 
-```js
+```javascript
 {
     "status": "success",
     "dataAvailable": true,
@@ -66,7 +66,7 @@ Upon decompression of base64GzippedResponse and JSON data display the user shoul
 | Name | Data type | Description |
 | :--- | :--- | :--- |
 | pointOfSale | string | Country ISO code where shopping request was generated. |
-| searchPhrase | string | Departure and arrival dates and city codes indicated in shopping request. Original shopping query, containing departure and arrival dates and city indicated in shopping request. The format is YYYYMMDDDEPARR, where DEP means Departure city/airport code ARR- arrival city/airport code  |
+| searchPhrase | string | Departure and arrival dates and city codes indicated in shopping request. Original shopping query, containing departure and arrival dates and city indicated in shopping request. The format is YYYYMMDDDEPARR, where DEP means Departure city/airport code ARR- arrival city/airport code |
 | searchDate | date | Date in the format YYYY-MM-DD to which the search results refer |
 | Direct | response object | Contains the cheapest pricing option   for direct flight. Also contains gzippedshopping response in base64 format, to which this cheapest option |
 | Connected | response object | Contains the cheapest option for connected flight. Also includes gzipped shopping response in base64 format, to which this chepeast option refers. For more information please see below |
@@ -122,7 +122,7 @@ A leg is basically a part of journey between two cities/airports, that can conta
 | PassengerTypeCode | string | IATA Passenger Type Code \(PTC\) that normally contains 3 letters: ADT, SRC, CNN etc |
 | Segments | number | Quantity of segments within one leg. See more details below |
 
-##### Segments
+**Segments**
 
 | Name | Example | Description |
 | :--- | :--- | :--- |
@@ -145,6 +145,4 @@ A leg is basically a part of journey between two cities/airports, that can conta
 | AvailabilitySource | B | Where availability was obtained |
 | Equipment | E75 | Equipment type |
 | SegmentsContinued | 1M | Indicates married segments |
-
-
 

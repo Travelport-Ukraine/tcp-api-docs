@@ -1,27 +1,29 @@
-# Summary
+# Table of contents
+
+* [Introduction](README.md)
 
 ## Overview
 
-* [Introduction to eStreaming API](README.md)
-* [Getting Started](getting-started.md)
-* [Using Postman Application](using-postman-application.md)
-* [Making request](making-request.md)
-* [Capacity Planning](capacity-planning.md)
-* [Point Of Sale](pointofsale.md)
-* [FAQ](faq.md)
+* [Introduction to eStreaming API](overview/introduction-to-estreaming-api.md)
+* [Getting Started](overview/getting-started.md)
+* [Using Postman Application](overview/using-postman-application.md)
+* [Making request](overview/making-request.md)
+* [Capacity Planning](overview/capacity-planning.md)
+* [Point Of Sale](overview/point-of-sale.md)
+* [FAQ](overview/faq.md)
 
 ## Methods
 
-* [Cache API](cached-api.md)
-* [Historical API ](historical-api.md)
-* [Fly From To API](fly-from-to-api.md)
-  * [Fly From To RT API](fly-from-to-api/fly-from-to-rt-api.md)
-* [Fly From API](fly-from-api.md)
-* [Fly From with options API](fly-from-with-options.md)
-* [Flex API](flex-api.md)
+* [Cache API](methods/cache-api.md)
+* [Historical API](methods/historical-api.md)
+* [Fly From To API](methods/fly-from-to-api/README.md)
+  * [Fly From To RT API](methods/fly-from-to-api/fly-from-to-rt-api.md)
+* [Fly From API](methods/fly-from-api.md)
+* [Fly From with options API](methods/fly-from-with-options-api.md)
+* [Flex API](methods/flex-api.md)
 
 ## eStreaming API limitations
 
-* [List of limitations](estreaming-api-limitations/list-of-limitations.md)
+* [List of limitations](estreaming-api-limitations/list-of-limitations/README.md)
   * [Known errors](estreaming-api-limitations/list-of-limitations/known-errors.md)
 

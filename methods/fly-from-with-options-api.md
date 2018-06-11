@@ -26,7 +26,7 @@ The following table illustrates the minimum required data for Fly From API with 
 
 ### Response sample \(application/json\)
 
-```js
+```javascript
 {
     "status": "success",
     "dataAvailable": true,
@@ -89,6 +89,4 @@ This object contains the following parameters:
 | :--- | :--- | :--- |
 | Origin | IEV | IATA code of airport/city where the journey begins |
 | Destination | WAW | IATA code of airport/city where the journey ends |
-
-
 

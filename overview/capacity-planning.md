@@ -1,4 +1,4 @@
-# Capacity planning
+# Capacity Planning
 
 eStreaming API pricing is based on RPS \(requests per seconds\).
 
@@ -6,7 +6,7 @@ Our free tier is a subject of **daily transactions limit** and **1RPS** capacity
 
 If you want to use eStreaming API without this limitations, you have to calculate the capacity you need, and then reserve it for you.
 
-### Reserved capacity calculation
+## Reserved capacity calculation
 
 We recommend following approach for the capacity calculation.
 
@@ -14,23 +14,23 @@ We recommend following approach for the capacity calculation.
 2. After log files analysis, assumptions and estimations are made on how many concurrent requests per second will be send to eStreaming API.
 3. Calculated number of concurrent requests is called reserved capacity.
 
-### Ordering and changing reserved capacity
+## Ordering and changing reserved capacity
 
 After you order your reserved capacity your daily transactions limit will be removed and you'll able to run queries according to selected RPS capacity.
 
 You can feel free to change your reserved capacity by one day advance notice.
 
-### Handling request bursts on your site
+## Handling request bursts on your site
 
 It is highly possible you are going to experience short periodic bursts of requests activity on your site. We recommend you to implement consequent retry API calls in case you receive API response message, that you are over your capacity.
 
 If you are running into bursts too frequently, we recommend you to increase you reserved capacity.
 
-### Capacity error messages
+## Capacity error messages
 
-Free tier users might get  the following error message in case daily requests limit is exceeded
+Free tier users might get the following error message in case daily requests limit is exceeded
 
-```js
+```javascript
  {
      status: 'error',
      dataAvailable: false,
@@ -48,7 +48,7 @@ Free tier users might get  the following error message in case daily requests li
 
 When the number of concurrent requests per second \(RPS\) is exceeded the relevant error message is also displayed.
 
-```js
+```javascript
 {
     status: 'error',
     dataAvailable: false,
@@ -63,6 +63,4 @@ When the number of concurrent requests per second \(RPS\) is exceeded the releva
     errorMessage: 'RPS capacity limit exceeded'
 }
 ```
-
-
 

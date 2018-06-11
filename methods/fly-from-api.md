@@ -21,7 +21,7 @@ The following table illustrates the minimum required data for Fly From API reque
 
 ### Response sample \(application/json\)
 
-```js
+```javascript
 {
     "status": "success",
     "dataAvailable": true,
@@ -69,6 +69,4 @@ Upon decompression of base64GzippedResponse and JSON data display the user shoul
 | currency | UAH | The currency of the PointofSale country. |
 | validatingCarrier | PS | IATA code of plating carrier |
 | originalRequest | 20170501IEVAAL20170521AALIEV | Contains parsed request from user |
-
-
 

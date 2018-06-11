@@ -17,7 +17,7 @@ Provides ability to get the cheapest pricing option within pre-defined date rang
 
 ## Flex API response \(application/json\)
 
-```js
+```javascript
 "status": "success",
 "dataAvailable": true,
 "requestId": "e016a919-138c-11e7-b8a6-7fe3e3d1b344",
@@ -61,6 +61,4 @@ Upon decompression of base64GzippedResponse and JSON data display the user shoul
 | Currency | UAH | Pricing offer currency |
 | TotalAmount | 15766 | Fare amount for the cheapest option, including taxes in PointofSale currency |
 | ValidatingCarrier | LO | IATA code of the plating carrier |
-
-
 

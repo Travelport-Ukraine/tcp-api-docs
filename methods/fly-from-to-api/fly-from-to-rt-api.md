@@ -1,54 +1,50 @@
-# Fly From-To API
+# Fly From To RT API
 
-Provides the cheapest pricing options for designated city/airport pair within specified time period and desirable minimum/maximum stay days. One \(single\) request allows to extract data with total length of departure dates range + stay days range up to 20.
+One \(single\) request allows to extract data with total length of departure dates range + stay days range up to 20.
 
-## Fly From-To OW API request
+## Sample request
 
-### Sample request \(type: GET\)
+> [https://api.travelcloudpro.eu/v1/cache/flyfromto?pointOfSale=UA&minDepartureDate=2017-11-01&maxDepartureDate=2017-11-07&origin=IEV&destination=AMS&minStay=2&maxStay=5](https://api.travelcloudpro.eu/v1/cache/flyfromto?pointOfSale=UA&minDepartureDate=2017-11-01&maxDepartureDate=2017-11-07&origin=IEV&destination=AMS&minStay=2&maxStay=5)
 
-> [https://api.travelcloudpro.eu/v1/cache/flyfromto?pointOfSale=UA&minDepartureDate=2017-10-01&maxDepartureDate=2017-10-07&origin=IEV&destination=WAW](https://api.travelcloudpro.eu/v1/cache/flyfromto?pointOfSale=UA&minDepartureDate=2017-10-01&maxDepartureDate=2017-10-07&origin=IEV&destination=WAW)
+The following table shows minimum parameters for FlyFromTo RT request.
 
-### Request parameters
-
-The following table illustrates the minimum required data for From-To OW request.
-
-| Name | Example | Desctiption |
+| Name | Example | Description |
 | :--- | :--- | :--- |
 | pointOfSale | UA | Country ISO code where shopping request was generated |
 | minDepartureDate | 2017-11-01 | The earliest possible journey departure date |
 | maxDepartureDate | 2017-11-07 | The farthest possible journey departure date |
-| origin | IEV | City IATA code where the journey begins \(do not use airport code\) |
-| destination | WAW | City IATA code where the journey ends \(do not use airport code\) |
+| origin | IEV | City/airport IATA code from which journey begins |
+| destination | AMS | City/airport IATA code where the journey ends |
+| minStay | 2 | Minimum number of days which should be spent at the point of destination before return journey |
+| maxStay | 5 | Maximum mumber of days to be soent at the poing of destination before return journey |
 
-## Fly From-To OW API response \(application/json\)
+## Sample response \(application/json\)
 
-```js
+```javascript
 {
     "status": "success",
     "dataAvailable": true,
-    "requestId": "742461c6-0e3b-11e7-a5f2-a7bb8199509d",
-    "executionTimeInMs": 62,
+    "requestId": "c0b8fc4c-0e3a-11e7-ba5b-d5670f74ff75",
+    "executionTimeInMs": 103,
     "originalRequest": {
         "origin": "IEV",
-        "destination": "WAW",
+        "destination": "AMS",
         "pointOfSale": "UA",
-        "minDepartureDate": "2017-10-01",
-        "maxDepartureDate": "2017-10-07",
-        "minStay": null,
-        "maxStay": null
+        "minDepartureDate": "2017-11-01",
+        "maxDepartureDate": "2017-11-07",
+        "minStay": "2",
+        "maxStay": "5"
     },
     "data": {
-    "proposalsCount": 5,
-    "compressedDataSize": 358,
-    "uncompressedDataSize": 1703,
-    "base64GzippedResponse": "H4sIAAAAAAAAA71UW0vDMBj9L3ley/flnrzVKThwbLDqQPGhtN1WqK2knSBj/91UfGzRDBnkKSeXc07OycuJvLdV0692m6wuiSWPCZmRrsxcflgfXNYNcxRQIQAu7p62ydbjt5Ur857YE8mPzpVN/vm9895DfdtndfLWHhuPEzSo/ORHVldF1lfNfp45V5XOQ+uNB+qs65dtUe2qsvi5KAIWUUhBWWosqFhK+exX+gtbVyT7ctEsO2IRNJdGCjjPyLxtGk9nOOFXQoyimCB0k/4PofMswFMW7inXyCYkPKymJGCEIgVtGbegYwQ1IkFIxlEaCibUVMWnGE2bGsgoyFV+QVKFmdIwnVQaoUkpWkb9+8eG6RENdBChJVM61FUuw6MayCjIVXG1/qNOQVpAP3zdRjVoKYSQPNxUJS/ofwihIE/VNf9Un4uhcCwWDMfaZhj4UIirfal/5XN+/QIDob/JpwYAAA=="
+        "proposalsCount": 8,
+        "compressedDataSize": 493,
+        "uncompressedDataSize": 2831,
+        "base64GzippedResponse": "H4sIAAAAAAAAA72WTWvbQBCG/8ueHbEzs6P9uKlpS0NjHLDbQ0sPwlYSgSsVWSmU4P/eUcmhBa2dlUVBB2ln2X3n0cy7+/VZ/Wjrpl/dr8t9pYL6VKiFOlRlt328e+zKwzCGGiyAhpt3n4vl+uWL5VUGZPbbuqu2vQrPavvUdVWz/fVnnQ8S6tu+3Bff26dG4sp5rWXwZ7mvd2VfNw/XZdfVVSehu7UE9uWhX7a7+r6udi/bXmm6Ar9BHbQPhjO25ovMlA3bblc8VDfN8qACGOdJW+uOC3XdNo3IGVY4KyhngIig29U8go6LBML4D+F8AmGHZgph3gAFY4NxmUUYSYjBGmNzgkTC7MBHBL3ZzCPoAsL2vxI2AVkqI/O5HU2IZTI5TiUsdRYRVLyfR9AFhM0Ul6CYS3y8PZ2QC8NDmSMeS0gDIkrhzOcSqzO//LWCLiA8xYedneTDdmhKdIEgc4gjCZFhp41UZCphMm6KSyQISiJMMxCONeUpwggbnQdDQbtMWz+SEBpGh5aSS5hoQgkn6LmA7wQX9ogxvmc8Yji1rfhe5owba0kCaQ7WJtWFmWMtdeace7WgJML2b8IAU1wYYxVzkrAdEiIfgDOtx65GxJ5zkIZPJYw+5hEnz7kEQcdvvwHYvqO6DwsAAA=="
     }
 }
 ```
 
-### Response parameters
-
-Please find below response elements for From-To OW API:
+Please find below the description of From-To RT elements:
 
 | Name | Data type | Description |
 | :--- | :--- | :--- |
@@ -58,16 +54,16 @@ Please find below response elements for From-To OW API:
 | executionTimeInMs | number | Indicates execution time on amazon servers without time taken to transfer data in and out |
 | originalRequest | object | Indicates parsed request from user |
 | pointOfSale | string | Country ISO code where shopping request was generated. |
-| searchPhrase | string | Departure and arrival dates city indicated in shopping request. The format is YYYYMMDDDEPARR, where DEP means Departure city сщву, ARR- arrival airport/city |
+| searchPhrase | string | Departure and arrival dates and airport/city indicated in shopping request. The format is YYYYMMDDDEPARR, where DEP means Departure airport/city, ARR- arrival airport/city |
 | minDepartureDate | date | Data format: YYYY-MM-DD. Marks the earliest date, staring from departure can take place |
 | maxDepartureDate | date | Data format: YYYY-MM-DD. Indicates the last date, until which the flight should depart |
-| minStay | null | No data for OW type of search |
-| maxStay | null | No data for OW type of search |
+| minStay | number | Minimum number of days which should be spent at the point of destination before return journey |
+| maxStay | number | Maximum number of days which should be spent at the point of destination before return journey |
 | data | response object | Appears only if status is "success" and dataAvailable is true |
-| proposalsCount | number | Indicates how many proposals are available in response |
+| proposalsCount | number | Indicates how many shopping proposals are available in response |
 | compressedDataSize |  | compressed data size in bytes |
 | uncompressedDataSize |  | uncompressed data size in bytes |
-| base64GzippedResponse |  | gzipped response in base64 formatUpon decompression of base64GzippedResponse and JSON data display the user should be able to view object contaning the following fields: |
+| base64GzippedResponse |  | gzipped response in base64 format |
 
 Upon decompression of base64GzippedResponse and JSON data display the user should be able to view object contaning the following fields:
 
@@ -78,7 +74,7 @@ Upon decompression of base64GzippedResponse and JSON data display the user shoul
 | Direct | response object | Contains the cheapest prising option   for direct flight. Also contains gzippedshopping response in base64 format, to which this chepeast option referrs. For more information please see below |
 | Connected | response object | Contains the cheapest option for connected flight. Also includes gzippedshopping response in base64 format, to which this chepeast option referrs. For more information please see below |
 
-#### Direct pricing option object
+### Direct pricing option object
 
 | Name | Example | Description |
 | :--- | :--- | :--- |
@@ -88,7 +84,7 @@ Upon decompression of base64GzippedResponse and JSON data display the user shoul
 | lastModified | 2017-04-12T17:37:44.098Z | Time in UTC format when data had been received from Travelport eStreaming |
 | recordAgeInMs | 55591865 | Milliseconds passed from the moment, when data has been received |
 
-#### Connected pricing option object
+### Connected pricing option object
 
 | Name | Example | Description |
 | :--- | :--- | :--- |
@@ -97,8 +93,4 @@ Upon decompression of base64GzippedResponse and JSON data display the user shoul
 | validatingCarrier | BT | IATA code of the plating carrier |
 | lastModified | 2017-04-12T17:37:44.098Z | Time in UTC format when data had been received from Travelport eStreaming |
 | recordAgeInMs | 55591865 | Milliseconds passed from the moment, when data has been received |
-
-## 
-
-
 

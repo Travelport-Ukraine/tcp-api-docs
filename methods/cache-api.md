@@ -21,7 +21,7 @@ The following table illustrates the minimum required data for cached shopping re
 
 ### Response example \(application/json\)
 
-```js
+```javascript
 {
     "status": "success",
     "dataAvailable": true,
@@ -69,7 +69,7 @@ Upon decompression of base64GzippedResponse and JSON data display the user shoul
 | guid | 46de111d-180a-4094-b4bf-4aa435e20b33 | Unique id |
 | requestStart | 2017/03/11 18:22:02.525 | ? |
 | pointOfSale | UA | Country ISO code where shopping request was generated. |
-| originalRequest | 20170316IEVWAW20170319WAWIEV | Original shopping query, containing departure and arrival dates and city/airport code indicated in shopping request. The format is YYYYMMDDDEPARR, where DEP means Departure city, ARR- arrival city code  |
+| originalRequest | 20170316IEVWAW20170319WAWIEV | Original shopping query, containing departure and arrival dates and city/airport code indicated in shopping request. The format is YYYYMMDDDEPARR, where DEP means Departure city, ARR- arrival city code |
 
 #### Date
 
@@ -96,7 +96,7 @@ A leg is basically a part of journey between two cities, that can contain one se
 | PassengerTypeCode | string | IATA Passenger Type Code \(PTC\) that normally contains 3 letters: ADT, SRC, CNN etc |
 | Segments | number | Quantity of segments within one leg. See more details below |
 
-##### Segments
+**Segments**
 
 | Name | Example | Description |
 | :--- | :--- | :--- |
@@ -119,6 +119,4 @@ A leg is basically a part of journey between two cities, that can contain one se
 | AvailabilitySource | B | Where availability was obtained |
 | Equipment | E75 | Equipment type |
 | SegmentsContinued | 1M | Indicates married segments |
-
-
 
