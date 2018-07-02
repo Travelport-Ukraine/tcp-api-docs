@@ -8,9 +8,7 @@ To run a request against TCP eStreaming API you should make a proper GET request
 
 ## Authorization
 
-To authorize you against the API we use `AuthToken` header, which
-should be passed with each and every request. You always receive
-one, when you register in TCP.
+To authorize you against the API we use `AuthToken` header, which should be passed with each and every request. You always receive one, when you register in TCP.
 
 ## Request URL
 
