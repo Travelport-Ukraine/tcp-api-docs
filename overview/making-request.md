@@ -19,7 +19,7 @@ Typical request URL looks like that:
 Request URL consists of the following elements:
 
 | **URL part** | **Description** |
-| :--- | :--- | :--- |
+| :--- | :--- |
 | [https://api.travelcloudpro.eu](https://api.travelcloudpro.eu) | API endpoint |
 | /v1 | API version |
 | /cache | API application \(cache stands here for eStreaming API\) |
@@ -31,7 +31,7 @@ Request URL consists of the following elements:
 Common eStreaming API request has following required params:
 
 | **Query param name** | **Description** |
-| --- | --- | --- |
+| :--- | :--- |
 | pointOfSale | Country ISO code where shopping request was generated. Further details can be found in [Point of Sale](point-of-sale.md) Section. |
 | ptc | Comma separated list of PTC \(e.g "ADT,CNN", "ADT" or "ITX"\) |
 
