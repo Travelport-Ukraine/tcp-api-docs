@@ -34,10 +34,10 @@
 | :--- | :--- | :--- |
 | adcTotal | `100` | Expected additional collection during exchange |
 | refundTotal | `300` | Expected refund value during exchange |
-| refundFare | `true|false` | Indicates if fare should be refunded during exchange |
+| refundFare | `true\|false` | Indicates if fare should be refunded during exchange |
 | fareQuote | `Object` | Describes changes, required to be provided to the fare quote during the exchange |
-| it | `true|false` | IT modifier |
-| bt | `true|false` | BT modifier |
+| it | `true\|false` | IT modifier |
+| bt | `true\|false` | BT modifier |
 | tourCode | `'LEISURE'` | Sets tour code to the fare quote, should be passed if tour code is required |
 | refundTaxes | `Array` | Contains array of taxes, which should be refunded with corresponding values |
 | commission | `Object` | Comission object |
@@ -51,7 +51,7 @@
 
 | segments[].index | `1` | Segment index |
 | segments[].fareBasis | `'HELLO'` | Segment farebasis |
-| segments[].isSaved | `true|false` | Indicates if this is new segment or already saved one |
+| segments[].isSaved | `true\|false` | Indicates if this is new segment or already saved one |
 | segments[].from | `'IEV'` | Segment departure airport |
 | segments[].departure | `'2018-09-29T06:50:00.000+02:00'` | Segment departure time |
 | segments[].arrival | `'2018-09-29T08:10:00.000+02:00'` | Segment arrival time |

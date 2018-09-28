@@ -28,7 +28,7 @@ POST
 | :--- | :--- | :--- |
 | pnr | `'ABCD01'` | Passenger name record |
 | fareQuoteIndex | `1` | Index of the fare quote to issue ticket with |
-| printEmd | `true|false` | Indicates if the penalty EMD, associated with this exchange should be issued along with a ticket |
+| printEmd | `true\|false` | Indicates if the penalty EMD, associated with this exchange should be issued along with a ticket |
 
 ### Request headers
 

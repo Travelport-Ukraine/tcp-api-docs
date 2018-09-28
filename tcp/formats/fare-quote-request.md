@@ -43,7 +43,7 @@
 | segments | `Array` | Array of the fare quote segments |
 | segments[].index | `1` | Segment index |
 | segments[].fareBasis | `'HELLO'` | Segment farebasis |
-| segments[].isSaved | `true|false` | Indicates if this is new segment or already saved one |
+| segments[].isSaved | `true\|false` | Indicates if this is new segment or already saved one |
 | segments[].from | `'IEV'` | Segment departure airport |
 | segments[].departure | `'2018-09-29T06:50:00.000+02:00'` | Segment departure time |
 | segments[].arrival | `'2018-09-29T08:10:00.000+02:00'` | Segment arrival time |
