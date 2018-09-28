@@ -17,7 +17,8 @@
 
 ### eStreaming API
 
-* [eStreaming API overview](estreaming/overview.md)
+* eStreaming API overview
+  * [Overview](estreaming/overview.md)
   * [Getting Started](estreaming/overview/getting-started.md)
   * [Using Postman Application](estreaming/overview/using-postman-application.md)
   * [Making request](estreaming/overview/making-request.md)
