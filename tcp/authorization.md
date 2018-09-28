@@ -78,6 +78,6 @@ No headers required
 
 ### How to read response
 
-In `data` section of resposne you will find your user and agency information, including list of the PCCs you could switch between, using [ChangePcc](change-pcc.md) method.
+In `data` section of resposne you will find your user and agency information, including list of the PCCs you could switch between, using [ChangePcc](./change-pcc.md) method.
 
 Also you will find there `token` field, which contains `AuthToken` you require to authorize your further method calls.

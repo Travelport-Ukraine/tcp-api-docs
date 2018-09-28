@@ -44,7 +44,7 @@
 | commission.type | `'Z'|'ZA'` | `'Z'` - percent commission type, `'ZA'` -absolute commission type |
 | commission.value | `10` | Commission value |
 | formOfPayment | `Array` | Describes up to three form of payment in case of additional collection |
-| penaltyData | `Object` | Describes penalty data for exchange. See [Penalty format](penalty.md) for details |
+| penaltyData | `Object` | Describes penalty data for exchange. See [Penalty format](./penalty.md) for details |
 
 
 

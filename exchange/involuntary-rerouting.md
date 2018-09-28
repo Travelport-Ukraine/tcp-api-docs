@@ -60,7 +60,7 @@ If some segments were added by the airline, make sure you have changed their sta
 
 This step is not necessary if the carrier has already added them and you successfully updated their status to HK.
 
-You can add segments manually or pass them in appropriate format to the [CalculateExchangeInformation](calculate-exchange-information.md) method.
+You can add segments manually or pass them in appropriate format to the [CalculateExchangeInformation](./calculate-exchange-information.md) method.
 
 ### 3. Get your ticket information
 
@@ -70,13 +70,13 @@ You will need `endorsement` and `basePrice` and `equivalentBasePrice` fields fro
 
 ### 4. Get a quote
 
-You should get an exchange quote using segments selected for exchange. Use [CalculateExchangeInformation](calculate-exchange-information.md) method for this.
+You should get an exchange quote using segments selected for exchange. Use [CalculateExchangeInformation](./calculate-exchange-information.md) method for this.
 
 You will use method response during exchange.
 
 ### 5. Process an exchange
 
-You will have to run [ExchangeTicket](exchange-ticket.md) method providing information from the previous steps.
+You will have to run [ExchangeTicket](./exchange-ticket.md) method providing information from the previous steps.
 
 #### Example request
 
@@ -157,13 +157,13 @@ You will have to run [ExchangeTicket](exchange-ticket.md) method providing infor
 
 You may also pass `copyOptions` param if you need to apply same exchange process to several passengers.
 
-See [ExchangeTicket](exchange-ticket.md) method documentation for more information.
+See [ExchangeTicket](./exchange-ticket.md) method documentation for more information.
 
 ### 6. Finish exchange by issung ticket
 
-Use [ExchangeTicket](exchange-ticket.md) method response to extract filed fares indexes to be issued.
+Use [ExchangeTicket](./exchange-ticket.md) method response to extract filed fares indexes to be issued.
 
-To finish exchange you should use [FinishExchange](finish-exchange.md) method.
+To finish exchange you should use [FinishExchange](./finish-exchange.md) method.
 
 
 ### 7. Clean everything up
