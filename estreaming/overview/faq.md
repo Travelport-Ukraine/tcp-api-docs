@@ -32,7 +32,7 @@ Required RPS capacity is much dependent on the way how your requests are distrib
 
 But you should consider that requests distribution is not flat during the day. If, for example, you have almost no requests during the day and doubled activity during the night, you should reserve an amount of capacity that will be enough to serve your peak periods. However short bursts of activity should be taken into account, and it's highly recommended to implement consequent retry API calls in case you receive API response message, that you are over your capacity.
 
-For further information about capacity, please visit [Capacity Planning](capacity-planning.md) page.
+For further information about capacity, please visit [Capacity Planning](./capacity-planning.md) page.
 
 ## 8. 1000 requests per day in a free tier is not enough for me. Can I ask you to give me more? {#8}
 

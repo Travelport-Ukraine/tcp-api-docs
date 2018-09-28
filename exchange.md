@@ -6,17 +6,17 @@ We did our best to create the simpliest solution for exchanging tickets, yet com
 
 In order to execute Exchange API methods you need to authenticate to obtain `AuthToken`. Then you will need to pass `AuthToken` header with each request to authorize it.
 
-For information on how to obtain `AuthToken` see [Authorization and authentication](exchange-api/exchange/authorization.md) article.
+For information on how to obtain `AuthToken` see [Authorization and authentication](./tcp/authorization.md) article.
 
 ## PCC switching
 
-If you have more than one PCC in your TCP account, you may find useful switching your PCCs with [ChangePcc](exchange-api/exchange/change-pcc.md) method.
+If you have more than one PCC in your TCP account, you may find useful switching your PCCs with [ChangePcc](./tcp/change-pcc.md) method.
 
 ## Exchange procedure
 
 ### 1. Select a PNR to start with
 
-Exchange starts with PNR. You need to have one before proceeding. If you are going to do a name change, or your previous PNR is now archived, you are to create a new one. In order to check if you have chosen the right one, use our [GetBooking](exchange-api/methods/get-booking.md) method.
+Exchange starts with PNR. You need to have one before proceeding. If you are going to do a name change, or your previous PNR is now archived, you are to create a new one. In order to check if you have chosen the right one, use our [GetBooking](./tcp/get-booking.md) method.
 
 
 ### 2. Add segments to PNR
@@ -64,4 +64,4 @@ Don't forget to remove old segments. You may use [RemoveSegment](./exchange/remo
 
 ## Special cases
 
-You may also be interested how to exchange tickets in special cases like [involuntary rerouting](./exchange/involuntary-rerouting.md) or exchange [using manual mask](exchange/manual-mask.md). This cases are covered more deeply in the corresponding sections.
+You may also be interested how to exchange tickets in special cases like [involuntary rerouting](./exchange/involuntary-rerouting.md) or exchange [using manual mask](./exchange/manual-mask.md). This cases are covered more deeply in the corresponding sections.
