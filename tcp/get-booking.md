@@ -26,6 +26,8 @@ GET
 
 ## GetBooking response
 
+### Response example
+
 ```json
 {
   "type": "uAPI",
