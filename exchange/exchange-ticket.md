@@ -83,7 +83,7 @@ POST
 | :--- | :--- | :--- |
 | pnr | `'ABCD01'` | Passenger name record |
 | ticketNumber | `'0123456789999'` | Number of the ticket for exchange |
-| suppressFareBasisValidationWarnings | `true|false` | Should be passed as true, if fare basis validation warnings were returned while creating fare quote |
+| suppressFareBasisValidationWarnings | `true\|false` | Should be passed as true, if fare basis validation warnings were returned while creating fare quote |
 | fareQuoteIndex | `1` | Stored fare quote index. Should be passed either `fareQuoteIndex` or `fareQuoteData` |
 | fareQuoteData | `Object` | Object, describing fare quote. See [Fare quote request format](../tcp/formats/fare-quote-request.md) |
 | fareQuoteHash | `'9aa9a825d4ae813b79b8b163845d898e'` | Should be passed along with `fareQuoteData` to verify its integrity during exchange process |
