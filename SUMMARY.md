@@ -5,12 +5,13 @@
 ### Exchange API
 
 * [Exchange overview](exchange.md)
+  * [Authorization and authentication](tcp/authorization.md)
+  * [Changing PCC](tcp/change-pcc.md)
 * Special cases
   * [Involuntary rerouting](exchange/involuntary-rerouting.md)
   * [Exchange using manual mask](exchange/manual-mask.md)
 * Methods
-  * [GetBooking](exchange/get-booking.md)
-  * [AddSegments](exchange/add-segments.md)
+  * [GetBooking](tcp/get-booking.md)
   * [CalculateExchangeInformation](exchange/calculate-exchange-information.md)
   * [ExchangeTicket](exchange/exchange-ticket.md)
   * [FinishExchange](exchange/finish-exchange.md)
