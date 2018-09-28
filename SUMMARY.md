@@ -4,7 +4,7 @@
 
 ### Exchange API
 
-* [Exchange overview](exchange.md)
+* [Overview](exchange.md)
   * [Authorization and authentication](tcp/authorization.md)
   * [Changing PCC](tcp/change-pcc.md)
 * Special cases
@@ -18,7 +18,7 @@
 
 ### eStreaming API
 
-* [eStreaming API overview](estreaming.md)
+* [Overview](estreaming.md)
   * [Getting Started](estreaming/overview/getting-started.md)
   * [Using Postman Application](estreaming/overview/using-postman-application.md)
   * [Making request](estreaming/overview/making-request.md)
@@ -33,6 +33,6 @@
   * [Fly From API](estreaming/methods/fly-from-api.md)
   * [Fly From with options API](estreaming/methods/fly-from-with-options-api.md)
   * [Flex API](estreaming/methods/flex-api.md)
-* eStreaming API limitations
+* Limitations
   * [List of limitations](estreaming/estreaming-api-limitations/list-of-limitations/README.md)
     * [Known errors](estreaming/estreaming-api-limitations/list-of-limitations/known-errors.md)
