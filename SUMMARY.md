@@ -39,5 +39,6 @@
 
 ## eStreaming Pipe
 
-* [eStreaming Pipe](estreaming-pipe/estreaming-pipe.md)
-
+* [eStreaming Pipe](estreaming-pipe/README.md)
+  * [Client setup](estreaming-pipe/setup.md)
+  * [Recommendations](estreaming-pipe/recommendations.md)
