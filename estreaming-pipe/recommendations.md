@@ -4,8 +4,8 @@ From our quite a big experience we strongly _do not_ recommend to directly use a
 
 The list is ordered from "Just perfect" to "Very good" to "Acceptable". The better configuration is the more experience and knowledge it requires to setup.
 
-* [Elastic Beanstalk](https://aws.amazon.com/en/elasticbeanstalk/) to host HTTP server & receive incoming messages → [Kinesis](https://aws.amazon.com/kinesis/) to collect, buffer and deliver messages in butches → [Lambda](https://aws.amazon.com/lambda/) To run your processing code in serverless invorement
-* [Elastic Beanstalk](https://aws.amazon.com/en/elasticbeanstalk/) to host HTTP server, receive incoming messages and pack them in a butches → [Lambda](https://aws.amazon.com/lambda/) To run your processing code in serverless invorement
+* [Elastic Beanstalk](https://aws.amazon.com/en/elasticbeanstalk/) to host HTTP server & receive incoming messages → [Kinesis](https://aws.amazon.com/kinesis/) to collect, buffer and deliver messages in batches → [Lambda](https://aws.amazon.com/lambda/) To run your processing code in serverless invorement
+* [Elastic Beanstalk](https://aws.amazon.com/en/elasticbeanstalk/) to host HTTP server, receive incoming messages and pack them in a batches → [Lambda](https://aws.amazon.com/lambda/) To run your processing code in serverless invorement
 * [Elastic Beanstalk](https://aws.amazon.com/en/elasticbeanstalk/) to host HTTP server, receive incoming messages and  run your processing code
 * [EC2](https://aws.amazon.com/ec2/)  to host HTTP server, receive incoming messages, run your processing code and be responsible for all aspects of operation system and all other software running on your server
 
