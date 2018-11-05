@@ -1,6 +1,12 @@
 # Necessary client side setup
 
-In order to work with _eStreaming Pipe_ you need to do the following: 1. Develop HTTP server which will receive incoming messages as compressed CSV files in body of POST requests. 1. Create [Amazon Web Services](https://aws.amazon.com/) account \(if you do not have one\) 1. Deploy this application in eu-west-1 \(EU Ireland\) AWS region. 1. Setup VPC Endpoint Services to the application from previous step. In order to do it you should follow the steps from [corresponding AWS Manual](https://docs.aws.amazon.com/vpc/latest/userguide/endpoint-service.html) and complete steps required for "service provider". The following are the general steps to create an endpoint service:
+In order to work with _eStreaming Pipe_ you need to do the following: 
+
+1. Develop HTTP server which will receive incoming messages as compressed CSV files in body of POST requests. 1. Create [Amazon Web Services](https://aws.amazon.com/) account \(if you do not have one\) 
+
+2. Deploy this application in eu-west-1 \(EU Ireland\) AWS region. 
+
+3. Setup VPC Endpoint Services to the application from previous step. In order to do it you should follow the steps from [corresponding AWS Manual](https://docs.aws.amazon.com/vpc/latest/userguide/endpoint-service.html) and complete steps required for "service provider". The following are the general steps to create an endpoint service:
 
 * Create a Network Load Balancer for your application in your VPC. The load balancer receives HTTP POST requests from us and routes it to your service. For more information, see [Getting Started with Network Load Balancers](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/network-load-balancer-getting-started.html) in the AWS User Guide for Network Load Balancers. 
 * Create a VPC endpoint service configuration and specify your Network Load Balancer. 
