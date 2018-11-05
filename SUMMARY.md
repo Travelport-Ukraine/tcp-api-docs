@@ -39,6 +39,7 @@
 
 ## eStreaming Pipe
 
-* [Overview](estreaming-pipe/README.md)
-  * [Necessary client side setup](estreaming-pipe/setup.md)
-  * [Recommendations](estreaming-pipe/recommendations.md)
+* [Overview](estreaming-pipe/estreaming-pipe/README.md)
+  * [Necessary client side setup](estreaming-pipe/estreaming-pipe/setup.md)
+  * [Recommendations](estreaming-pipe/estreaming-pipe/recommendations.md)
+
