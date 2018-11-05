@@ -6,7 +6,7 @@
 
 ### Request endpoint
 
-https://beta.api.travelcloudpro.eu/air/exchange/calculate
+[https://beta.api.travelcloudpro.eu/air/exchange/calculate](https://beta.api.travelcloudpro.eu/air/exchange/calculate)
 
 ### Request method
 
@@ -14,7 +14,7 @@ POST
 
 ### Request example
 
-```json
+```javascript
 {
   "pnr": "ABCD01",
   "ticketNumber": "0123456789999",
@@ -60,19 +60,19 @@ POST
 | pnr | `'ABCD01'` | Passenger name record |
 | ticketNumber | `'0123456789999'` | Number of the ticket for exchange |
 | fareQuoteIndex | `1` | Stored fare quote index. Should be passed either `fareQuoteIndex` or `fareQuoteData` |
-| fareQuoteData | `Object` | Object, describing fare quote. See [Fare quote request format](../tcp/formats/fare-quote-request.md) |
+| fareQuoteData | `Object` | Object, describing fare quote. See [Fare quote request format](https://github.com/Travelport-Ukraine/tcp-api-docs/tree/a5931a0f9f34859ad45e79139802c8f386f92d64/tcp/formats/fare-quote-request.md) |
 
 ### Request headers
 
 | Name | Example | Description |
 | :--- | :--- | :--- |
-| AuthToken | `'eyJhbGciOiJIUzI1NiIsInR5cCI...'` | Authorization token. See [Authorization and authentication](../tcp/authorization.md) for more details |
+| AuthToken | `'eyJhbGciOiJIUzI1NiIsInR5cCI...'` | Authorization token. See [Authorization and authentication](https://github.com/Travelport-Ukraine/tcp-api-docs/tree/a5931a0f9f34859ad45e79139802c8f386f92d64/tcp/authorization.md) for more details |
 
 ## CalculateExchangeInformation response
 
 ### Response example
 
-```json
+```javascript
 {
   "diffBasedOnFare": true,
   "currencyInfo": {
@@ -206,3 +206,4 @@ POST
 * `equivalentBasePrice` indicated equivalent base price values and the diff
 * `adcTotal` and `refundTotal` indicated current value of prognosed additional collection and refund based on current taxes and fare values if no penalty is provided
 * `fareQuote` field holds information about the fare quote which has been created using the data provided
+

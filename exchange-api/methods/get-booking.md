@@ -6,7 +6,7 @@ GetBooking method is used to acquire information about the PNR.
 
 ### Request endpoint
 
-https://beta.api.travelcloudpro.eu/core/booking/{pnr}
+[https://beta.api.travelcloudpro.eu/core/booking/{pnr}](https://beta.api.travelcloudpro.eu/core/booking/{pnr})
 
 ### Request method
 
@@ -22,13 +22,13 @@ GET
 
 | Name | Example | Description |
 | :--- | :--- | :--- |
-| AuthToken | `'eyJhbGciOiJIUzI1NiIsInR5cCI...'` | Authorization token. See [Authorization and authentication](../tcp/authorization.md) for more details |
+| AuthToken | `'eyJhbGciOiJIUzI1NiIsInR5cCI...'` | Authorization token. See [Authorization and authentication](../exchange/authorization.md) for more details |
 
 ## GetBooking response
 
 ### Response example
 
-```json
+```javascript
 {
   "type": "uAPI",
   "pnr": "ABCD01",
@@ -108,3 +108,4 @@ GET
   ]
 }
 ```
+

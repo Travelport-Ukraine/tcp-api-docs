@@ -6,10 +6,11 @@ Involuntary rerouting is a special exchange case, caused by the carrier. No pena
 
 ### 1. Get your PNR
 
-Run [GetBooking](../tcp/get-booking.md) request. You will need `segments` and `passengers` section of the response.
+Run [GetBooking](../methods/get-booking.md) request. You will need `segments` and `passengers` section of the response.
 
 #### Example response
-```json
+
+```javascript
 {
   "type": "uAPI",
   "pnr": "ABCD01",
@@ -55,32 +56,31 @@ Run [GetBooking](../tcp/get-booking.md) request. You will need `segments` and `p
 
 If some segments were added by the airline, make sure you have changed their status to HK. If no, you have to add segments by yourself like it's covered in the next step.
 
-
 ### 2. Add segments to PNR
 
 This step is not necessary if the carrier has already added them and you successfully updated their status to HK.
 
-You can add segments manually or pass them in appropriate format to the [CalculateExchangeInformation](./calculate-exchange-information.md) method.
+You can add segments manually or pass them in appropriate format to the [CalculateExchangeInformation](../methods/calculate-exchange-information.md) method.
 
 ### 3. Get your ticket information
 
-Use [GetTicket](../tcp/get-ticket.md) method to acquire ticket information as you will use it during exchange.
+Use [GetTicket](https://github.com/Travelport-Ukraine/tcp-api-docs/tree/ad00f08d18f9983a26ee6f5908dc7ced73142c8c/tcp/get-ticket.md) method to acquire ticket information as you will use it during exchange.
 
 You will need `endorsement` and `basePrice` and `equivalentBasePrice` fields from the method response in order to process an exchange.
 
 ### 4. Get a quote
 
-You should get an exchange quote using segments selected for exchange. Use [CalculateExchangeInformation](./calculate-exchange-information.md) method for this.
+You should get an exchange quote using segments selected for exchange. Use [CalculateExchangeInformation](../methods/calculate-exchange-information.md) method for this.
 
 You will use method response during exchange.
 
 ### 5. Process an exchange
 
-You will have to run [ExchangeTicket](./exchange-ticket.md) method providing information from the previous steps.
+You will have to run [ExchangeTicket](../methods/exchange-ticket.md) method providing information from the previous steps.
 
 #### Example request
 
-```json
+```javascript
 {
   "pnr": "ABCD01",
   "ticketNumber": "0123456789999",
@@ -157,16 +157,15 @@ You will have to run [ExchangeTicket](./exchange-ticket.md) method providing inf
 
 You may also pass `copyOptions` param if you need to apply same exchange process to several passengers.
 
-See [ExchangeTicket](./exchange-ticket.md) method documentation for more information.
+See [ExchangeTicket](../methods/exchange-ticket.md) method documentation for more information.
 
 ### 6. Finish exchange by issung ticket
 
-Use [ExchangeTicket](./exchange-ticket.md) method response to extract filed fares indexes to be issued.
+Use [ExchangeTicket](../methods/exchange-ticket.md) method response to extract filed fares indexes to be issued.
 
-To finish exchange you should use [FinishExchange](./finish-exchange.md) method.
-
+To finish exchange you should use [FinishExchange](../methods/finish-exchange.md) method.
 
 ### 7. Clean everything up
 
-Don't forget to remove old segments. You may use [RemoveSegment](../tcp/remove-segment.md) method for this purpose.
+Don't forget to remove old segments. You may use [RemoveSegment](https://github.com/Travelport-Ukraine/tcp-api-docs/tree/ad00f08d18f9983a26ee6f5908dc7ced73142c8c/tcp/remove-segment.md) method for this purpose.
 

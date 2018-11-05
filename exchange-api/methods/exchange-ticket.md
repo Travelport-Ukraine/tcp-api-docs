@@ -6,7 +6,7 @@
 
 ### Request endpoint
 
-https://beta.api.travelcloudpro.eu/air/exchange/process
+[https://beta.api.travelcloudpro.eu/air/exchange/process](https://beta.api.travelcloudpro.eu/air/exchange/process)
 
 ### Request method
 
@@ -14,7 +14,7 @@ POST
 
 ### Request example
 
-```json
+```javascript
 {
   "pnr": "ABCD01",
   "ticketNumber": "0123456789999",
@@ -79,29 +79,28 @@ POST
 
 ### Request parameters
 
-| Name | Example | Description |
-| :--- | :--- | :--- |
-| pnr | `'ABCD01'` | Passenger name record |
-| ticketNumber | `'0123456789999'` | Number of the ticket for exchange |
-| suppressFareBasisValidationWarnings | `true\|false` | Should be passed as true, if fare basis validation warnings were returned while creating fare quote |
-| fareQuoteIndex | `1` | Stored fare quote index. Should be passed either `fareQuoteIndex` or `fareQuoteData` |
-| fareQuoteData | `Object` | Object, describing fare quote. See [Fare quote request format](../tcp/formats/fare-quote-request.md) |
-| fareQuoteHash | `'9aa9a825d4ae813b79b8b163845d898e'` | Should be passed along with `fareQuoteData` to verify its integrity during exchange process |
-| fareQuoteIndex | `1` | Stored fare quote index. Should be passed either `fareQuoteIndex` or `fareQuoteData` |
-| exchangeData | `Object` | Object, describing exchange options. See [Exchange data request format](../tcp/formats/exchange-data-request.md) |
+| Name | Example | Description |  |
+| :--- | :--- | :--- | :--- |
+| pnr | `'ABCD01'` | Passenger name record |  |
+| ticketNumber | `'0123456789999'` | Number of the ticket for exchange |  |
+| suppressFareBasisValidationWarnings | \`true | false\` | Should be passed as true, if fare basis validation warnings were returned while creating fare quote |
+| fareQuoteIndex | `1` | Stored fare quote index. Should be passed either `fareQuoteIndex` or `fareQuoteData` |  |
+| fareQuoteData | `Object` | Object, describing fare quote. See [Fare quote request format](https://github.com/Travelport-Ukraine/tcp-api-docs/tree/a5931a0f9f34859ad45e79139802c8f386f92d64/tcp/formats/fare-quote-request.md) |  |
+| fareQuoteHash | `'9aa9a825d4ae813b79b8b163845d898e'` | Should be passed along with `fareQuoteData` to verify its integrity during exchange process |  |
+| fareQuoteIndex | `1` | Stored fare quote index. Should be passed either `fareQuoteIndex` or `fareQuoteData` |  |
+| exchangeData | `Object` | Object, describing exchange options. See [Exchange data request format](https://github.com/Travelport-Ukraine/tcp-api-docs/tree/a5931a0f9f34859ad45e79139802c8f386f92d64/tcp/formats/exchange-data-request.md) |  |
 
 ### Request headers
 
 | Name | Example | Description |
 | :--- | :--- | :--- |
-| AuthToken | `'eyJhbGciOiJIUzI1NiIsInR5cCI...'` | Authorization token. See [Authorization and authentication](../tcp/authorization.md) for more details |
-
+| AuthToken | `'eyJhbGciOiJIUzI1NiIsInR5cCI...'` | Authorization token. See [Authorization and authentication](https://github.com/Travelport-Ukraine/tcp-api-docs/tree/a5931a0f9f34859ad45e79139802c8f386f92d64/tcp/authorization.md) for more details |
 
 ## ExchangeTicket response
 
 ### Response example
 
-```json
+```javascript
 [
   {
     "status": "PREPARED_FQ",
@@ -194,3 +193,4 @@ POST
   }
 ]
 ```
+

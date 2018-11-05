@@ -8,7 +8,7 @@ For authentication you should use your login and password for TCP.
 
 ### Request endpoint
 
-https://beta.api.travelcloudpro.eu/auth/login
+[https://beta.api.travelcloudpro.eu/auth/login](https://beta.api.travelcloudpro.eu/auth/login)
 
 ### Request method
 
@@ -16,7 +16,7 @@ POST
 
 ### Request example
 
-```json
+```javascript
 {
   "username": "tcp-user@travelcloudpro.eu",
   "password": "V3ryS3cr3tP@$$w0rd"
@@ -36,10 +36,9 @@ No headers required
 
 ## Authentication response
 
-
 ### Response example
 
-```json
+```javascript
 {
   "status": "success",
   "date": "2018-09-28T16:07:17.734Z",
@@ -78,6 +77,7 @@ No headers required
 
 ### How to read response
 
-In `data` section of resposne you will find your user and agency information, including list of the PCCs you could switch between, using [ChangePcc](./change-pcc.md) method.
+In `data` section of resposne you will find your user and agency information, including list of the PCCs you could switch between, using [ChangePcc](change-pcc.md) method.
 
 Also you will find there `token` field, which contains `AuthToken` you require to authorize your further method calls.
+

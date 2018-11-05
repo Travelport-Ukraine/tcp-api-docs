@@ -32,6 +32,6 @@ Common eStreaming API request has following required params:
 
 | **Query param name** | **Description** |
 | :--- | :--- |
-| pointOfSale | Country ISO code where shopping request was generated. Further details can be found in [Point of Sale](./point-of-sale.md) Section. |
+| pointOfSale | Country ISO code where shopping request was generated. Further details can be found in [Point of Sale](point-of-sale.md) Section. |
 | ptc | Comma separated list of PTC \(e.g "ADT,CNN", "ADT" or "ITX"\) |
 

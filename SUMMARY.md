@@ -2,37 +2,42 @@
 
 * [Introduction](README.md)
 
-### Exchange API
+## Exchange API
 
-* [Overview](exchange.md)
-  * [Authorization and authentication](tcp/authorization.md)
-  * [Changing PCC](tcp/change-pcc.md)
-* Special cases
-  * [Involuntary rerouting](exchange/involuntary-rerouting.md)
-  * [Exchange using manual mask](exchange/manual-mask.md)
-* Methods
-  * [GetBooking](tcp/get-booking.md)
-  * [CalculateExchangeInformation](exchange/calculate-exchange-information.md)
-  * [ExchangeTicket](exchange/exchange-ticket.md)
-  * [FinishExchange](exchange/finish-exchange.md)
+* [Overview](exchange-api/exchange/README.md)
+  * [Authorization and authentication](exchange-api/exchange/authorization.md)
+  * [Changing PCC](exchange-api/exchange/change-pcc.md)
+* [Special cases](exchange-api/special-cases/README.md)
+  * [Involuntary rerouting](exchange-api/special-cases/involuntary-rerouting.md)
+  * [Exchange using manual mask](exchange-api/special-cases/manual-mask.md)
+* [Methods](exchange-api/methods/README.md)
+  * [GetBooking](exchange-api/methods/get-booking.md)
+  * [CalculateExchangeInformation](exchange-api/methods/calculate-exchange-information.md)
+  * [ExchangeTicket](exchange-api/methods/exchange-ticket.md)
+  * [FinishExchange](exchange-api/methods/finish-exchange.md)
 
-### eStreaming API
+## eStreaming API
 
-* [Overview](estreaming.md)
-  * [Getting Started](estreaming/overview/getting-started.md)
-  * [Using Postman Application](estreaming/overview/using-postman-application.md)
-  * [Making request](estreaming/overview/making-request.md)
-  * [Capacity Planning](estreaming/overview/capacity-planning.md)
-  * [Point Of Sale](estreaming/overview/point-of-sale.md)
-  * [FAQ](estreaming/overview/faq.md)
-* Methods
-  * [Cache API](estreaming/methods/cache-api.md)
-  * [Historical API](estreaming/methods/historical-api.md)
-  * [Fly From To API](estreaming/methods/fly-from-to-api/README.md)
-    * [Fly From To RT API](estreaming/methods/fly-from-to-api/fly-from-to-rt-api.md)
-  * [Fly From API](estreaming/methods/fly-from-api.md)
-  * [Fly From with options API](estreaming/methods/fly-from-with-options-api.md)
-  * [Flex API](estreaming/methods/flex-api.md)
-* Limitations
-  * [List of limitations](estreaming/estreaming-api-limitations/list-of-limitations/README.md)
-    * [Known errors](estreaming/estreaming-api-limitations/list-of-limitations/known-errors.md)
+* [Overview](estreaming-api/estreaming/README.md)
+  * [Getting Started](estreaming-api/estreaming/getting-started.md)
+  * [Using Postman Application](estreaming-api/estreaming/using-postman-application.md)
+  * [Making request](estreaming-api/estreaming/making-request.md)
+  * [Capacity Planning](estreaming-api/estreaming/capacity-planning.md)
+  * [Point Of Sale](estreaming-api/estreaming/point-of-sale.md)
+  * [FAQ](estreaming-api/estreaming/faq.md)
+* [Methods](estreaming-api/methods/README.md)
+  * [Cache API](estreaming-api/methods/cache-api.md)
+  * [Historical API](estreaming-api/methods/historical-api.md)
+  * [Fly From To API](estreaming-api/methods/fly-from-to-api/README.md)
+    * [Fly From To RT API](estreaming-api/methods/fly-from-to-api/fly-from-to-rt-api.md)
+  * [Fly From API](estreaming-api/methods/fly-from-api.md)
+  * [Fly From with options API](estreaming-api/methods/fly-from-with-options-api.md)
+  * [Flex API](estreaming-api/methods/flex-api.md)
+* [Limitations](estreaming-api/limitations/README.md)
+  * [List of limitations](estreaming-api/limitations/list-of-limitations/README.md)
+    * [Known errors](estreaming-api/limitations/list-of-limitations/known-errors.md)
+
+## eStreaming Pipe
+
+* [eStreaming Pipe](estreaming-pipe/estreaming-pipe.md)
+

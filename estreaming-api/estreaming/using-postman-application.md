@@ -4,7 +4,7 @@ In order to test eStreaming API credentials and confirm connectivity [Postman](h
 
 1. Open Cache folder in Collections Section.
 
-![](../.gitbook/assets/import.png)
+![](../../.gitbook/assets/import.png)
 
 2.Select the required method for sending eStreaming API request. The following subsections provide further insights into the structure of requests and reponses:
 
@@ -19,12 +19,12 @@ In order to test eStreaming API credentials and confirm connectivity [Postman](h
 
 1. Each eStreaming API GET  request contain a number of required parameters described in detail within the relvant topic. In order to change the default value for each parameter it is necessary to edit the relevant field in Params Section and click Save button when done.
 
-![](../.gitbook/assets/params.png)
+![](../../.gitbook/assets/params.png)
 
 1. Click Send button to transmit new request.
-2. Copy the content from base64GzippedResponse field![](../.gitbook/assets/responsebody.png)6. Paste it into [TxtWizard](http://www.txtwizard.net/) and click Decompress button
+2. Copy the content from base64GzippedResponse field![](../../.gitbook/assets/responsebody.png)6. Paste it into [TxtWizard](http://www.txtwizard.net/) and click Decompress button
 
-![](../.gitbook/assets/decompression1.png)![](../.gitbook/assets/decompressdone.png)7. Copy the content of Result field and paste it into [JSON Editor](http://www.jsoneditoronline.org/) to view response sctructure:
+![](../../.gitbook/assets/decompression1.png)![](../../.gitbook/assets/decompressdone.png)7. Copy the content of Result field and paste it into [JSON Editor](http://www.jsoneditoronline.org/) to view response sctructure:
 
-![](../.gitbook/assets/jsoneditorstructure.png)
+![](../../.gitbook/assets/jsoneditorstructure.png)
 
