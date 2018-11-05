@@ -1,4 +1,4 @@
-# Known errors
+# Error messages
 
 ## Cached API error response body example:
 

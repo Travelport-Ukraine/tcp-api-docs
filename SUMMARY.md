@@ -34,8 +34,8 @@
   * [Fly From with options API](estreaming-api/methods/fly-from-with-options-api.md)
   * [Flex API](estreaming-api/methods/flex-api.md)
 * [Limitations](estreaming-api/limitations/README.md)
-  * [List of limitations](estreaming-api/limitations/list-of-limitations/README.md)
-    * [Known errors](estreaming-api/limitations/list-of-limitations/known-errors.md)
+  * [List of limitations](estreaming-api/limitations/list-of-limitations.md)
+* [Error messages](estreaming-api/known-errors.md)
 
 ## eStreaming Pipe
 
