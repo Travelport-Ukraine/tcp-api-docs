@@ -1,4 +1,4 @@
-# Overview
+# Service description
 
 ## eStreaming Pipe service description
 
