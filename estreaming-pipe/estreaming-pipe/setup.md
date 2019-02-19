@@ -2,7 +2,7 @@
 
 In order to work with _eStreaming Pipe_ you need to do the following: 
 
-1. Develop HTTP server which will receive incoming messages as compressed CSV files in body of POST requests.
+1. Develop HTTP server which will receive incoming messages as compressed CSV files in body of POST requests. Don't forget to list desired port \(typically 80\) in your instances security group inbound rules.
 2. Create [Amazon Web Services](https://aws.amazon.com/) account \(if you do not have one\) 
 3. Deploy this application in eu-west-1 \(EU Ireland\) AWS region. 
 4. Setup VPC Endpoint Services to the application from previous step. In order to do it you should follow the steps from [corresponding AWS Manual](https://docs.aws.amazon.com/vpc/latest/userguide/endpoint-service.html) and complete steps required for "service provider". The following are the general steps to create an endpoint service:
