@@ -4,7 +4,7 @@ For your convenience, we have constructed all the available request types in a [
 
 {% file src="../../.gitbook/assets/cee-cache-production.postman\_collection.json" %}
 
-Please read instruction how to test eStreaming API credentials and confirm connectivity in [Using Postman Application](https://docs.travelcloudpro.eu/estreaming-api/estreaming/using-postman-application) section.
+Please read instructions how to test eStreaming API credentials and confirm connectivity in [Using Postman Application](https://docs.travelcloudpro.eu/estreaming-api/estreaming/using-postman-application) section.
 
 Please note that you would need to indicate your own AuthToken in HTTP Headers for each eStreaming API Method. You will get you AuthToken in email message with the subject "Travel Cloud Pro registration confirmed".
 
