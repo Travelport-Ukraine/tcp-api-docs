@@ -2,7 +2,7 @@
 
 For your convenience, we have constructed all the available request types in a [Postman](https://www.postman.com/) file: 
 
-{% file src="../../.gitbook/assets/cee-cache-production.postman\_collection.json" %}
+{% file src="../../.gitbook/assets/cee-cache-production.postman\_collection.txt" %}
 
 Please read instructions how to test eStreaming API credentials and confirm connectivity in [Using Postman Application](https://docs.travelcloudpro.eu/estreaming-api/estreaming/using-postman-application) section.
 
