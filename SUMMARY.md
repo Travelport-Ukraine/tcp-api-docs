@@ -2,20 +2,6 @@
 
 * [Introduction](README.md)
 
-## Exchange API
-
-* [Overview](exchange-api/exchange/README.md)
-  * [Authorization and authentication](exchange-api/exchange/authorization.md)
-  * [Changing PCC](exchange-api/exchange/change-pcc.md)
-* [Special cases](exchange-api/special-cases/README.md)
-  * [Involuntary rerouting](exchange-api/special-cases/involuntary-rerouting.md)
-  * [Exchange using manual mask](exchange-api/special-cases/manual-mask.md)
-* [Methods](exchange-api/methods/README.md)
-  * [GetBooking](exchange-api/methods/get-booking.md)
-  * [CalculateExchangeInformation](exchange-api/methods/calculate-exchange-information.md)
-  * [ExchangeTicket](exchange-api/methods/exchange-ticket.md)
-  * [FinishExchange](exchange-api/methods/finish-exchange.md)
-
 ## eStreaming API
 
 * [Overview](estreaming-api/estreaming/README.md)
