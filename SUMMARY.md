@@ -32,5 +32,5 @@
 ## Travelport Airline Shopping Cache
 
 * [SFTP clients](travelport-airline-shopping-cache/overview.md)
-* [How to generate public key to access Secure FTP](travelport-airline-shopping-cache/how-to-generate-public-key-to-access-secure-ftp.md)
+* [Generating SSH keys](travelport-airline-shopping-cache/how-to-generate-public-key-to-access-secure-ftp.md)
 

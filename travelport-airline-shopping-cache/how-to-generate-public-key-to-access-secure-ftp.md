@@ -1,10 +1,4 @@
-# How to generate public key to access Secure FTP
-
-## Generate SSH keys
-
-As an alternative to the service managed authentication method, you can authenticate users using a custom identity provider. This allows you to plug in an existing identity provider using an Amazon API Gateway endpoint. For more information, see [Authenticate using custom identity providers](https://docs.aws.amazon.com/transfer/latest/userguide/authenticating-users.html#authentication-custom-ip).
-
-A server can only authenticate users using one method \(service managed or custom identity provider\), and that method cannot be changed after the server is created.
+# Generating SSH keys
 
 ### Creating SSH Keys on macOS, Linux, or UNIX
 
@@ -37,5 +31,5 @@ Windows uses a slightly different SSH key-pair format. The public key must be in
 If you present WinSCP with a private key file not in .ppk format, that client offers to convert the key into .ppk format for you.
 {% endhint %}
 
-
+For a tutorial on creating SSH keys using PuTTYgen on Windows, see the [SSH.com website](https://www.ssh.com/ssh/putty/windows/puttygen).
 
